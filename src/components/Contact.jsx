@@ -34,16 +34,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_sn0u9i6',
-        'template_0smvgit',
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "MD AFRID FOISAL OPU",
+          to_name: import.meta.env.VITE_EMAILJS_TO_NAME,
           from_email: form.email,
-          to_email: "25afridfoisal00@gmail.com",
+          to_email: import.meta.env.VITE_EMAILJS_TO_EMAIL,
           message: form.message,
         },
-        'jVEBEBce-yzR_q2n0'
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
