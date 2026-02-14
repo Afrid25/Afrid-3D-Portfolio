@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
@@ -17,6 +17,24 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [notification, setNotification] = useState({ show: false, type: '', message: '' });
+
+  const Notification = ({ show, type, message, onClose }) => (
+    <AnimatePresence>
+      {show && (
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -100, opacity: 0 }}
+          transition={{ duration: 0.3 }}
+          className={`fixed top-20 left-1/2 transform -translate-x-1/2 p-4 rounded-lg shadow-lg z-50 ${type === 'success' ? 'bg-green-500' : 'bg-red-500'} text-white flex justify-between items-center`}
+        >
+          <span>{message}</span>
+          <button onClick={onClose} className="ml-4 text-xl font-bold">×</button>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
 
   const handleChange = (e) => {
     const { target } = e;
@@ -48,7 +66,8 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          setNotification({ show: true, type: 'success', message: "Thank you. I will get back to you as soon as possible." });
+          setTimeout(() => setNotification({ show: false, type: '', message: '' }), 5000);
 
           setForm({
             name: "",
@@ -60,7 +79,8 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          setNotification({ show: true, type: 'error', message: "Ahh, something went wrong. Please try again." });
+          setTimeout(() => setNotification({ show: false, type: '', message: '' }), 5000);
         }
       );
   };
@@ -73,6 +93,13 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+
+        <Notification
+          show={notification.show}
+          type={notification.type}
+          message={notification.message}
+          onClose={() => setNotification({ show: false, type: '', message: '' })}
+        />
 
         <form
           ref={formRef}
