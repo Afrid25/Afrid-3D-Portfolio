@@ -27,12 +27,24 @@ import {
 
 export const navLinks = [
   {
+    id: "top",
+    title: "Home",
+  },
+  {
     id: "about",
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "journey",
+    title: "Technical Journey",
+  },
+  {
+    id: "skills",
+    title: "Skills",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -42,19 +54,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Ler : Web Development",
+    title: "Frontend Development",
     icon: web,
   },
   {
-    title: "Ler : React Native Development",
+    title: "Responsive UI Design",
     icon: mobile,
   },
   {
-    title: "Ler : Backend Development",
+    title: "Backend Development",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Product Building",
     icon: creator,
   },
 ];
@@ -101,72 +113,67 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: docker,
   },
 ];
 
 const experiences = [
   {
-  title: "Founder & Developer",
-  company_name: "Bookeeds",
-  icon: startup,
-  iconBg: "#1d1836",
-  date: "2025 - Present",
-  points: [
-    "Conceptualized and developing a student productivity platform.",
-    "Designing UI in Figma and implementing it using React.",
-    "Building core features to reduce social media distraction.",
-    "Experimenting with automation and smart user experience flows."
+    title: "Founder & Developer",
+    company_name: "Bookeeds",
+    icon: startup,
+    iconBg: "#1d1836",
+    date: "2025 - Present",
+    points: [
+      "Building a student productivity platform around focus, planning, and daily structure.",
+      "Designing core flows in Figma before translating them into responsive React interfaces.",
+      "Using product thinking to keep the experience purposeful and easy to navigate.",
     ],
   },
-
   {
-  title: "Frontend & UI Development",
-  company_name: "Independent Projects",
-  icon: frontend,
-  iconBg: "#1d1836",
-  date: "2025 - Present",
-  points: [
-    "Building responsive web applications using React, HTML, CSS, and JavaScript.",
-    "Designing interfaces in Figma and converting them into functional UI.",
-    "Practicing reusable components and clean code architecture.",
-    "Improving user experience through interactive design patterns."
-  ],
+    title: "Frontend & UI Development",
+    company_name: "Independent Projects",
+    icon: frontend,
+    iconBg: "#1d1836",
+    date: "2025 - Present",
+    points: [
+      "Creating responsive portfolio and project interfaces with React, Tailwind, HTML, CSS, and JavaScript.",
+      "Improving spacing, readability, and component structure for cleaner user experiences.",
+      "Practicing reusable UI patterns with a strong focus on mobile responsiveness.",
+    ],
   },
   {
-  title: "AI & Automation Experiments",
-  company_name: "Personal Research",
-  icon: ai,
-  iconBg: "#1d1836",
-  date: "2025 - Present",
-  points: [
-    "Developed a Python-based voice controller to execute system commands.",
-    "Integrated speech recognition for hands-free computer interaction.",
-    "Built an experimental AI chatbot for automated responses and task handling.",
-    "Explored real-world applications of AI-driven workflow automation."
-  ],
+    title: "AI & Automation Experiments",
+    company_name: "Personal Research",
+    icon: ai,
+    iconBg: "#1d1836",
+    date: "2025 - Present",
+    points: [
+      "Exploring voice-driven and AI-assisted workflows through personal automation projects.",
+      "Testing how natural interaction can improve task flow and reduce friction.",
+      "Turning experiments into working prototypes with practical user-facing outcomes.",
+    ],
   },
   {
-  title: "Cyber Security Exploration",
-  company_name: "Independent Study",
-  icon: security,
-  iconBg: "#1d1836",
-  date: "2025 - Present",
-  points: [
-    "Studying networking fundamentals and system security concepts.",
-    "Exploring ethical hacking techniques and common vulnerabilities.",
-    "Practicing Linux commands and security-related tools.",
-    "Understanding real-world cyber attack and prevention methods."
-  ],
+    title: "Cyber Security Exploration",
+    company_name: "Independent Study",
+    icon: security,
+    iconBg: "#1d1836",
+    date: "2025 - Present",
+    points: [
+      "Studying networking, Linux workflows, and common security concepts alongside development.",
+      "Learning how secure thinking improves product decisions from the start.",
+      "Building technical depth that supports more reliable and resilient software.",
+    ],
   },
 ];
 
@@ -201,59 +208,35 @@ const projects = [
   {
     name: "Blood For Life",
     description:
-      "A web-based platform that connects blood donors and recipients, enabling users to search for blood by group and location, request donations, and manage donor information efficiently. The system aims to simplify the blood donation process and ensure timely support during emergencies.",
-    tags: [
-      { name: "HTML", color: "blue-text-gradient" },
-      { name: "JavaScript", color: "green-text-gradient" },
-      { name: "CSS", color: "pink-text-gradient" },
-    ],
+      "A blood donation platform that helps people search donors by group and location, request support quickly, and manage emergency response more efficiently.",
+    tags: [{ name: "HTML" }, { name: "JavaScript" }, { name: "CSS" }],
     image: bloodbank,
     source_code_link: "https://github.com/Afrid25/Blood-Bank-App",
-    live_link: "https://afrid25.github.io/Blood-Bank-App/", // 👈 add this
+    live_link: "https://afrid25.github.io/Blood-Bank-App/",
   },
   {
     name: "Bookeeds",
     description:
-      "Book of Deeds is a student-friendly all-in-one productivity and study management application designed to help students organize their academic activities in one place. The app allows users to manage tasks, track study goals, store notes, and plan their daily academic work efficiently, creating a structured and focused learning environment.",
-    tags: [
-      { name: "HTML", color: "blue-text-gradient" },
-      { name: "CSS", color: "green-text-gradient" },
-      { name: "JavaScript", color: "pink-text-gradient" },
-      { name: "Php", color: "sky_blue-text-gradient" },
-    ],
+      "A student productivity product focused on planning, tracking goals, and reducing distraction through a more intentional digital workflow.",
+    tags: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }, { name: "PHP" }],
     image: bookeeds,
     source_code_link: "https://github.com/Afrid25/BOOK-OF-DEEDS-update-",
-    live_link: "https://bookofdeeds.great-site.net/", // 👈 add this
+    live_link: "https://bookofdeeds.great-site.net/",
   },
-
   {
-    name: "Ai controller for pc",
+    name: "AI Controller for PC",
     description:
-      "AI Controller for PC is a voice-command-based desktop automation system that allows users to control their computer using natural speech. The application can execute system commands, open applications, perform web searches, and automate routine tasks, providing a hands-free and intelligent user experience.",
+      "A voice-command desktop automation experiment for launching apps, running searches, and handling common computer actions with hands-free control.",
     tags: [
-      {
-        name: "Python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Sql",
-        color: "green-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "HTML",
-        color: "red-text-gradient",
-      },
-      {
-        name: "Java Script",
-        color: "yellow-text-gradient",
-      },
+      { name: "Python" },
+      { name: "SQL" },
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "JavaScript" },
     ],
     image: aicontroller,
     source_code_link: "https://github.com/Afrid25",
+    live_link: "",
   },
 ];
 

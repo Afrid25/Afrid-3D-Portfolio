@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afrid Resume</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f7fb;
+        --surface: #ffffff;
+        --text: #111827;
+        --muted: #5b6478;
+        --accent: #6d3df6;
+        --border: #d9def1;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(960px, calc(100% - 2rem));
+        margin: 2rem auto;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 24px 60px rgba(17, 24, 39, 0.08);
+      }
+
+      .hero {
+        padding: 2rem;
+        background: linear-gradient(135deg, #111827 0%, #34256b 100%);
+        color: white;
+      }
+
+      .hero p,
+      .hero a {
+        color: rgba(255, 255, 255, 0.88);
+      }
+
+      .content {
+        display: grid;
+        gap: 1.5rem;
+        padding: 2rem;
+      }
+
+      .grid {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .grid.two {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .card {
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 1rem 1.1rem;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 0.75rem;
+      }
+
+      h3 {
+        font-size: 1.05rem;
+        margin-bottom: 0.35rem;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 1.2rem;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-top: 1.25rem;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0.75rem 1.2rem;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 700;
+        border: 1px solid transparent;
+      }
+
+      .button.primary {
+        background: white;
+        color: #111827;
+      }
+
+      .button.secondary {
+        border-color: rgba(255, 255, 255, 0.24);
+      }
+
+      @media print {
+        body {
+          background: white;
+        }
+
+        main {
+          width: 100%;
+          margin: 0;
+          border: 0;
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        .actions {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <p>Resume Preview</p>
+        <h1>Md Afrid Foisal Opu</h1>
+        <p style="margin-top: 0.75rem">
+          CSE student focused on full-stack development, responsive interfaces, and practical
+          cybersecurity learning.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="/cv/afrid-resume.pdf" download>Download PDF</a>
+          <a class="button secondary" href="mailto:25afridfoisal00@gmail.com">Email</a>
+          <a class="button secondary" href="https://github.com/Afrid25">GitHub</a>
+        </div>
+      </section>
+
+      <section class="content">
+        <div>
+          <h2>Summary</h2>
+          <p>
+            Developer with a strong interest in product building, accessible interfaces, and
+            trustworthy web experiences. Comfortable working across UI implementation, front-end
+            architecture, and early-stage product experimentation.
+          </p>
+        </div>
+
+        <div class="grid two">
+          <section class="card">
+            <h2>Core Skills</h2>
+            <ul>
+              <li>React, JavaScript, TypeScript, Tailwind CSS</li>
+              <li>Responsive UI design and component-based front-end work</li>
+              <li>Node.js, MongoDB, Git, Figma, Three.js</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h2>Contact</h2>
+            <ul>
+              <li>Email: 25afridfoisal00@gmail.com</li>
+              <li>GitHub: github.com/Afrid25</li>
+              <li>Location: Dhaka, Bangladesh</li>
+            </ul>
+          </section>
+        </div>
+
+        <div>
+          <h2>Projects</h2>
+          <div class="grid">
+            <section class="card">
+              <h3>Bookeeds</h3>
+              <p>
+                Student-focused productivity platform for organizing academic work, planning study
+                sessions, and building more intentional learning habits.
+              </p>
+            </section>
+            <section class="card">
+              <h3>Blood For Life</h3>
+              <p>
+                Web platform connecting blood donors and recipients with searchable donor records
+                and request flows for emergency response.
+              </p>
+            </section>
+            <section class="card">
+              <h3>AI Controller for PC</h3>
+              <p>
+                Voice-command experiment for launching apps, handling searches, and automating
+                common desktop actions through natural speech.
+              </p>
+            </section>
+          </div>
+        </div>
+
+        <div class="grid two">
+          <section class="card">
+            <h2>Experience</h2>
+            <ul>
+              <li>Founder and developer building Bookeeds</li>
+              <li>Independent front-end and UI development practice</li>
+              <li>AI automation and cybersecurity self-learning projects</li>
+            </ul>
+          </section>
+
+          <section class="card">
+            <h2>Availability</h2>
+            <p>
+              Open to internships, freelance projects, and collaborative product work. A more
+              detailed private packet of certificates and verification files can be shared securely
+              on request.
+            </p>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,111 +1,53 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import ComputersCanvas from "./canvas/Computers";
-
-/**
- * Mobile detection hook - runs outside Canvas
- * This determines whether to show the 3D Canvas or fallback
- */
-const useIsMobile = (breakpoint = 768) => {
-  const [isMobile, setIsMobile] = React.useState(false);
-  
-  React.useEffect(() => {
-    const checkIsMobile = () => {
-      setIsMobile(window.innerWidth < breakpoint);
-    };
-    
-    // Check on mount
-    checkIsMobile();
-    
-    // Add listener for resize
-    window.addEventListener('resize', checkIsMobile);
-    
-    // Cleanup
-    return () => window.removeEventListener('resize', checkIsMobile);
-  }, [breakpoint]);
-  
-  return isMobile;
-};
+import profilePhoto from "../assets/profile-photoroom.png";
 
 const Hero = () => {
-  const isMobile = useIsMobile(768);
-
   return (
-    <section className={"relative w-full h-screen mx-auto"}>
-      {/* Text Content - Always visible */}
+    <section
+      id='top'
+      className='relative overflow-hidden bg-[radial-gradient(circle_at_top_left,_rgba(255,76,76,0.18),_transparent_26%),radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.06),_transparent_22%),linear-gradient(180deg,_#0f0f0f_0%,_#141414_100%)]'
+    >
+      <div className='pointer-events-none absolute inset-0' aria-hidden='true'>
+        <div className='absolute left-[-8%] top-20 h-56 w-56 rounded-full bg-[#ff4c4c]/12 blur-3xl' />
+        <div className='absolute bottom-8 right-[-10%] h-64 w-64 rounded-full bg-white/6 blur-3xl' />
+      </div>
+
       <div
-        className={`absolute inset-0 top-[70px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 z-10 pointer-events-none`}
+        className={`${styles.paddingX} relative mx-auto flex min-h-[100svh] max-w-7xl items-center py-24 pt-32`}
       >
-        <div className='flex flex-col justify-center items-center mt-5 pointer-events-auto'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
-
-        <div className="pointer-events-auto">
-          <h3 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>AFRID </span>
-          </h3>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a CSE student, truly passionate about <br className='sm:block hidden' />
-             cyber security and full stack development.
-          </p>
-        </div>
-      </div>
-
-      {/* 
-        3D Canvas - Uses CSS display to show/hide instead of conditional rendering.
-        This ensures R3F context is properly initialized and prevents
-        "Hooks can only be used within the Canvas component" error.
-      */}
-      <div 
-        className="absolute inset-0"
-        style={{ display: isMobile ? 'none' : 'block' }}
-      >
-        <ComputersCanvas />
-      </div>
-      
-      {/* Mobile Fallback - Shows when isMobile is true */}
-      {isMobile && (
-        <div 
-          className="absolute inset-0 flex items-center justify-center"
-          style={{
-            background: 'linear-gradient(to bottom, #0a0a0a 0%, #1a1a2e 100%)',
-          }}
-        >
-          {/* 
-            To use a fallback image, add import at top:
-            import fallbackImage from "../assets/herobg.png";
-            
-            Then replace this div with:
-            <img src={fallbackImage} alt="Desktop Setup" className="w-full h-full object-cover opacity-80" />
-          */}
-          <div className="text-center px-4">
-            <p className="text-white-100 text-sm sm:text-base opacity-60">
-              View on desktop for 3D experience
+        <div className='grid w-full gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-center'>
+          <motion.div
+            initial={{ opacity: 0, x: -36 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            className='flex flex-col items-center justify-center text-center lg:items-start lg:text-left'
+          >
+            <h1 className={`${styles.heroHeadText} text-white`}>I AM AFRID A</h1>
+            <p className='mt-5 text-lg font-medium tracking-[0.3em] text-white/70 sm:text-xl'>
+              CSE Student
             </p>
-          </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 36 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
+            className='relative mx-auto flex w-full justify-center lg:mx-0 lg:justify-end'
+          >
+            <div className='absolute h-[260px] w-[260px] rounded-full bg-[#ff4c4c]/18 blur-3xl sm:h-[320px] sm:w-[320px] lg:h-[420px] lg:w-[420px]' />
+            <div className='relative flex aspect-square w-[260px] items-end justify-center overflow-hidden rounded-full border-4 border-white/10 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.14),_rgba(255,255,255,0.03)_46%,_rgba(0,0,0,0.34)_100%)] shadow-[0_40px_100px_-40px_rgba(255,76,76,0.45)] sm:w-[320px] lg:w-[420px]'>
+              <img
+                src={profilePhoto}
+                alt='Afrid profile'
+                className='h-full w-full translate-y-3 scale-[1.14] object-contain object-top sm:translate-y-4'
+                fetchPriority='high'
+                decoding='async'
+              />
+            </div>
+          </motion.div>
         </div>
-      )}
-      
-      {/* Scroll Indicator - Works on both mobile and desktop */}
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-20'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
-            />
-          </div>
-        </a>
       </div>
     </section>
   );

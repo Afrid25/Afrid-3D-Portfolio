@@ -1,89 +1,65 @@
-import React from "react";
-import Tilt  from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services } from "../constants";
+import { siteConfig, profileHighlights } from "../constants/siteConfig";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import profilePic from "../assets/profile.jpeg";
-
-
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
-
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
-);
 
 const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>About Me</p>
+        <h2 className={styles.sectionHeadText}>Clean work, clear intent.</h2>
       </motion.div>
 
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-10 flex flex-col md:flex-row items-center gap-10"
+        className='mt-10 grid gap-6 xl:grid-cols-[minmax(0,1.2fr)_minmax(320px,0.8fr)]'
       >
-        {/* Text */}
-        <p className="text-secondary text-[17px] max-w-3xl leading-[30px]">
-          I am a CSE student and web developer passionate about building impactful digital products.
-          I work with technologies like JavaScript, TypeScript, React, and Node.js to create scalable
-          and user-friendly applications.
+        <div className='rounded-[32px] border border-white/10 bg-white/[0.04] p-8 shadow-[0_32px_90px_-52px_rgba(255,76,76,0.35)] sm:p-10'>
+          <p className='max-w-2xl text-base leading-8 text-white/70 sm:text-lg'>
+            {siteConfig.about}
+          </p>
+          <p className='mt-5 max-w-2xl text-base leading-8 text-white/60 sm:text-lg'>
+            {siteConfig.summary}
+          </p>
 
-          <br /><br />
+          <div className='mt-10 flex flex-wrap items-center gap-4'>
+            <a
+              href={siteConfig.resume.downloadUrl}
+              download
+              aria-label='Download my CV as PDF'
+              className='inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#ff4c4c] px-6 py-3 text-sm font-semibold text-white shadow-[0_16px_40px_-20px_rgba(255,76,76,0.8)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#ff6262] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff4c4c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#111111]'
+            >
+              {siteConfig.resume.label}
+            </a>
+            <span className='text-sm uppercase tracking-[0.28em] text-white/40'>
+              {siteConfig.location}
+            </span>
+          </div>
 
-          I founded Book of Deeds, a student community platform designed to help students stay productive
-          and avoid social media distraction. My goal is to build startups that compete at a global level
-          and solve meaningful problems through technology.
-
-          <br /><br />
-
-          I believe in continuous learning, smart execution, and turning ideas into real products.
-        </p>
-
-        {/* Profile Image */}
-        <div className="w-[250px] h-[250px] flex-shrink-0">
-          <img
-            src={profilePic}
-            alt="Afrid"
-            className="w-full h-full object-cover object-top rounded-2xl shadow-lg"
-          />
+          <div className='mt-10 rounded-[28px] border border-white/10 bg-black/20 p-6'>
+            <p className='text-sm uppercase tracking-[0.24em] text-white/40'>Availability</p>
+            <p className='mt-3 text-lg font-medium text-white'>{siteConfig.availability}</p>
+          </div>
         </div>
-      </motion.div>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
+        <aside className='grid gap-4'>
+          {profileHighlights.map((item) => (
+            <article
+              key={item.label}
+              className='rounded-[28px] border border-white/10 bg-white/[0.04] p-6 shadow-[0_24px_70px_-50px_rgba(255,76,76,0.28)]'
+            >
+              <p className='text-sm uppercase tracking-[0.24em] text-white/40'>{item.label}</p>
+              <h3 className='mt-3 text-2xl font-semibold tracking-[-0.03em] text-white'>
+                {item.value}
+              </h3>
+              <p className='mt-3 text-sm leading-7 text-white/60'>{item.description}</p>
+            </article>
+          ))}
+        </aside>
+      </motion.div>
     </>
   );
 };
