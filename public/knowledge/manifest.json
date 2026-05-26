@@ -1,0 +1,12 @@
+{
+  "files": [
+    "profile.json",
+    "projects.json",
+    "skills.json",
+    "experience.json",
+    "education.json",
+    "achievements.json",
+    "faq.json",
+    "latestUpdates.json"
+  ]
+}

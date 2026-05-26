@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "title": "Founder & Developer",
+      "organization": "Bookeeds",
+      "date": "2025 - Present",
+      "summary": "Building a student productivity platform around focus, planning, and daily structure.",
+      "highlights": [
+        "Designing core flows in Figma before translating them into responsive React interfaces.",
+        "Using product thinking to keep the experience purposeful and easy to navigate."
+      ]
+    },
+    {
+      "title": "Frontend & UI Development",
+      "organization": "Independent Projects",
+      "date": "2025 - Present",
+      "summary": "Creating responsive portfolio and project interfaces with React, Tailwind, HTML, CSS, and JavaScript.",
+      "highlights": [
+        "Improving spacing, readability, and component structure for cleaner user experiences.",
+        "Practicing reusable UI patterns with a strong focus on mobile responsiveness."
+      ]
+    },
+    {
+      "title": "AI & Automation Experiments",
+      "organization": "Personal Research",
+      "date": "2025 - Present",
+      "summary": "Exploring voice-driven and AI-assisted workflows through personal automation projects.",
+      "highlights": [
+        "Testing how natural interaction can improve task flow and reduce friction.",
+        "Turning experiments into working prototypes with practical user-facing outcomes."
+      ]
+    },
+    {
+      "title": "Cyber Security Exploration",
+      "organization": "Independent Study",
+      "date": "2025 - Present",
+      "summary": "Studying networking, Linux workflows, and common security concepts alongside development.",
+      "highlights": [
+        "Learning how secure thinking improves product decisions from the start.",
+        "Building technical depth that supports more reliable and resilient software."
+      ]
+    }
+  ]
+}

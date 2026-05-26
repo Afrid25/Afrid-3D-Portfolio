@@ -8,6 +8,7 @@ const iconTone = {
   instagram: "text-[#ff6b9a]",
   twitter: "text-[#f5f5f5]",
   whatsapp: "text-[#25d366]",
+  telegram: "text-[#2aabee]",
   youtube: "text-[#ff3b30]",
 };
 const accentTone = {
@@ -17,6 +18,7 @@ const accentTone = {
   instagram: "group-hover:border-[#ff6b9a]/40 group-hover:bg-[#ff6b9a]/10",
   twitter: "group-hover:border-white/25 group-hover:bg-white/8",
   whatsapp: "group-hover:border-[#25d366]/40 group-hover:bg-[#25d366]/10",
+  telegram: "group-hover:border-[#2aabee]/40 group-hover:bg-[#2aabee]/10",
   youtube: "group-hover:border-[#ff3b30]/40 group-hover:bg-[#ff3b30]/10",
 };
 
@@ -81,6 +83,28 @@ const SocialIcon = ({ type }) => {
             d='M9.3 8.95c.18-.4.37-.41.55-.42h.46c.16 0 .4.06.61.52.21.45.71 1.55.77 1.66.06.11.1.24.02.39-.08.16-.12.26-.24.39-.12.14-.25.3-.36.4-.12.11-.25.24-.11.48.14.23.62 1.02 1.34 1.65.92.82 1.7 1.07 1.94 1.19.24.12.38.1.52-.06.14-.16.59-.68.75-.91.16-.24.32-.2.54-.12.23.08 1.44.68 1.69.8.25.12.42.18.48.29.06.12.06.67-.15 1.31-.2.64-1.2 1.22-1.67 1.29-.43.06-.97.09-1.56-.1-.36-.12-.82-.27-1.4-.52-2.48-1.08-4.1-3.61-4.23-3.78-.12-.16-1-1.33-1-2.53 0-1.2.63-1.8.85-2.05Z'
             stroke='currentColor'
             strokeWidth='1.2'
+          />
+        </svg>
+      );
+    case "telegram":
+      return (
+        <svg
+          viewBox='0 0 24 24'
+          fill='none'
+          className={`${iconClassName} ${iconTone[type]}`}
+          aria-hidden='true'
+        >
+          <path
+            d='M20.25 4.75 3.8 11.1c-.76.29-.75 1.36.02 1.63l4.2 1.45 1.62 5.05c.24.73 1.17.93 1.68.35l2.32-2.65 4.27 3.1c.62.45 1.5.09 1.64-.67l2.38-13.2c.17-.94-.8-1.75-1.68-1.41Z'
+            stroke='currentColor'
+            strokeWidth='1.5'
+          />
+          <path
+            d='m8.2 14.05 8.42-5.3-6.72 7.05-.1 3.1'
+            stroke='currentColor'
+            strokeWidth='1.5'
+            strokeLinecap='round'
+            strokeLinejoin='round'
           />
         </svg>
       );

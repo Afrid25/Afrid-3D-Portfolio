@@ -1,0 +1,62 @@
+{
+  "name": "Md Afrid Foisal Opu",
+  "shortName": "Afrid",
+  "role": "Frontend & Product Engineer",
+  "location": "Dhaka, Bangladesh",
+  "email": "25afridfoisal00@gmail.com",
+  "phone": "+8801849667752",
+  "availability": "Available for internships, freelance work, and product collaborations.",
+  "summary": "CSE student focused on clean responsive interfaces, product thinking, AI-assisted workflows, and practical full-stack development.",
+  "contactMethods": [
+    {
+      "label": "WhatsApp",
+      "value": "01849667752",
+      "url": "https://wa.me/8801849667752",
+      "note": "Best for quick chat and fast project discussions."
+    },
+    {
+      "label": "Telegram",
+      "value": "01849667752",
+      "url": "https://t.me/+8801849667752",
+      "note": "Use the same phone number on Telegram for direct messages."
+    },
+    {
+      "label": "Email",
+      "value": "25afridfoisal00@gmail.com",
+      "url": "mailto:25afridfoisal00@gmail.com",
+      "note": "Best for detailed opportunities, collaboration notes, or resume requests."
+    }
+  ],
+  "highlights": [
+    "Frontend and product-focused CSE student from Dhaka, Bangladesh.",
+    "Builds responsive web interfaces with React, JavaScript, Tailwind CSS, and modern tooling.",
+    "Founder and developer of Bookeeds, a student productivity startup project.",
+    "Explores AI-assisted workflows, voice automation, and cyber security fundamentals.",
+    "Available for internships, freelance work, and product collaborations."
+  ],
+  "resume": {
+    "label": "Download Resume",
+    "url": "/cv/afrids-cv.pdf"
+  },
+  "links": {
+    "portfolio": "https://afrid-3d-portfolio.vercel.app",
+    "github": "https://github.com/Afrid25",
+    "facebook": "https://www.facebook.com/share/19xqfVC73z/",
+    "instagram": "https://www.instagram.com/a.f.opu1?igsh=MTVxZjYxb2g1NzM5cg==",
+    "twitter": "https://x.com/AfridOpu",
+    "whatsapp": "https://wa.me/8801849667752",
+    "telegram": "https://t.me/+8801849667752"
+  },
+  "assistant": {
+    "greeting": "Hi, I'm Afrid's portfolio assistant. Ask me about his projects, skills, experience, CV, or contact details. For a quick chat, I can connect you through WhatsApp, Telegram, or email.",
+    "personality": "Professional, concise, intelligent, and friendly without sounding casual.",
+    "quickPrompts": [
+      "Quick chat with Afrid",
+      "Tell me about your best project",
+      "What technologies do you use?",
+      "Show your AI projects",
+      "How can I contact you?",
+      "What problem does Bookeeds solve?"
+    ]
+  }
+}

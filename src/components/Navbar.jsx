@@ -76,6 +76,16 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href={siteConfig.resume.downloadUrl}
+                download
+                aria-label='Download Afrid resume as PDF'
+                className='inline-flex min-h-[44px] items-center justify-center rounded-full border border-white/12 bg-white/[0.06] px-4 text-sm font-semibold text-white transition duration-300 hover:border-white/25 hover:bg-white/[0.1]'
+              >
+                Resume
+              </a>
+            </li>
           </ul>
 
           <button
@@ -122,6 +132,17 @@ const Navbar = () => {
                     </a>
                   </li>
                 ))}
+                <li>
+                  <a
+                    href={siteConfig.resume.downloadUrl}
+                    download
+                    aria-label='Download Afrid resume as PDF'
+                    onClick={() => setOpen(false)}
+                    className='flex min-h-[52px] w-full items-center justify-center rounded-2xl border border-white/10 bg-white px-4 py-3 text-sm font-bold uppercase tracking-[0.18em] text-[#0f0f0f] transition duration-300 hover:bg-white/90'
+                  >
+                    Resume
+                  </a>
+                </li>
               </motion.ul>
             </motion.div>
           ) : null}

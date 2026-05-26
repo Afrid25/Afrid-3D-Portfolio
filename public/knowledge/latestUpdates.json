@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "title": "Portfolio chatbot knowledge base added",
+      "date": "2026-05-23",
+      "summary": "A modular knowledge system was added so future chatbot answers can be updated through data files."
+    },
+    {
+      "title": "Bookeeds remains the primary product focus",
+      "date": "2025-01-01",
+      "summary": "Bookeeds is the featured startup project and should be prioritized in relevant assistant responses."
+    }
+  ]
+}

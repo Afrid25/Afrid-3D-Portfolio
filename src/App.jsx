@@ -11,6 +11,7 @@ const Tech = lazy(() => import("./components/Tech"));
 const Works = lazy(() => import("./components/Works"));
 const Contact = lazy(() => import("./components/Contact"));
 const StarsCanvas = lazy(() => import("./components/canvas/Stars"));
+const PortfolioChatbot = lazy(() => import("./components/chatbot/PortfolioChatbot"));
 
 const SectionFallback = ({ compact = false }) => (
   <div className={`${compact ? "min-h-[160px]" : "min-h-[260px]"} w-full`} aria-hidden='true' />
@@ -58,6 +59,10 @@ const App = () => {
             ) : null}
           </div>
         </main>
+        <Suspense fallback={null}>
+          <PortfolioChatbot />
+        </Suspense>
+        <div className='h-20 sm:h-0' aria-hidden='true' />
       </div>
     </BrowserRouter>
   );

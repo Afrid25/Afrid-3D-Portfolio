@@ -24,9 +24,9 @@ const Hero = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className='flex flex-col items-center justify-center text-center lg:items-start lg:text-left'
           >
-            <h1 className={`${styles.heroHeadText} text-white`}>I AM AFRID A</h1>
-            <p className='mt-5 text-lg font-medium tracking-[0.3em] text-white/70 sm:text-xl'>
-              CSE Student
+            <h1 className={`${styles.heroHeadText} max-w-3xl text-white`}>I AM AFRID</h1>
+            <p className='mt-5 text-lg font-semibold uppercase tracking-[0.3em] text-white/75 sm:text-xl'>
+              A CSE STUDENT
             </p>
           </motion.div>
 

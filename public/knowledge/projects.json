@@ -1,0 +1,58 @@
+{
+  "items": [
+    {
+      "id": "bookeeds",
+      "name": "Bookeeds",
+      "category": "Student productivity startup",
+      "status": "Active",
+      "featured": true,
+      "date": "2025 - Present",
+      "problem": "Students often struggle to organize goals, study routines, and daily focus in one purposeful workflow.",
+      "solution": "Bookeeds helps students plan tasks, track goals, and reduce distraction through a more intentional digital productivity experience.",
+      "summary": "A student productivity product focused on planning, goal tracking, and distraction reduction.",
+      "technologies": ["HTML", "CSS", "JavaScript", "PHP"],
+      "tags": ["productivity", "startup", "student", "planning"],
+      "links": {
+        "github": "https://github.com/Afrid25/BOOK-OF-DEEDS-update-",
+        "live": "https://bookofdeeds.great-site.net/"
+      },
+      "sectionId": "projects"
+    },
+    {
+      "id": "blood-for-life",
+      "name": "Blood For Life",
+      "category": "Emergency support platform",
+      "status": "Completed",
+      "featured": false,
+      "date": "2025",
+      "problem": "Finding blood donors quickly can be difficult during urgent situations.",
+      "solution": "The platform helps users search donors by blood group and location, request support, and manage emergency response more efficiently.",
+      "summary": "A blood donation platform for donor search, requests, and emergency coordination.",
+      "technologies": ["HTML", "JavaScript", "CSS"],
+      "tags": ["healthcare", "donation", "emergency", "frontend"],
+      "links": {
+        "github": "https://github.com/Afrid25/Blood-Bank-App",
+        "live": "https://afrid25.github.io/Blood-Bank-App/"
+      },
+      "sectionId": "projects"
+    },
+    {
+      "id": "ai-controller-for-pc",
+      "name": "AI Controller for PC",
+      "category": "AI automation experiment",
+      "status": "Prototype",
+      "featured": false,
+      "date": "2025",
+      "problem": "Common desktop actions can be repetitive and slower when users need hands-free control.",
+      "solution": "A voice-command desktop automation experiment for launching apps, running searches, and handling common computer actions.",
+      "summary": "A hands-free desktop automation prototype using voice commands and AI-assisted workflows.",
+      "technologies": ["Python", "SQL", "HTML", "CSS", "JavaScript"],
+      "tags": ["ai", "automation", "voice", "desktop"],
+      "links": {
+        "github": "https://github.com/Afrid25",
+        "live": ""
+      },
+      "sectionId": "projects"
+    }
+  ]
+}

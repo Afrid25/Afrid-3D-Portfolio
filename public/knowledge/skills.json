@@ -1,0 +1,20 @@
+{
+  "groups": [
+    {
+      "name": "Frontend",
+      "skills": ["React JS", "JavaScript", "TypeScript", "HTML 5", "CSS 3", "Tailwind CSS", "Redux Toolkit"]
+    },
+    {
+      "name": "Backend & Data",
+      "skills": ["Node JS", "MongoDB", "PHP", "SQL", "API integration"]
+    },
+    {
+      "name": "Creative & Product",
+      "skills": ["Figma", "Responsive UI Design", "Product Thinking", "Framer Motion", "Three JS"]
+    },
+    {
+      "name": "Tools & Workflow",
+      "skills": ["Git", "Docker", "Vite", "EmailJS", "AI-assisted development"]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Afrid Foisal Portfolio",
+  "short_name": "Afrid",
+  "description": "Frontend and product-focused developer portfolio built with React, Vite, Tailwind CSS, and Three.js.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050816",
+  "theme_color": "#050816",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

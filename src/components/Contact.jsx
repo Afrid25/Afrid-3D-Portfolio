@@ -1,7 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaGithub, FaLinkedinIn, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 import { SectionWrapper } from "../hoc";
@@ -36,6 +36,16 @@ const contactSocialLinks = [
     name: "Twitter",
     href: socialLinks.find((link) => link.name === "Twitter")?.href || "https://x.com",
     Icon: FaXTwitter,
+  },
+  {
+    name: "WhatsApp",
+    href: socialLinks.find((link) => link.name === "WhatsApp")?.href || "https://wa.me/8801849667752",
+    Icon: FaWhatsapp,
+  },
+  {
+    name: "Telegram",
+    href: socialLinks.find((link) => link.name === "Telegram")?.href || "https://t.me/+8801849667752",
+    Icon: FaTelegramPlane,
   },
 ];
 
@@ -173,18 +183,22 @@ const Contact = () => {
             Follow Me
           </p>
           <div className='mt-6 flex flex-wrap items-center justify-center gap-4 sm:gap-6'>
-            {contactSocialLinks.map(({ name, href, Icon }) => (
-              <a
-                key={name}
-                href={href}
-                target='_blank'
-                rel='noreferrer'
-                aria-label={`Open ${name}`}
-                className='inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-black/20 text-white transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:text-[#ff6262] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff4c4c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#111111]'
-              >
-                <Icon size={22} />
-              </a>
-            ))}
+            {contactSocialLinks.map((link) => {
+              const SocialIcon = link.Icon;
+
+              return (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  target='_blank'
+                  rel='noreferrer'
+                  aria-label={`Open ${link.name}`}
+                  className='inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-black/20 text-white transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:text-[#ff6262] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff4c4c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#111111]'
+                >
+                  <SocialIcon size={22} />
+                </a>
+              );
+            })}
           </div>
         </div>
       </motion.div>
