@@ -13,9 +13,167 @@ const knowledgeFiles = [
   "experience.json",
   "education.json",
   "achievements.json",
+  "certificates.json",
   "faq.json",
   "latestUpdates.json",
 ];
+
+const priorityOrder = [
+  "projects",
+  "certificates",
+  "skills",
+  "experience",
+  "education",
+  "achievements",
+  "profile",
+  "startup vision",
+  "contact information",
+  "faq",
+];
+
+const stopWords = new Set([
+  "a",
+  "an",
+  "and",
+  "are",
+  "as",
+  "at",
+  "can",
+  "does",
+  "for",
+  "from",
+  "has",
+  "have",
+  "he",
+  "his",
+  "how",
+  "i",
+  "in",
+  "is",
+  "me",
+  "of",
+  "on",
+  "or",
+  "that",
+  "the",
+  "to",
+  "what",
+  "with",
+  "you",
+]);
+
+const tokenize = (value = "") =>
+  String(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9+#.]+/g, " ")
+    .split(/\s+/)
+    .filter((word) => word.length > 1 && !stopWords.has(word));
+
+const semanticGroups = {
+  projects: ["project", "bookeeds", "built", "work", "demo", "strongest", "best", "startup", "product"],
+  certificates: ["certificate", "certification", "certified", "award", "issuer", "verification"],
+  skills: ["skill", "technology", "technologies", "stack", "tools", "framework", "know", "use"],
+  experience: ["experience", "career", "journey", "internship", "background"],
+  education: ["education", "study", "university", "degree", "student", "cse"],
+  profile: ["who", "intro", "introduce", "about", "describe", "bio", "afrid", "profile"],
+  "contact information": ["contact", "email", "whatsapp", "telegram", "hire", "reach", "phone", "message"],
+  "startup vision": ["startup", "vision", "mission", "future", "goal", "users", "product"],
+};
+
+const includesIntent = (queryTokens, source) =>
+  (semanticGroups[source] || []).some((word) => queryTokens.includes(word));
+
+const toSearchText = (value) => {
+  if (!value) return "";
+  if (typeof value === "string") return value;
+  if (Array.isArray(value)) return value.map(toSearchText).join(" ");
+  if (typeof value === "object") return Object.values(value).map(toSearchText).join(" ");
+  return String(value);
+};
+
+const normalizeKnowledge = (knowledge = {}) => ({
+  ...knowledge,
+  faq: Array.isArray(knowledge.faq) ? { items: knowledge.faq } : knowledge.faq,
+});
+
+const createRetrievalRecords = (knowledge = {}) => {
+  const normalized = normalizeKnowledge(knowledge);
+  const records = [];
+  const pushItems = (source, items = [], titleKey = "title") => {
+    items.forEach((item) => {
+      records.push({
+        source,
+        title: item[titleKey] || item.name || item.question || source,
+        data: item,
+        text: toSearchText(item),
+        priority: priorityOrder.indexOf(source) === -1 ? 99 : priorityOrder.indexOf(source),
+      });
+    });
+  };
+
+  pushItems("projects", normalized.projects?.items, "name");
+  pushItems("certificates", normalized.certificates?.items || normalized.achievements?.certificates, "name");
+  pushItems("skills", normalized.skills?.groups, "name");
+  pushItems("experience", normalized.experience?.items);
+  pushItems("education", normalized.education?.items, "degree");
+  pushItems("achievements", normalized.achievements?.items);
+  pushItems("faq", normalized.faq?.items, "question");
+  pushItems("latest updates", normalized.latestUpdates?.items);
+
+  if (normalized.profile) {
+    records.push({
+      source: "profile",
+      title: normalized.profile.name || "Profile",
+      data: normalized.profile,
+      text: toSearchText(normalized.profile),
+      priority: priorityOrder.indexOf("profile"),
+    });
+    records.push({
+      source: "contact information",
+      title: "Official contact information",
+      data: normalized.profile,
+      text: toSearchText({
+        email: normalized.profile.email,
+        phone: normalized.profile.phone,
+        methods: normalized.profile.contactMethods,
+        links: normalized.profile.links,
+      }),
+      priority: priorityOrder.indexOf("contact information"),
+    });
+  }
+
+  return records;
+};
+
+const retrieveKnowledge = (knowledge, message, limit = 10) => {
+  const queryTokens = tokenize(message);
+  const expandedTokens = [
+    ...queryTokens,
+    ...Object.entries(semanticGroups)
+      .filter(([source]) => includesIntent(queryTokens, source))
+      .flatMap(([, words]) => words),
+  ];
+
+  return createRetrievalRecords(knowledge)
+    .map((record) => {
+      const recordTokens = tokenize(`${record.title} ${record.text}`);
+      const hits = expandedTokens.filter((token) =>
+        recordTokens.some(
+          (recordToken) =>
+            recordToken === token ||
+            (token.length >= 4 &&
+              recordToken.length >= 4 &&
+              (recordToken.includes(token) || token.includes(recordToken))),
+        ),
+      );
+      const intentBonus = includesIntent(queryTokens, record.source) ? 12 : 0;
+      const score = hits.length * 6 + intentBonus + (20 - record.priority);
+      return { ...record, score };
+    })
+    .filter((record) => record.score > 20 - record.priority)
+    .sort((a, b) => b.score - a.score || a.priority - b.priority)
+    .slice(0, limit);
+};
 
 const getClientId = (request) =>
   request.headers["x-forwarded-for"]?.split(",")[0]?.trim() ||
@@ -102,16 +260,22 @@ const buildActions = (message = "", knowledge = {}) => {
   ];
 };
 
-const createPrompt = ({ message, mode, history, knowledge }) => `
-You are Afrid's professional portfolio assistant.
+const createPrompt = ({ message, mode, history, knowledge, retrieved }) => `
+You are the official AI assistant for Afrid's portfolio.
 
-Rules:
-- Answer concisely and intelligently using only the supplied portfolio knowledge.
-- Prioritize latest updates first.
-- Be recruiter-friendly and practical.
-- For quick-chat/contact questions, clearly mention WhatsApp 01849667752, Telegram with the same number, and email 25afridfoisal00@gmail.com when present in the supplied knowledge.
-- If information is missing, say what is known and suggest contacting Afrid.
-- Never invent private details.
+You are not a generic chatbot. You are Afrid's Portfolio Intelligence System.
+
+Retrieval-first rules:
+- Answer only from the retrieved portfolio knowledge and supplied portfolio knowledge.
+- Knowledge priority order: ${priorityOrder.join(" > ")} > AI-generated reasoning.
+- Never invent projects, skills, certificates, awards, experience, education, achievements, or private details.
+- If verified information does not exist, say exactly: "I couldn't find verified information about that in Afrid's portfolio knowledge base."
+- For skills, only mention technologies explicitly stored in the knowledge base.
+- For projects, cover purpose, problem solved, technologies, key features, and impact when available.
+- For certificates, include certificate name, issuing organization, date, achievement, and verification information when available.
+- For contact questions, prioritize official email, WhatsApp, Telegram, and portfolio links.
+- For recruiter-style questions, keep the answer concise, technical, and impact-focused.
+- End with one short relevant follow-up question.
 - Return plain text only. Do not use markdown tables.
 
 Current mode: ${mode}
@@ -122,6 +286,9 @@ ${JSON.stringify(history, null, 2)}
 
 Portfolio knowledge:
 ${JSON.stringify(knowledge, null, 2)}
+
+Retrieved knowledge, ranked:
+${JSON.stringify(retrieved, null, 2)}
 `;
 
 const getGeminiText = (geminiResponse) => {
@@ -158,12 +325,21 @@ export default async function handler(request, response) {
 
   try {
     const knowledge = await loadKnowledge(request, fallbackKnowledge);
+    const retrieved = retrieveKnowledge(knowledge, message);
+
+    if (!retrieved.length) {
+      return response.status(200).json({
+        answer: "I couldn't find verified information about that in Afrid's portfolio knowledge base.",
+        actions: buildActions(message, knowledge),
+      });
+    }
+
     const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
     const geminiResponse = await ai.models.generateContent({
       model: MODEL,
-      contents: createPrompt({ message, mode, history, knowledge }),
+      contents: createPrompt({ message, mode, history, knowledge, retrieved }),
       config: {
-        temperature: 0.45,
+        temperature: 0.2,
         maxOutputTokens: 420,
       },
     });

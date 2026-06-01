@@ -9,6 +9,7 @@ const About = lazy(() => import("./components/About"));
 const Experience = lazy(() => import("./components/Experience"));
 const Tech = lazy(() => import("./components/Tech"));
 const Works = lazy(() => import("./components/Works"));
+const CertificatesSection = lazy(() => import("./components/Certificates/CertificatesSection"));
 const Contact = lazy(() => import("./components/Contact"));
 const StarsCanvas = lazy(() => import("./components/canvas/Stars"));
 const PortfolioChatbot = lazy(() => import("./components/chatbot/PortfolioChatbot"));
@@ -47,6 +48,9 @@ const App = () => {
           </Suspense>
           <Suspense fallback={<SectionFallback />}>
             <Works />
+          </Suspense>
+          <Suspense fallback={<SectionFallback />}>
+            <CertificatesSection />
           </Suspense>
           <div className='relative z-0'>
             <Suspense fallback={<SectionFallback />}>

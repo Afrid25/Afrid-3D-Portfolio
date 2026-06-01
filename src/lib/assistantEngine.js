@@ -1,4 +1,4 @@
-import { findProjectByQuery, flattenKnowledge } from "./portfolioKnowledge.js";
+import { findProjectByQuery, flattenKnowledge, searchKnowledge } from "./portfolioKnowledge.js";
 
 const contactKeywords = [
   "contact",
@@ -16,10 +16,12 @@ const contactKeywords = [
   "talk",
 ];
 const projectKeywords = ["project", "work", "portfolio", "build", "built", "demo", "showcase"];
-const skillKeywords = ["skill", "technology", "stack", "tools", "use", "tech", "framework"];
+const skillKeywords = ["skill", "skills", "technology", "technologies", "stack", "tools", "use", "tech", "framework"];
 const educationKeywords = ["education", "study", "university", "degree", "student"];
 const experienceKeywords = ["experience", "journey", "background", "internship", "career"];
-const achievementKeywords = ["achievement", "certificate", "award", "accomplishment"];
+const achievementKeywords = ["achievement", "achievements", "certificate", "certificates", "certification", "award", "awards", "accomplishment"];
+const profileKeywords = ["who", "about", "introduce", "describe", "profile", "bio"];
+const unsupportedPersonalKeywords = ["favorite", "favourite", "age", "birthday", "religion", "family", "relationship"];
 const resumeKeywords = ["resume", "cv", "download"];
 const greetingKeywords = ["hi", "hello", "hey", "good morning", "good evening"];
 
@@ -31,6 +33,26 @@ const hasAny = (query, keywords) =>
     const pattern = keyword.includes(" ") ? escaped : `\\b${escaped}\\b`;
     return new RegExp(pattern, "i").test(query);
   });
+
+const faqStopWords = new Set([
+  "about",
+  "afrid",
+  "and",
+  "are",
+  "can",
+  "does",
+  "for",
+  "has",
+  "have",
+  "how",
+  "is",
+  "me",
+  "the",
+  "what",
+  "with",
+  "you",
+  "your",
+]);
 
 const formatList = (items = [], limit = 6) => items.slice(0, limit).join(", ");
 
@@ -99,8 +121,16 @@ const contactText = (profile = {}) => {
   return `For a quick chat, connect with Afrid on WhatsApp at ${methods.whatsapp.value} or Telegram using the same number. For detailed messages, email ${methods.email.value}. ${profile.availability || "He is open to relevant opportunities."}`;
 };
 
+const appendFollowUp = (text, followUp) => `${text}\n\n${followUp}`;
+
+const missingInfoReply = {
+  text: "I couldn't find verified information about that in Afrid's portfolio knowledge base.",
+  actions: [createAction("Ask About Projects", "prompt", "Tell me about Afrid's projects")],
+};
+
 export const createLocalAssistantReply = ({ query, knowledge, mode = "general" }) => {
   const flat = flattenKnowledge(knowledge || {});
+  const retrieved = searchKnowledge(knowledge || {}, query, 8);
   const normalizedQuery = query.trim().toLowerCase();
   const bookeedsMode = mode === "bookeeds" || normalizedQuery.includes("bookeeds");
   const matchedProject = bookeedsMode
@@ -129,9 +159,26 @@ export const createLocalAssistantReply = ({ query, knowledge, mode = "general" }
     };
   }
 
+  if (hasAny(normalizedQuery, profileKeywords)) {
+    const highlights = (flat.profile.highlights || []).slice(0, 3).join(" ");
+
+    return {
+      text: appendFollowUp(
+        `${flat.profile.name || "Afrid"} is ${flat.profile.role || "a developer"}. ${
+          flat.profile.summary || highlights
+        } ${highlights}`,
+        "Would you like to see Afrid's strongest project next?",
+      ),
+      actions: [
+        createAction("View Projects", "scroll", "projects"),
+        createAction("Download Resume", "download", flat.profile.resume?.url),
+      ],
+    };
+  }
+
   if (hasAny(normalizedQuery, contactKeywords)) {
     return {
-      text: contactText(flat.profile),
+      text: appendFollowUp(contactText(flat.profile), "Would you like to download Afrid's resume too?"),
       actions: createContactActions(flat.profile),
     };
   }
@@ -150,7 +197,10 @@ export const createLocalAssistantReply = ({ query, knowledge, mode = "general" }
     const project = flat.featuredProjects[0] || flat.projects[0];
 
     return {
-      text: `${summarizeProject(project)} For recruiters, it shows Afrid's ability to think beyond UI and shape a product around a clear user problem.`,
+      text: appendFollowUp(
+        `${summarizeProject(project)} For recruiters, it shows Afrid's ability to think beyond UI and shape a product around a clear user problem.`,
+        "Would you like to learn about the technologies used in Bookeeds?",
+      ),
       actions: createProjectActions(project),
     };
   }
@@ -171,9 +221,31 @@ export const createLocalAssistantReply = ({ query, knowledge, mode = "general" }
 
     return {
       text: project
-        ? `${summarizeProject(project)} Technologies used: ${formatList(project.technologies || [])}.`
+        ? appendFollowUp(
+            `${summarizeProject(project)} Technologies used: ${formatList(project.technologies || [])}. Key features and impact are represented through its focus on ${project.summary}`,
+            "Would you like to see more projects that demonstrate Afrid's skills?",
+          )
         : "Afrid's portfolio includes practical frontend, product, and AI automation work. The projects section has the strongest examples.",
       actions: createProjectActions(project),
+    };
+  }
+
+  if (hasAny(normalizedQuery, achievementKeywords) && retrieved.some((record) => record.type === "certificate")) {
+    const certificates = retrieved.filter((record) => record.type === "certificate").slice(0, 4);
+
+    return {
+      text: appendFollowUp(
+        certificates
+          .map(({ data }) => {
+            const name = data.name || data.title;
+            return `${name} - Issuer: ${data.issuer}. Date: ${data.date}. Achievement: ${
+              data.achievement || data.caption
+            } Verification: ${data.verification || "Certificate file is available in the portfolio."}`;
+          })
+          .join("\n"),
+        "Would you like a summary of Afrid's technical certifications?",
+      ),
+      actions: [],
     };
   }
 
@@ -183,7 +255,10 @@ export const createLocalAssistantReply = ({ query, knowledge, mode = "general" }
       .join(". ");
 
     return {
-      text: `Afrid's core stack is ${formatList(flat.skillNames, 10)}. ${groupedSkills}`,
+      text: appendFollowUp(
+        `Afrid's core stack is ${formatList(flat.skillNames, 10)}. ${groupedSkills}`,
+        "Would you like to see projects that demonstrate those skills?",
+      ),
       actions: [createAction("View Skills", "scroll", "skills")],
     };
   }
@@ -223,11 +298,11 @@ export const createLocalAssistantReply = ({ query, knowledge, mode = "general" }
       .toLowerCase()
       .replace(/[?]/g, "")
       .split(/\s+/)
-      .filter((word) => word.length > 2);
-    const queryWords = normalizedQuery.split(/\s+/);
+      .filter((word) => word.length > 2 && !faqStopWords.has(word));
+    const queryWords = normalizedQuery.split(/\s+/).filter((word) => !faqStopWords.has(word));
     const overlap = questionWords.filter((word) => queryWords.includes(word));
 
-    return overlap.length >= 2;
+    return overlap.length >= 2 || (overlap.length >= 1 && questionWords.length <= 3);
   });
 
   if (faqHit) {
@@ -237,6 +312,14 @@ export const createLocalAssistantReply = ({ query, knowledge, mode = "general" }
         ? createContactActions(flat.profile)
         : [createAction("Contact Afrid", "prompt", "Quick chat with Afrid")],
     };
+  }
+
+  if (hasAny(normalizedQuery, unsupportedPersonalKeywords)) {
+    return missingInfoReply;
+  }
+
+  if (!retrieved.length) {
+    return missingInfoReply;
   }
 
   const latest = flat.latestUpdates[0];

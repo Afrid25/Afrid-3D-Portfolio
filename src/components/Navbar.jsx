@@ -23,7 +23,7 @@ const Navbar = () => {
     };
 
     const handleResize = () => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 1024) {
         setOpen(false);
       }
     };
@@ -62,13 +62,13 @@ const Navbar = () => {
             {siteConfig.shortName}
           </a>
 
-          <ul className='hidden items-center gap-5 md:flex lg:gap-8'>
+          <ul className='hidden items-center gap-4 lg:flex xl:gap-8'>
             {navLinks.map((nav) => (
               <li key={nav.id}>
                 <a
                   href={`#${nav.id}`}
                   onClick={() => handleNavClick(nav.title)}
-                  className={`inline-flex min-h-[44px] items-center text-sm font-semibold uppercase tracking-[0.18em] transition duration-300 hover:text-white ${
+                  className={`inline-flex min-h-[44px] items-center text-xs font-semibold uppercase tracking-[0.16em] transition duration-300 hover:text-white xl:text-sm ${
                     active === nav.title ? "text-white" : "text-secondary"
                   }`}
                 >
@@ -94,7 +94,7 @@ const Navbar = () => {
             aria-expanded={open}
             aria-controls='mobile-navigation'
             onClick={() => setOpen((value) => !value)}
-            className='inline-flex min-h-[48px] min-w-[48px] items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:border-white/20 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff4c4c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#050816] md:hidden'
+            className='inline-flex min-h-[48px] min-w-[48px] items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:border-white/20 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff4c4c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#050816] lg:hidden'
           >
             <img src={menuIcon} alt='menu' className='h-3 w-5 object-contain' />
           </button>
@@ -108,7 +108,7 @@ const Navbar = () => {
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-              className='overflow-hidden md:hidden'
+              className='overflow-hidden lg:hidden'
             >
               <motion.ul
                 initial={{ y: -12 }}

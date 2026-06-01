@@ -54,6 +54,62 @@ textarea {
   outline-offset: 3px;
 }
 
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.gradient-circle {
+  --border-width: 4px;
+
+  isolation: isolate;
+  padding: var(--border-width);
+}
+
+.gradient-circle::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: var(--border-width);
+  background: conic-gradient(
+    from var(--angle),
+    #5A95FF,
+    #FF5E57,
+    #FFD84D,
+    #4DFF9D,
+    #5A95FF
+  );
+  animation: spin 20s linear infinite;
+  filter: brightness(1.9) saturate(1.75);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.gradient-circle::after {
+  --angle: 0deg;
+
+  z-index: 1;
+}
+
+.profile-image {
+  transition: transform 0.3s ease;
+}
+
+@keyframes spin {
+  to {
+    --angle: 360deg;
+  }
+}
+
 ::selection {
   background: rgba(145, 94, 255, 0.35);
   color: white;

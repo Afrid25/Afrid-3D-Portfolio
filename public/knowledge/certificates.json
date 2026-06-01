@@ -1,0 +1,92 @@
+{
+  "items": [
+    {
+      "id": "anthropic-ai-fluency",
+      "name": "AI Fluency for Students",
+      "issuer": "Anthropic",
+      "issuerDetail": "Makers of Claude AI",
+      "date": "May 30, 2026",
+      "achievement": "Certified in AI Fluency by Anthropic, in collaboration with top global higher education institutions.",
+      "verification": "Verified certificate file is available in the portfolio.",
+      "category": "AI & Tech",
+      "file": "/certificates/cert-01-anthropic-ai-fluency.pdf"
+    },
+    {
+      "id": "road-to-faang",
+      "name": "Road to FAANG Companies",
+      "issuer": "IIUC Competitive Programming Society",
+      "issuerDetail": "Endorsed by Arnab Dashgupta, Software Engineer at Google",
+      "date": "March 1, 2025",
+      "achievement": "Attended a seminar on breaking into top tech companies, led and endorsed by a Google engineer.",
+      "verification": "Verified certificate file is available in the portfolio.",
+      "category": "Tech Activity",
+      "file": "/certificates/cert-02-faang-seminar.pdf"
+    },
+    {
+      "id": "bteb-computer-office",
+      "name": "National Skill Standard Basic Course - Computer Office Application",
+      "issuer": "Bangladesh Technical Education Board, Dhaka",
+      "issuerDetail": "Skill Development Training Center, Kaptai, Rangamati",
+      "date": "Issued January 18, 2023",
+      "achievement": "Government-certified in Computer Office Application with Grade A+ through 360 hours of structured technical training.",
+      "verification": "Registration: 3001091919. Verified certificate file is available in the portfolio.",
+      "category": "Software Development",
+      "file": "/certificates/cert-03-bteb-computer-office.jpg"
+    },
+    {
+      "id": "vdp-training",
+      "name": "VDP Basic Training",
+      "issuer": "Bangladesh Ansar & Village Defence Party",
+      "issuerDetail": "Government of Bangladesh",
+      "date": "January 10-30, 2025",
+      "achievement": "Completed government-certified paramilitary civic training, demonstrating discipline, national service commitment, and physical resilience.",
+      "verification": "Verified certificate file is available in the portfolio.",
+      "category": "Workshops & Training",
+      "file": "/certificates/cert-04-vdp-training.jpg"
+    },
+    {
+      "id": "patriotic-song-third",
+      "name": "Patriotic Song Competition - 3rd Position",
+      "issuer": "Youth Sports and Cultural Competition",
+      "issuerDetail": "Karnaphuli College, Kaptai",
+      "date": "May 20, 2022",
+      "achievement": "Placed 3rd in patriotic song, reflecting dedication to Bangladesh's cultural heritage and performing arts.",
+      "verification": "Verified certificate image is available in the portfolio.",
+      "category": "Leadership",
+      "file": "/certificates/patrioticsong_3rd_position.jpg"
+    },
+    {
+      "id": "folk-song-first",
+      "name": "Folk Song Competition - 1st Position",
+      "issuer": "Upazila Education Office, Kaptai",
+      "issuerDetail": "National Education Week 2015",
+      "date": "October 18, 2015",
+      "achievement": "Won 1st place in folk song, recognized for vocal performance and traditional Bangladeshi cultural expression.",
+      "verification": "Verified certificate image is available in the portfolio.",
+      "category": "Leadership",
+      "file": "/certificates/folksong_1st_position.jpg"
+    },
+    {
+      "id": "folk-song-second",
+      "name": "Folk Song Competition - 2nd Position",
+      "issuer": "Upazila Education Office, Kaptai",
+      "issuerDetail": "National Education Week 2015",
+      "date": "2015",
+      "achievement": "Awarded 2nd place in folk song, showing consistent strength in traditional music performance.",
+      "verification": "Verified certificate image is available in the portfolio.",
+      "category": "Leadership",
+      "file": "/certificates/folk_song_2nd_position.jpg"
+    },
+    {
+      "id": "academic-singing-first",
+      "name": "Academic Singing Competition - 1st Position",
+      "issuer": "Upazila Education Office, Kaptai",
+      "issuerDetail": "National Education Week 2015",
+      "date": "2015",
+      "achievement": "Won 1st place in an academic singing competition, recognizing musical talent at institutional level.",
+      "verification": "Verified certificate image is available in the portfolio.",
+      "category": "Leadership",
+      "file": "/certificates/singing_academic_1st.jpg"
+    }
+  ]
+}
