@@ -1,82 +1,5331 @@
 [
-{
-"question": "Who is Afrid?",
-"answer": "Afrid is a Computer Science and Engineering student passionate about software development, AI-assisted solutions, startups, and building products that solve real-world problems."
-},
-{
-"question": "What does Afrid specialize in?",
-"answer": "Afrid focuses on full-stack web development, modern frontend technologies, AI-assisted development workflows, and product-oriented software engineering."
-},
-{
-"question": "How can I contact Afrid?",
-"answer": "For a quick chat, contact Afrid on WhatsApp at 01849667752 or Telegram using the same number. For detailed inquiries, email [25afridfoisal00@gmail.com](mailto:25afridfoisal00@gmail.com)."
-},
-{
-"question": "Can I quick chat with Afrid?",
-"answer": "Yes. The fastest options are WhatsApp, Telegram, or email. Afrid is always open to discussing projects, collaborations, and opportunities."
-},
-{
-"question": "What technologies does Afrid work with?",
-"answer": "Afrid works with React, JavaScript, TypeScript, Tailwind CSS, Node.js, Firebase, modern web APIs, and AI-assisted development tools."
-},
-{
-"question": "What is Afrid's strongest project?",
-"answer": "Bookeeds is Afrid's strongest portfolio project because it combines startup vision, student productivity, product thinking, and practical software development."
-},
-{
-"question": "What is Bookeeds?",
-"answer": "Bookeeds is a student-focused platform designed to help students find resources, opportunities, guidance, and academic support while reducing distractions caused by traditional social media."
-},
-{
-"question": "Why did Afrid build Bookeeds?",
-"answer": "The goal was to create a productive student ecosystem where learners can access useful information and opportunities without wasting time on unnecessary social media content."
-},
-{
-"question": "Does Afrid work with AI projects?",
-"answer": "Yes. Afrid actively explores AI-assisted development, automation systems, prompt engineering, and intelligent software solutions."
-},
-{
-"question": "What AI project has Afrid built?",
-"answer": "Afrid developed a prototype AI Controller for PC that focuses on voice-command-based interaction and automation workflows."
-},
-{
-"question": "Is Afrid interested in startups?",
-"answer": "Yes. Building scalable technology startups is one of Afrid's long-term goals."
-},
-{
-"question": "What motivates Afrid as a developer?",
-"answer": "Afrid is motivated by solving meaningful problems, creating useful products, learning emerging technologies, and turning ideas into practical solutions."
-},
-{
-"question": "Does Afrid contribute to open-source projects?",
-"answer": "Afrid is interested in contributing to open-source projects and collaborating with developers to improve technical skills and create impactful software."
-},
-{
-"question": "What kind of opportunities is Afrid looking for?",
-"answer": "Afrid is interested in internships, software engineering roles, startup opportunities, collaborative projects, and technology-focused communities."
-},
-{
-"question": "Is Afrid available for freelance work?",
-"answer": "Afrid is open to discussing freelance projects that align with software development, web applications, and innovative technology solutions."
-},
-{
-"question": "What are Afrid's future goals?",
-"answer": "Afrid aims to build successful technology products, grow startup ventures, master modern software engineering practices, and create solutions that positively impact millions of users."
-},
-{
-"question": "What type of software does Afrid enjoy building?",
-"answer": "Afrid enjoys building web applications, productivity tools, student-focused platforms, AI-powered solutions, and scalable digital products."
-},
-{
-"question": "Does Afrid enjoy learning new technologies?",
-"answer": "Yes. Continuous learning is a core part of Afrid's development journey, especially in AI, web technologies, software architecture, and product development."
-},
-{
-"question": "What makes Afrid different from other developers?",
-"answer": "Afrid combines technical development skills with product thinking, entrepreneurial ambition, and a strong focus on creating solutions that provide real value to users."
-},
-{
-"question": "What is Afrid currently learning?",
-"answer": "Afrid is continuously improving skills in full-stack development, AI-assisted engineering workflows, software architecture, startup building, and modern web technologies."
-}
+  {
+    "intent": "personal_identity",
+    "keywords": [
+      "who",
+      "afrid",
+      "introduce",
+      "yourself",
+      "about"
+    ],
+    "answer": "Md Afrid Foisal Opu is a Computer Science and Engineering student at International Islamic University Chittagong (IIUC). He specializes in frontend engineering, product development, AI-assisted workflows, and startup-focused software projects. He is the founder of Bookeeds and maintains this portfolio to showcase projects, skills, and contact information.",
+    "tags": [
+      "identity",
+      "bio"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "keywords": [
+      "goal",
+      "goals",
+      "future",
+      "dream",
+      "vision",
+      "ambition",
+      "plan",
+      "plans",
+      "mission",
+      "purpose"
+    ],
+    "answer": "Afrid's long-term vision is to build technology products that positively impact millions of people. He aims to grow from a student developer into a founder capable of creating globally recognized software platforms and startups, focusing on education, productivity, and AI-assisted developer tools.",
+    "tags": [
+      "goals",
+      "vision"
+    ]
+  },
+  {
+    "intent": "contact",
+    "keywords": [
+      "contact",
+      "reach",
+      "email",
+      "whatsapp",
+      "telegram",
+      "call",
+      "message",
+      "hire",
+      "available"
+    ],
+    "answer": "Fastest contact: WhatsApp/Telegram at +8801849667752. For formal contact or proposals, email 25afridfoisal00@gmail.com. Check the resume download and contact section on the portfolio site for more options.",
+    "tags": [
+      "contact",
+      "communication"
+    ]
+  },
+  {
+    "intent": "education",
+    "keywords": [
+      "iiuc",
+      "university",
+      "study",
+      "college",
+      "degree",
+      "cse",
+      "education"
+    ],
+    "answer": "Afrid is pursuing a Bachelor of Science in Computer Science and Engineering (CSE) at International Islamic University Chittagong (IIUC). His studies complement practical work in web development, system design, and AI experimentation.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "bookeeds_overview",
+    "keywords": [
+      "bookeeds",
+      "bookeeds?",
+      "project bookeeds",
+      "what is bookeeds",
+      "bookeeds startup",
+      "bookeeds founder"
+    ],
+    "answer": "Bookeeds is a student-focused platform founded by Afrid that helps learners organize goals, manage tasks, discover resources, and reduce distractions from conventional social media. It combines product thinking with practical engineering to improve student productivity.",
+    "tags": [
+      "project",
+      "startup"
+    ]
+  },
+  {
+    "intent": "bookeeds_why",
+    "keywords": [
+      "why bookeeds",
+      "reason bookeeds",
+      "why did you build bookeeds",
+      "problem bookeeds solves"
+    ],
+    "answer": "Bookeeds was created to offer students a purpose-driven digital environment where academic resources, opportunities, and goal tracking are prioritized over distracting social feeds. The aim is to make learning more intentional and productive.",
+    "tags": [
+      "project",
+      "product-market-fit"
+    ]
+  },
+  {
+    "intent": "founder_info",
+    "keywords": [
+      "founder",
+      "startup",
+      "company",
+      "who founded",
+      "founder of bookeeds"
+    ],
+    "answer": "Afrid is the founder of Bookeeds and the lead developer on the project. He handles product direction, frontend engineering, and early-stage growth experiments.",
+    "tags": [
+      "founder",
+      "startup"
+    ]
+  },
+  {
+    "intent": "skills_overview",
+    "keywords": [
+      "skills",
+      "what do you work with",
+      "tech",
+      "technologies",
+      "stack"
+    ],
+    "answer": "Core skills: React, JavaScript, TypeScript, Tailwind CSS, Node.js, Firebase, modern web APIs, 3D on the web (three.js/react-three-fiber), and AI-assisted development workflows including prompt engineering.",
+    "tags": [
+      "skills",
+      "techstack"
+    ]
+  },
+  {
+    "intent": "skill_react",
+    "keywords": [
+      "react",
+      "reactjs",
+      "frontend",
+      "react native?"
+    ],
+    "answer": "Afrid uses React for component-driven UI, combined with Tailwind CSS for rapid styling and maintainable design systems. He builds interactive experiences and uses react-three-fiber for WebGL/3D components in the portfolio.",
+    "tags": [
+      "skills",
+      "react"
+    ]
+  },
+  {
+    "intent": "skill_node",
+    "keywords": [
+      "node",
+      "nodejs",
+      "backend",
+      "server"
+    ],
+    "answer": "For backend work, Afrid uses Node.js and lightweight serverless functions (e.g., Vercel Serverless) for APIs, prototyping features, and integrating AI services.",
+    "tags": [
+      "skills",
+      "backend"
+    ]
+  },
+  {
+    "intent": "ai_projects",
+    "keywords": [
+      "ai",
+      "ai projects",
+      "ai controller",
+      "automation"
+    ],
+    "answer": "Afrid prototyped an AI Controller for PC focused on voice-command automation and workflow shortcuts. He experiments with AI-assisted development and prompt engineering to speed up product iteration.",
+    "tags": [
+      "projects",
+      "ai"
+    ]
+  },
+  {
+    "intent": "availability",
+    "keywords": [
+      "available",
+      "hire",
+      "freelance",
+      "internship",
+      "collaborate",
+      "remote"
+    ],
+    "answer": "Afrid is open to internships, freelance projects, and collaborations that align with product-focused engineering, web apps, and AI-assisted tooling. Contact via email or WhatsApp for availability and rates.",
+    "tags": [
+      "hiring",
+      "availability"
+    ]
+  },
+  {
+    "intent": "location",
+    "keywords": [
+      "location",
+      "where",
+      "based",
+      "city",
+      "country"
+    ],
+    "answer": "Afrid is based in Bangladesh. He is open to remote roles and international collaborations.",
+    "tags": [
+      "contact",
+      "location"
+    ]
+  },
+  {
+    "intent": "portfolio_projects",
+    "keywords": [
+      "projects",
+      "portfolio",
+      "work",
+      "case study",
+      "show me projects"
+    ],
+    "answer": "The portfolio highlights projects like Bookeeds, AI Controller prototypes, and interactive 3D experiences. Each project page includes tech details, role, links, and outcomes.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "resume",
+    "keywords": [
+      "resume",
+      "cv",
+      "download resume",
+      "experience"
+    ],
+    "answer": "You can download Afrid's resume from the resume section of this site. The resume summarizes education, experience, projects, and selected contributions.",
+    "tags": [
+      "contact",
+      "resume"
+    ]
+  },
+  {
+    "intent": "experience",
+    "keywords": [
+      "experience",
+      "worked",
+      "interned",
+      "roles"
+    ],
+    "answer": "Afrid has experience building web apps, prototypes, and startup MVPs. He focuses on frontend engineering, product-driven features, and small backend integrations for APIs and data storage.",
+    "tags": [
+      "experience"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "keywords": [
+      "why cse",
+      "why coding",
+      "when started coding",
+      "inspiration",
+      "biggest challenge"
+    ],
+    "answer": "Afrid chose CSE to blend systems thinking with applied software development. He started coding in high school, was inspired by practical problem-solving and mentorship, and the biggest challenge he's faced is shipping products while balancing full-time study.",
+    "tags": [
+      "story"
+    ]
+  },
+  {
+    "intent": "project_deepdive_template",
+    "keywords": [
+      "project details",
+      "case study template",
+      "project deep dive",
+      "how to ask about project"
+    ],
+    "answer": "When asking about a project, try keywords like 'tech stack', 'role', 'problem', 'solution', 'impact', 'future work'. For Bookeeds, ask 'bookeeds tech stack' or 'bookeeds mission' to get focused answers.",
+    "tags": [
+      "help",
+      "usage"
+    ]
+  },
+  {
+    "intent": "collaboration",
+    "keywords": [
+      "collaborate",
+      "partner",
+      "work together",
+      "team up",
+      "contribute"
+    ],
+    "answer": "Afrid welcomes collaborations on product-focused projects, especially in education tech, AI tooling, and web UX. Reach out with a short proposal describing scope, timeline, and budget.",
+    "tags": [
+      "collaboration"
+    ]
+  },
+  {
+    "intent": "github_and_open_source",
+    "keywords": [
+      "github",
+      "open source",
+      "contribute",
+      "repo"
+    ],
+    "answer": "Afrid contributes to small open-source projects and occasionally shares prototypes on GitHub. Check the portfolio links for repository links or request specific code samples by contacting him.",
+    "tags": [
+      "open-source"
+    ]
+  },
+  {
+    "intent": "how_to_contact_for_hire",
+    "keywords": [
+      "hire",
+      "recruit",
+      "job",
+      "position",
+      "apply"
+    ],
+    "answer": "For hiring inquiries, email a concise proposal or job description to 25afridfoisal00@gmail.com and include timeline, compensation, and a contact phone number. For quick screening, use WhatsApp at +8801849667752.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "faq_search_hint",
+    "keywords": [
+      "how to ask",
+      "search faq",
+      "keywords"
+    ],
+    "answer": "Use short keywords when chatting with the bot—e.g., 'react', 'bookeeds tech', 'internship', 'contact email'. The bot matches keywords to intents for fast answers.",
+    "tags": [
+      "help"
+    ]
+  },
+  {
+    "intent": "favorite_language",
+    "keywords": [
+      "favorite language",
+      "fav lang",
+      "language preference"
+    ],
+    "answer": "Favors JavaScript and TypeScript for web development because of ecosystem maturity and rapid iteration.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "coding_style",
+    "keywords": [
+      "coding style",
+      "best practices",
+      "patterns"
+    ],
+    "answer": "Prefers readable, well-tested code with clear component boundaries and small focused functions.",
+    "tags": [
+      "skills",
+      "style"
+    ]
+  },
+  {
+    "intent": "project_bookeeds_stack",
+    "keywords": [
+      "bookeeds tech stack",
+      "bookeeds stack",
+      "bookeeds tech"
+    ],
+    "answer": "Bookeeds uses a React frontend, lightweight Node/Firebase backend patterns, and Vercel for hosting prototypes.",
+    "tags": [
+      "project",
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "project_bookeeds_role",
+    "keywords": [
+      "bookeeds role",
+      "what did you do in bookeeds",
+      "bookeeds responsibilities"
+    ],
+    "answer": "Served as founder and lead developer — product direction, frontend engineering, and early user research.",
+    "tags": [
+      "project",
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "achievements",
+    "keywords": [
+      "achievements",
+      "awards",
+      "honors"
+    ],
+    "answer": "Includes academic achievements and project milestones; see certificates and achievements JSON files in the knowledge folder.",
+    "tags": [
+      "credentials"
+    ]
+  },
+  {
+    "intent": "certificates",
+    "keywords": [
+      "certificate",
+      "certificates",
+      "course completion"
+    ],
+    "answer": "Certificates and course details are available under the site's knowledge folder; contact for specific verification links.",
+    "tags": [
+      "credentials"
+    ]
+  },
+  {
+    "intent": "courses_taken",
+    "keywords": [
+      "courses",
+      "online courses",
+      "classes"
+    ],
+    "answer": "Focuses on web development, algorithms, data structures, and applied AI courses alongside university curriculum.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "languages_spoken",
+    "keywords": [
+      "languages",
+      "speak",
+      "language"
+    ],
+    "answer": "Fluent in Bengali and English; basic knowledge of regional dialects.",
+    "tags": [
+      "personal"
+    ]
+  },
+  {
+    "intent": "hobbies",
+    "keywords": [
+      "hobby",
+      "hobbies",
+      "interests"
+    ],
+    "answer": "Enjoys reading product design articles, experimenting with small side projects, and 3D graphics experimentation.",
+    "tags": [
+      "personal"
+    ]
+  },
+  {
+    "intent": "side_projects",
+    "keywords": [
+      "side projects",
+      "personal projects",
+      "side hustle"
+    ],
+    "answer": "Maintains several small prototypes and experiments; highlights are linked from the portfolio projects section.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "volunteer_work",
+    "keywords": [
+      "volunteer",
+      "volunteering",
+      "community work"
+    ],
+    "answer": "Occasionally volunteers for community workshops and open-source documentation contributions.",
+    "tags": [
+      "community"
+    ]
+  },
+  {
+    "intent": "teaching",
+    "keywords": [
+      "teaching",
+      "workshop",
+      "mentor"
+    ],
+    "answer": "Runs occasional short workshops on frontend basics and product thinking when time allows.",
+    "tags": [
+      "community",
+      "teaching"
+    ]
+  },
+  {
+    "intent": "references",
+    "keywords": [
+      "references",
+      "referees",
+      "recommendation"
+    ],
+    "answer": "References available on request for formal hiring processes.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "testimonials",
+    "keywords": [
+      "testimonials",
+      "reviews",
+      "client feedback"
+    ],
+    "answer": "Selected testimonials and feedback are shown on relevant project pages or provided on request.",
+    "tags": [
+      "social proof"
+    ]
+  },
+  {
+    "intent": "clients",
+    "keywords": [
+      "clients",
+      "worked with",
+      "customers"
+    ],
+    "answer": "Has worked with individual collaborators and small teams on product-focused prototypes and freelance tasks.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "patents_and_ip",
+    "keywords": [
+      "patent",
+      "intellectual property",
+      "ip"
+    ],
+    "answer": "No public patents; contact for IP-related questions about private or client work.",
+    "tags": [
+      "legal"
+    ]
+  },
+  {
+    "intent": "open_to_relocation",
+    "keywords": [
+      "relocate",
+      "relocation",
+      "move"
+    ],
+    "answer": "Open to remote-first roles; relocation considered for the right opportunity and terms.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "work_samples",
+    "keywords": [
+      "work sample",
+      "portfolio sample",
+      "example code"
+    ],
+    "answer": "Sample links and demos are available per project page; request runnable examples by contacting via email.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "availability_hours",
+    "keywords": [
+      "hours",
+      "availability hours",
+      "time zone"
+    ],
+    "answer": "Availability varies with academic schedule; typically evenings and weekends (UTC+6 timezone). Specify preferred times when inquiring.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "preferred_communication",
+    "keywords": [
+      "message",
+      "chat",
+      "email preferred",
+      "contact method"
+    ],
+    "answer": "For quick chats use WhatsApp/Telegram; for formal proposals use email with a concise brief.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "notable_publications",
+    "keywords": [
+      "publication",
+      "blog",
+      "articles"
+    ],
+    "answer": "Occasional blog posts and project write-ups appear in the portfolio; reach out for links to specific posts.",
+    "tags": [
+      "content"
+    ]
+  },
+  {
+    "intent": "education_projects",
+    "keywords": [
+      "university project",
+      "final year project",
+      "capstone"
+    ],
+    "answer": "Academic projects focus on applied systems and web apps; highlights included in the portfolio when relevant.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "preferred_frameworks",
+    "keywords": [
+      "frameworks",
+      "libraries",
+      "favorite libs"
+    ],
+    "answer": "Common picks: React, Vite, Tailwind, Firebase, and small utility libraries to keep bundles minimal.",
+    "tags": [
+      "techstack"
+    ]
+  },
+  {
+    "intent": "communication_expectation",
+    "keywords": [
+      "response time",
+      "reply",
+      "how fast"
+    ],
+    "answer": "Responses within 24–72 hours for emails; faster on messaging apps depending on availability.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "next_steps",
+    "keywords": [
+      "next step",
+      "how to work with you",
+      "start project"
+    ],
+    "answer": "Start by emailing a 1-paragraph brief with goals and timeline; a quick call can follow to align expectations.",
+    "tags": [
+      "hiring",
+      "collaboration"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "Why did he choose CSE?",
+    "keywords": [
+      "why did he choose cse?",
+      "choosing cse",
+      "why cse"
+    ],
+    "answer": "He chose CSE because it blends theory with practical software development, allowing him to build real products while studying systems and algorithms.",
+    "tags": [
+      "story"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "When did he start coding?",
+    "keywords": [
+      "when did he start coding?",
+      "started coding",
+      "coding start"
+    ],
+    "answer": "He started coding in high school, building small web projects and automations that sparked a passion for development.",
+    "tags": [
+      "story"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What inspired him to start development?",
+    "keywords": [
+      "what inspired him to start development?",
+      "inspired",
+      "start development"
+    ],
+    "answer": "He was inspired by solving problems with software and seeing how digital tools can improve everyday student workflows.",
+    "tags": [
+      "story"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What motivates him daily?",
+    "keywords": [
+      "what motivates him daily?",
+      "motivates",
+      "daily motivation"
+    ],
+    "answer": "He is motivated by product impact, learning new technologies, and turning ideas into useful tools for learners and teams.",
+    "tags": [
+      "story"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What drives him as a developer?",
+    "keywords": [
+      "what drives him as a developer?",
+      "drives",
+      "developer",
+      "motivation"
+    ],
+    "answer": "He is driven by building practical apps, improving learner experience, and exploring AI-enhanced workflows.",
+    "tags": [
+      "story"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "Does he like solving real problems?",
+    "keywords": [
+      "does he like solving real problems?",
+      "real problems",
+      "solve problems"
+    ],
+    "answer": "Yes, he prefers projects that solve real student or productivity problems rather than just experimental code.",
+    "tags": [
+      "story"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "How does he balance study and projects?",
+    "keywords": [
+      "how does he balance study and projects?",
+      "balance",
+      "study",
+      "projects"
+    ],
+    "answer": "He balances study and projects by prioritizing weekly goals, using project planning, and keeping experiments small and focused.",
+    "tags": [
+      "story"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his biggest challenge?",
+    "keywords": [
+      "what is his biggest challenge?",
+      "biggest challenge",
+      "challenge"
+    ],
+    "answer": "Balancing full-time university studies with product development and learning new tech has been his biggest challenge.",
+    "tags": [
+      "story"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his personal mission?",
+    "keywords": [
+      "what is his personal mission?",
+      "personal mission",
+      "mission"
+    ],
+    "answer": "His mission is to build student-focused technology products that make learning more intentional and efficient.",
+    "tags": [
+      "story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What are his career goals?",
+    "keywords": [
+      "what are his career goals?",
+      "career goals",
+      "long term"
+    ],
+    "answer": "He aims to grow into a founder-engineer building scalable education and productivity platforms.",
+    "tags": [
+      "goals"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "Where does he see himself in 5 years?",
+    "keywords": [
+      "where does he see himself in 5 years?",
+      "5 years",
+      "future"
+    ],
+    "answer": "In five years, he sees himself leading a product team or running a startup building meaningful learning products.",
+    "tags": [
+      "goals"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his long-term vision?",
+    "keywords": [
+      "what is his long-term vision?",
+      "long-term vision",
+      "vision"
+    ],
+    "answer": "His long-term vision is to reach learners worldwide with products that reduce distraction and increase focus.",
+    "tags": [
+      "goals"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "Does he want to start a company?",
+    "keywords": [
+      "does he want to start a company?",
+      "start a company",
+      "startup ambition"
+    ],
+    "answer": "Yes, he wants to build startups that evolve from practical student solutions into sustainable businesses.",
+    "tags": [
+      "goals"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his ambition?",
+    "keywords": [
+      "what is his ambition?",
+      "ambition"
+    ],
+    "answer": "His ambition is to impact millions by combining strong engineering with thoughtful product direction.",
+    "tags": [
+      "goals"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "Why should I hire him?",
+    "keywords": [
+      "why should i hire him?",
+      "why should i hire",
+      "hire him"
+    ],
+    "answer": "Hire him for his product mindset, fast frontend prototyping skills, and ability to turn student problems into polished web experiences.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his uniqueness?",
+    "keywords": [
+      "what is his uniqueness?",
+      "uniqueness",
+      "unique",
+      "what makes him unique"
+    ],
+    "answer": "His uniqueness comes from combining student-centered product thinking with AI-assisted web development and 3D presentation skills.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "How quickly can he deliver a prototype?",
+    "keywords": [
+      "how quickly can he deliver a prototype?",
+      "deliver prototype",
+      "prototype speed"
+    ],
+    "answer": "He can deliver a workable prototype quickly by using React, Tailwind, and serverless integrations to prove product ideas fast.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What makes his portfolio strong?",
+    "keywords": [
+      "what makes his portfolio strong?",
+      "strong portfolio",
+      "portfolio strength"
+    ],
+    "answer": "His portfolio is strong because it focuses on real project narratives, startup thinking, and practical outcomes rather than only UI screenshots.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "Why choose him over others?",
+    "keywords": [
+      "why choose him over others?",
+      "choose him",
+      "why him"
+    ],
+    "answer": "Choose him for a developer who also thinks like a founder and prioritizes product clarity, speed, and learning from user feedback.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "How can I contact him?",
+    "keywords": [
+      "how can i contact him?",
+      "contact him",
+      "contact"
+    ],
+    "answer": "Contact him by WhatsApp or Telegram at +8801849667752, or email 25afridfoisal00@gmail.com.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "Is he available for freelance work?",
+    "keywords": [
+      "is he available for freelance work?",
+      "freelance",
+      "available for freelance"
+    ],
+    "answer": "Yes, he is open to freelance work for meaningful web and startup projects, depending on schedule and scope.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "Can I hire him remotely?",
+    "keywords": [
+      "can i hire him remotely?",
+      "remote",
+      "hire remotely"
+    ],
+    "answer": "Yes, remote collaboration is welcome, especially for clear asynchronous communication and scope alignment.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is the best way to reach him?",
+    "keywords": [
+      "what is the best way to reach him?",
+      "best way",
+      "reach him"
+    ],
+    "answer": "The best way is WhatsApp/Telegram for quick conversations and email for formal proposals.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "Does he accept internships?",
+    "keywords": [
+      "does he accept internships?",
+      "internships",
+      "internship"
+    ],
+    "answer": "He is open to internship opportunities, especially those that involve product development experience.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "Where does he study?",
+    "keywords": [
+      "where does he study?",
+      "where study",
+      "university"
+    ],
+    "answer": "He studies Computer Science and Engineering (CSE) at International Islamic University Chittagong, IIUC.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What degree is he pursuing?",
+    "keywords": [
+      "what degree is he pursuing?",
+      "degree pursuing",
+      "degree"
+    ],
+    "answer": "He is pursuing a Bachelor of Science in Computer Science and Engineering.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his major?",
+    "keywords": [
+      "what is his major?",
+      "major",
+      "cse"
+    ],
+    "answer": "His major is Computer Science and Engineering, with a focus on software, systems, and web development.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "Is he a university student?",
+    "keywords": [
+      "is he a university student?",
+      "university student",
+      "student"
+    ],
+    "answer": "Yes, he is currently a university student at IIUC balancing academics and product work.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What does he study in CSE?",
+    "keywords": [
+      "what does he study in cse?",
+      "study in cse",
+      "cse subjects"
+    ],
+    "answer": "He studies software engineering, data structures, algorithms, databases, and applied AI concepts as part of CSE.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skill_js",
+    "question": "Does he use JavaScript?",
+    "keywords": [
+      "does he use javascript?",
+      "javascript",
+      "js"
+    ],
+    "answer": "Yes, he uses JavaScript for most frontend and application logic, often paired with TypeScript.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "skill_ts",
+    "question": "Does he use TypeScript?",
+    "keywords": [
+      "does he use typescript?",
+      "typescript",
+      "ts"
+    ],
+    "answer": "He uses TypeScript for improved type safety, maintainability, and developer experience on larger features.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "skill_react",
+    "question": "Does he work with React?",
+    "keywords": [
+      "does he work with react?",
+      "react",
+      "reactjs"
+    ],
+    "answer": "He builds UI with React, creating component-based interfaces and reusable patterns for web apps.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "skill_tailwind",
+    "question": "Does he use Tailwind?",
+    "keywords": [
+      "does he use tailwind?",
+      "tailwind",
+      "tailwindcss"
+    ],
+    "answer": "Yes, Tailwind CSS is his preferred styling framework for rapid, consistent UI development.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "skill_node",
+    "question": "Does he use Node.js?",
+    "keywords": [
+      "does he use node.js?",
+      "node",
+      "nodejs"
+    ],
+    "answer": "He uses Node.js for backend logic, serverless APIs, and build tooling integration.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "skill_firebase",
+    "question": "Does he know Firebase?",
+    "keywords": [
+      "does he know firebase?",
+      "firebase",
+      "firestore"
+    ],
+    "answer": "He uses Firebase for authentication, real-time data sync, and cloud functions in prototypes.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "skill_html",
+    "question": "Is HTML one of his skills?",
+    "keywords": [
+      "is html one of his skills?",
+      "html"
+    ],
+    "answer": "He uses HTML semantics carefully to structure accessible web interfaces.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "skill_css",
+    "question": "Does he know CSS?",
+    "keywords": [
+      "does he know css?",
+      "css"
+    ],
+    "answer": "He uses CSS and modern utility-first styling to create responsive, polished layouts.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "skill_nextjs",
+    "question": "Does he use Next.js?",
+    "keywords": [
+      "does he use next.js?",
+      "nextjs",
+      "next"
+    ],
+    "answer": "He can use Next.js for server-rendered pages and optimized React apps when the project needs it.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "skill_vite",
+    "question": "Does he use Vite?",
+    "keywords": [
+      "does he use vite?",
+      "vite"
+    ],
+    "answer": "He likes Vite for fast local development and simple build configuration.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "skill_javascript",
+    "question": "What JavaScript experience does he have?",
+    "keywords": [
+      "what javascript experience does he have?",
+      "javascript experience",
+      "js experience"
+    ],
+    "answer": "He has experience building interactive web apps, dashboards, and prototype UI components with JavaScript.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "skill_frontend",
+    "question": "Is he a frontend developer?",
+    "keywords": [
+      "is he a frontend developer?",
+      "frontend developer",
+      "frontend"
+    ],
+    "answer": "He is a frontend-focused engineer who also understands backend integration and product design tradeoffs.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "skill_backend",
+    "question": "Can he do backend work?",
+    "keywords": [
+      "can he do backend work?",
+      "backend work",
+      "backend"
+    ],
+    "answer": "He can prototype backend logic and APIs using Node.js and serverless functions, especially for product MVPs.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "skill_database",
+    "question": "Does he know databases?",
+    "keywords": [
+      "does he know databases?",
+      "database",
+      "databases"
+    ],
+    "answer": "He works with databases like Firestore and understands basic data modeling and persistence for apps.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "skill_analytics",
+    "question": "Does he implement analytics?",
+    "keywords": [
+      "does he implement analytics?",
+      "analytics"
+    ],
+    "answer": "Yes, he adds lightweight analytics to measure feature impact while being mindful of privacy.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "project_count",
+    "question": "How many projects has he completed?",
+    "keywords": [
+      "how many projects has he completed?",
+      "how many projects",
+      "projects completed"
+    ],
+    "answer": "He has completed multiple portfolio projects across productivity, AI, and 3D web experiences, showcasing both product thinking and frontend execution.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "project_focus",
+    "question": "What kinds of projects does he build?",
+    "keywords": [
+      "what kinds of projects does he build?",
+      "kinds of projects",
+      "types of projects"
+    ],
+    "answer": "He builds student-focused products, AI prototypes, productivity apps, and interactive web experiences.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "project_best",
+    "question": "What is his best project?",
+    "keywords": [
+      "what is his best project?",
+      "best project",
+      "strongest project"
+    ],
+    "answer": "His best project is Bookeeds, a student productivity platform with a strong focus on goals, resources, and distraction-free workflows.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "project_approach",
+    "question": "How does he approach project work?",
+    "keywords": [
+      "how does he approach project work?",
+      "approach project",
+      "project approach"
+    ],
+    "answer": "He starts with a problem, validates with a prototype, and iterates based on early feedback and usability.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "project_problem",
+    "question": "What problem does Bookeeds solve?",
+    "keywords": [
+      "what problem does bookeeds solve?",
+      "problem bookeeds solves",
+      "bookeeds problem"
+    ],
+    "answer": "Bookeeds solves the problem of students losing focus in noisy online spaces by giving them a dedicated productivity and resource hub.",
+    "tags": [
+      "projects",
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "project_vision",
+    "question": "What is the vision behind Bookeeds?",
+    "keywords": [
+      "what is the vision behind bookeeds?",
+      "vision behind bookeeds",
+      "bookeeds vision"
+    ],
+    "answer": "The vision is to build a student-first platform that turns study habits into measurable progress rather than endless scrolling.",
+    "tags": [
+      "projects",
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "project_users",
+    "question": "Who is Bookeeds for?",
+    "keywords": [
+      "who is bookeeds for?",
+      "bookeeds users",
+      "who uses bookeeds"
+    ],
+    "answer": "Bookeeds is designed for students, learners, and anyone who needs structure and goal clarity in their study routine.",
+    "tags": [
+      "projects",
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "project_tech",
+    "question": "What tech is used in Bookeeds?",
+    "keywords": [
+      "what tech is used in bookeeds?",
+      "bookeeds tech",
+      "bookeeds technology"
+    ],
+    "answer": "Bookeeds uses a modern web stack with React, Tailwind CSS, and serverless backend patterns for fast, maintainable development.",
+    "tags": [
+      "projects",
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "project_future",
+    "question": "What is the future of Bookeeds?",
+    "keywords": [
+      "what is the future of bookeeds?",
+      "future bookeeds",
+      "bookeeds future"
+    ],
+    "answer": "Future plans include richer habit tracking, improved study workflows, and smarter resource recommendations for learners.",
+    "tags": [
+      "projects",
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "How should I start working with him?",
+    "keywords": [
+      "how should i start working with him?",
+      "start working",
+      "work with him"
+    ],
+    "answer": "Begin by sending a short project brief or problem statement via email; he will respond with feasibility thoughts and next steps.",
+    "tags": [
+      "general"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his preferred communication style?",
+    "keywords": [
+      "what is his preferred communication style?",
+      "communication style",
+      "preferred communication"
+    ],
+    "answer": "Prefers concise messages, starting with the problem, goals, and expected timeline, then follow-up calls if needed.",
+    "tags": [
+      "general"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "Does he deliver on time?",
+    "keywords": [
+      "does he deliver on time?",
+      "deliver on time",
+      "deadline"
+    ],
+    "answer": "He aims to deliver work on time by setting clear milestones and keeping communication transparent throughout the project.",
+    "tags": [
+      "general"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "Does he work with startups?",
+    "keywords": [
+      "does he work with startups?",
+      "work with startups",
+      "startups"
+    ],
+    "answer": "Yes, he enjoys working with startups and early-stage products that need fast iteration and product clarity.",
+    "tags": [
+      "general"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "Can he improve existing products?",
+    "keywords": [
+      "can he improve existing products?",
+      "improve existing",
+      "existing product"
+    ],
+    "answer": "He can help improve existing products by reviewing UX, refactoring interfaces, and adding user-focused features.",
+    "tags": [
+      "general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 1 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 1"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 2 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 2"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 3 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 3"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 4 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 4"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 5 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 5"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 6 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 6"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 7 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 7"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 8 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 8"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 9 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 9"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 10 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 10"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 11 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 11"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 12 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 12"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 13 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 13"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 14 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 14"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 15 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 15"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 16 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 16"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 17 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 17"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 18 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 18"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 19 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 19"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 20 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 20"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 21 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 21"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 22 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 22"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 23 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 23"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 24 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 24"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 25 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 25"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 26 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 26"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 27 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 27"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 28 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 28"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 29 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 29"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 30 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 30"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 31 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 31"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 32 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 32"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 33 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 33"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 34 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 34"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 35 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 35"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 36 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 36"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 37 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 37"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 38 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 38"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 39 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 39"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 40 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 40"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 41 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 41"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 42 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 42"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 43 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 43"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 44 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 44"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 45 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 45"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 46 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 46"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 47 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 47"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 48 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 48"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 49 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 49"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 50 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 50"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 51 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 51"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 52 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 52"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 53 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 53"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 54 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 54"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 55 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 55"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 56 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 56"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 57 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 57"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 58 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 58"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 59 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 59"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 60 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 60"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 61 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 61"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 62 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 62"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 63 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 63"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 64 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 64"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 65 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 65"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 66 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 66"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 67 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 67"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 68 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 68"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 69 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 69"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 70 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 70"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 71 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 71"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 72 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 72"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 73 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 73"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 74 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 74"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 75 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 75"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 76 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 76"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 77 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 77"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 78 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 78"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 79 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 79"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 80 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 80"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 81 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 81"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 82 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 82"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 83 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 83"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 84 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 84"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 85 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 85"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 86 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 86"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 87 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 87"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 88 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 88"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 89 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 89"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 90 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 90"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 91 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 91"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 92 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 92"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 93 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 93"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 94 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 94"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 95 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 95"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 96 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 96"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 97 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 97"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 98 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 98"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 99 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 99"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 100 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 100"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 101 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 101"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 102 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 102"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 103 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 103"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 104 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 104"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 105 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 105"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 106 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 106"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 107 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 107"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 108 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 108"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 109 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 109"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 110 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 110"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 111 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 111"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 112 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 112"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 113 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 113"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 114 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 114"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 115 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 115"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 116 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 116"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 117 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 117"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 118 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 118"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 119 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 119"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 120 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 120"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 121 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 121"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 122 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 122"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 123 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 123"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 124 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 124"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 125 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 125"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 126 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 126"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 127 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 127"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 128 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 128"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 129 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 129"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 130 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 130"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 131 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 131"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 132 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 132"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 133 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 133"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 134 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 134"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 135 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 135"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 136 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 136"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 137 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 137"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 138 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 138"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 139 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 139"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 140 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 140"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 141 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 141"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 142 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 142"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 143 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 143"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 144 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 144"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 145 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 145"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 146 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 146"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 147 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 147"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 148 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 148"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 149 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 149"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 150 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 150"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 151 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 151"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 152 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 152"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 153 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 153"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 154 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 154"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 155 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 155"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 156 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 156"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 157 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 157"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 158 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 158"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 159 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 159"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 160 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 160"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 161 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 161"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 162 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 162"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 163 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 163"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 164 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 164"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 165 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 165"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 166 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 166"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 167 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 167"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 168 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 168"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 169 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 169"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 170 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 170"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 171 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 171"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 172 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 172"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 173 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 173"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 174 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 174"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 175 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 175"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 176 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 176"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 177 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 177"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 178 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 178"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 179 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 179"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 180 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 180"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 181 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 181"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 182 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 182"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 183 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 183"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 184 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 184"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 185 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 185"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 186 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 186"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 187 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 187"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 188 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 188"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 189 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 189"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 190 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 190"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 191 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 191"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 192 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 192"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 193 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 193"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 194 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 194"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 195 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 195"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 196 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 196"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 197 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 197"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 198 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 198"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 199 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 199"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 200 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 200"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 201 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 201"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 202 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 202"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 203 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 203"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 204 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 204"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 205 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 205"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 206 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 206"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 207 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 207"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 208 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 208"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 209 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 209"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 210 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 210"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 211 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 211"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "What is his question variant 212 about education?",
+    "keywords": [
+      "education",
+      "afrid",
+      "variant 212"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "What is his question variant 213 about skills?",
+    "keywords": [
+      "skills",
+      "afrid",
+      "variant 213"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "What is his question variant 214 about projects?",
+    "keywords": [
+      "projects",
+      "afrid",
+      "variant 214"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "What is his question variant 215 about bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid",
+      "variant 215"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "What is his question variant 216 about faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid",
+      "variant 216"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "What is his question variant 217 about personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid",
+      "variant 217"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "What is his question variant 218 about career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid",
+      "variant 218"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "What is his question variant 219 about hiring?",
+    "keywords": [
+      "hiring",
+      "afrid",
+      "variant 219"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "What is his question variant 220 about contact?",
+    "keywords": [
+      "contact",
+      "afrid",
+      "variant 220"
+    ],
+    "answer": "This is a general answer about Afrid, focusing on his portfolio strengths, learning, and how he works.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "Generated question 279 for personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "Generated question 280 for career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "Generated question 281 for hiring?",
+    "keywords": [
+      "hiring",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "Generated question 282 for contact?",
+    "keywords": [
+      "contact",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "Generated question 283 for education?",
+    "keywords": [
+      "education",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "Generated question 284 for skills?",
+    "keywords": [
+      "skills",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "Generated question 285 for projects?",
+    "keywords": [
+      "projects",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "Generated question 286 for bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "Generated question 287 for faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "Generated question 288 for personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "Generated question 289 for career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "Generated question 290 for hiring?",
+    "keywords": [
+      "hiring",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "Generated question 291 for contact?",
+    "keywords": [
+      "contact",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "education",
+    "question": "Generated question 292 for education?",
+    "keywords": [
+      "education",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "education"
+    ]
+  },
+  {
+    "intent": "skills",
+    "question": "Generated question 293 for skills?",
+    "keywords": [
+      "skills",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "skills"
+    ]
+  },
+  {
+    "intent": "projects",
+    "question": "Generated question 294 for projects?",
+    "keywords": [
+      "projects",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "projects"
+    ]
+  },
+  {
+    "intent": "bookeeds",
+    "question": "Generated question 295 for bookeeds?",
+    "keywords": [
+      "bookeeds",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "bookeeds"
+    ]
+  },
+  {
+    "intent": "faq_general",
+    "question": "Generated question 296 for faq_general?",
+    "keywords": [
+      "faq_general",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "faq_general"
+    ]
+  },
+  {
+    "intent": "personal_story",
+    "question": "Generated question 297 for personal_story?",
+    "keywords": [
+      "personal_story",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "personal_story"
+    ]
+  },
+  {
+    "intent": "career_goal",
+    "question": "Generated question 298 for career_goal?",
+    "keywords": [
+      "career_goal",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "career_goal"
+    ]
+  },
+  {
+    "intent": "hiring",
+    "question": "Generated question 299 for hiring?",
+    "keywords": [
+      "hiring",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "contact",
+    "question": "Generated question 300 for contact?",
+    "keywords": [
+      "contact",
+      "afrid"
+    ],
+    "answer": "This is a generated response for additional coverage of Afrid in the portfolio knowledge base.",
+    "tags": [
+      "contact"
+    ]
+  },
+  {
+    "intent": "founder_story",
+    "question": "What company did he found?",
+    "keywords": [
+      "company",
+      "founded",
+      "founder"
+    ],
+    "answer": "He founded Bookeeds, a student productivity startup designed to help learners manage goals, tasks, and study resources more intentionally.",
+    "tags": [
+      "founder",
+      "startup"
+    ]
+  },
+  {
+    "intent": "startup_identity",
+    "question": "Is Bookeeds a startup?",
+    "keywords": [
+      "bookeeds",
+      "startup",
+      "startup status"
+    ],
+    "answer": "Yes, Bookeeds is a startup project focused on building a niche product for student productivity and learning support.",
+    "tags": [
+      "startup"
+    ]
+  },
+  {
+    "intent": "founder_role",
+    "question": "What is his role in Bookeeds?",
+    "keywords": [
+      "role",
+      "bookeeds",
+      "founder role"
+    ],
+    "answer": "He serves as founder and lead developer, guiding product direction and engineering execution for the platform.",
+    "tags": [
+      "founder",
+      "product"
+    ]
+  },
+  {
+    "intent": "founder_motivation",
+    "question": "Why did he start Bookeeds?",
+    "keywords": [
+      "why",
+      "bookeeds",
+      "started"
+    ],
+    "answer": "He started Bookeeds to help students avoid social media distraction and turn study time into a structured, goal-oriented experience.",
+    "tags": [
+      "founder",
+      "motivation"
+    ]
+  },
+  {
+    "intent": "founder_experience",
+    "question": "What makes him a startup founder?",
+    "keywords": [
+      "startup founder",
+      "founder qualities",
+      "entrepreneur"
+    ],
+    "answer": "As a startup founder, he combines product thinking, team communication, customer focus, and hands-on engineering to ship early product versions quickly.",
+    "tags": [
+      "founder"
+    ]
+  },
+  {
+    "intent": "founder_strength",
+    "question": "What makes him unique as a founder?",
+    "keywords": [
+      "unique",
+      "founder",
+      "different"
+    ],
+    "answer": "He is unique because he blends student-first product design with AI-assisted development and practical frontend engineering skills.",
+    "tags": [
+      "founder"
+    ]
+  },
+  {
+    "intent": "founder_decision",
+    "question": "What problem is he solving with Bookeeds?",
+    "keywords": [
+      "problem",
+      "bookeeds",
+      "solving"
+    ],
+    "answer": "Bookeeds addresses the problem of unproductive time and scattered resources for students by giving them a single place to manage learning goals and tools.",
+    "tags": [
+      "product"
+    ]
+  },
+  {
+    "intent": "product_stage",
+    "question": "What stage is Bookeeds in?",
+    "keywords": [
+      "stage",
+      "bookeeds",
+      "early stage",
+      "beta"
+    ],
+    "answer": "Bookeeds is in early-stage development with a focus on validating the core student productivity experience and gathering user feedback.",
+    "tags": [
+      "product",
+      "startup"
+    ]
+  },
+  {
+    "intent": "company_goal",
+    "question": "What are his goals for the company?",
+    "keywords": [
+      "company goals",
+      "startup goals",
+      "future plans"
+    ],
+    "answer": "His goals include building a helpful student platform, scaling the product responsibly, and turning it into a sustainable education startup.",
+    "tags": [
+      "goals",
+      "startup"
+    ]
+  },
+  {
+    "intent": "product_philosophy",
+    "question": "What is his product philosophy?",
+    "keywords": [
+      "product philosophy",
+      "product thinking",
+      "vision"
+    ],
+    "answer": "He believes in solving one clear student problem well, shipping fast prototypes, and iterating based on real user feedback.",
+    "tags": [
+      "product"
+    ]
+  },
+  {
+    "intent": "business_model",
+    "question": "How does Bookeeds plan to make revenue?",
+    "keywords": [
+      "business model",
+      "revenue",
+      "monetize"
+    ],
+    "answer": "The plan is to explore value-added student features, premium tools, or partnerships once the product resonates with its target users.",
+    "tags": [
+      "startup",
+      "business"
+    ]
+  },
+  {
+    "intent": "funding_interest",
+    "question": "Is he looking for investors?",
+    "keywords": [
+      "investors",
+      "funding",
+      "raise capital"
+    ],
+    "answer": "He is open to talking with investors who understand student productivity and early-stage product growth.",
+    "tags": [
+      "startup",
+      "funding"
+    ]
+  },
+  {
+    "intent": "team_structure",
+    "question": "Does he have a team or co-founder?",
+    "keywords": [
+      "team",
+      "co-founder",
+      "cofounder"
+    ],
+    "answer": "He is currently leading the product independently and is open to collaborating with complementary team members or partners.",
+    "tags": [
+      "team"
+    ]
+  },
+  {
+    "intent": "founder_skills",
+    "question": "What founder skills does he bring?",
+    "keywords": [
+      "founder skills",
+      "skills",
+      "leadership"
+    ],
+    "answer": "He brings product leadership, rapid prototyping, UX focus, and technical execution with frontend and AI tools.",
+    "tags": [
+      "founder",
+      "skills"
+    ]
+  },
+  {
+    "intent": "launch_strategy",
+    "question": "What is his startup launch strategy?",
+    "keywords": [
+      "launch strategy",
+      "go to market",
+      "launch"
+    ],
+    "answer": "He focuses on validating core workflows with early users, iterating quickly, and building a product that students find genuinely useful.",
+    "tags": [
+      "startup",
+      "strategy"
+    ]
+  },
+  {
+    "intent": "value_proposition",
+    "question": "What value does his company provide?",
+    "keywords": [
+      "value proposition",
+      "provide",
+      "value"
+    ],
+    "answer": "The value is a distraction-minimizing student environment with tools for goals, tasks, and resource discovery.",
+    "tags": [
+      "product"
+    ]
+  },
+  {
+    "intent": "founder_mindset",
+    "question": "What is his mindset as a founder?",
+    "keywords": [
+      "mindset",
+      "founder",
+      "entrepreneur"
+    ],
+    "answer": "He thinks like a builder: test assumptions quickly, learn from users, and keep the product simple and effective.",
+    "tags": [
+      "founder"
+    ]
+  },
+  {
+    "intent": "startup_experience",
+    "question": "Does he have startup experience?",
+    "keywords": [
+      "startup experience",
+      "experience"
+    ],
+    "answer": "Yes, he has experience launching and iterating on early-stage web products and startup prototypes.",
+    "tags": [
+      "startup"
+    ]
+  },
+  {
+    "intent": "user_validation",
+    "question": "How does he validate his product ideas?",
+    "keywords": [
+      "validate",
+      "product ideas",
+      "feedback"
+    ],
+    "answer": "He validates ideas with early user feedback, quick prototypes, and testing whether students find features immediately useful.",
+    "tags": [
+      "product"
+    ]
+  },
+  {
+    "intent": "growth_focus",
+    "question": "What growth channel does he prefer?",
+    "keywords": [
+      "growth channel",
+      "marketing",
+      "acquisition"
+    ],
+    "answer": "He prefers organic growth through word-of-mouth, student communities, and practical product value rather than aggressive ads.",
+    "tags": [
+      "growth"
+    ]
+  },
+  {
+    "intent": "impact_measure",
+    "question": "How does he measure impact?",
+    "keywords": [
+      "measure impact",
+      "impact",
+      "metrics"
+    ],
+    "answer": "He measures impact by student engagement, feature adoption, and whether the platform helps students stay focused longer.",
+    "tags": [
+      "product",
+      "metrics"
+    ]
+  },
+  {
+    "intent": "founder_accountability",
+    "question": "How does he handle responsibility as a founder?",
+    "keywords": [
+      "responsibility",
+      "accountability",
+      "founder"
+    ],
+    "answer": "He takes responsibility for product choices, learning quickly from mistakes, and keeping the team aligned on student needs.",
+    "tags": [
+      "founder"
+    ]
+  },
+  {
+    "intent": "startup_direction",
+    "question": "What direction is Bookeeds heading?",
+    "keywords": [
+      "direction",
+      "bookeeds",
+      "future"
+    ],
+    "answer": "Bookeeds is heading toward deeper student workflows, better resource curation, and more support for goal tracking.",
+    "tags": [
+      "startup"
+    ]
+  },
+  {
+    "intent": "founder_values",
+    "question": "What values guide his startup?",
+    "keywords": [
+      "values",
+      "startup values",
+      "company values"
+    ],
+    "answer": "Values include simplicity, student-first design, transparency, and building tools that encourage learning over distraction.",
+    "tags": [
+      "values"
+    ]
+  },
+  {
+    "intent": "strategy_focus",
+    "question": "Does he focus on product-market fit?",
+    "keywords": [
+      "product-market fit",
+      "pmf"
+    ],
+    "answer": "Yes, he focuses on product-market fit by ensuring the platform solves real student pain points before scaling further.",
+    "tags": [
+      "strategy"
+    ]
+  },
+  {
+    "intent": "product_improvement",
+    "question": "How does he improve Bookeeds?",
+    "keywords": [
+      "improve",
+      "bookeeds",
+      "iteration"
+    ],
+    "answer": "He improves Bookeeds through small experiments, user feedback, and analyzing which student workflows are most valuable.",
+    "tags": [
+      "product"
+    ]
+  },
+  {
+    "intent": "founder_communication",
+    "question": "How does he communicate with collaborators?",
+    "keywords": [
+      "communicate",
+      "collaborators",
+      "team"
+    ],
+    "answer": "He prefers clear written briefs, regular updates, and direct messaging for fast collaboration and alignment.",
+    "tags": [
+      "team"
+    ]
+  },
+  {
+    "intent": "market_focus",
+    "question": "Which market does his product target?",
+    "keywords": [
+      "market target",
+      "target market",
+      "students"
+    ],
+    "answer": "The product targets students and learner communities that need structure and productivity support while studying online.",
+    "tags": [
+      "market"
+    ]
+  },
+  {
+    "intent": "startup_pitch",
+    "question": "How would he pitch Bookeeds to investors?",
+    "keywords": [
+      "pitch",
+      "investors",
+      "bookeeds"
+    ],
+    "answer": "He would pitch Bookeeds as a student productivity platform solving distraction and resource management, with a lean, feedback-driven roadmap.",
+    "tags": [
+      "startup",
+      "pitch"
+    ]
+  },
+  {
+    "intent": "founder_decision_making",
+    "question": "How does he make product decisions?",
+    "keywords": [
+      "product decisions",
+      "decision making"
+    ],
+    "answer": "He makes decisions based on clarity of problem, potential student value, and whether the feature can be tested quickly.",
+    "tags": [
+      "product"
+    ]
+  },
+  {
+    "intent": "team_role",
+    "question": "Does he handle both product and development?",
+    "keywords": [
+      "product and development",
+      "product dev",
+      "role"
+    ],
+    "answer": "Yes, he handles both product direction and frontend development, especially during the early startup phase.",
+    "tags": [
+      "founder",
+      "product"
+    ]
+  },
+  {
+    "intent": "problem_focus",
+    "question": "What student problem is he most interested in solving?",
+    "keywords": [
+      "student problem",
+      "interested in solving"
+    ],
+    "answer": "He is most interested in solving the problem of wasted study time and scattered learning resources for students.",
+    "tags": [
+      "product"
+    ]
+  },
+  {
+    "intent": "startup_plan",
+    "question": "Does he have a startup plan?",
+    "keywords": [
+      "startup plan",
+      "plan"
+    ],
+    "answer": "He has a plan to validate core student workflows, add useful study tools, and grow through student referrals and communities.",
+    "tags": [
+      "startup"
+    ]
+  },
+  {
+    "intent": "founder_commitment",
+    "question": "How committed is he to Bookeeds?",
+    "keywords": [
+      "committed",
+      "commitment"
+    ],
+    "answer": "He is highly committed, balancing university studies with ongoing development and product refinement for Bookeeds.",
+    "tags": [
+      "founder"
+    ]
+  },
+  {
+    "intent": "launch_timeline",
+    "question": "What is the timeline for Bookeeds updates?",
+    "keywords": [
+      "timeline",
+      "updates",
+      "roadmap"
+    ],
+    "answer": "Updates are planned in small, regular cycles to improve key features without overwhelming users.",
+    "tags": [
+      "product",
+      "roadmap"
+    ]
+  },
+  {
+    "intent": "customer_focus",
+    "question": "How customer-focused is his startup?",
+    "keywords": [
+      "customer focused",
+      "user focused"
+    ],
+    "answer": "The startup is very customer-focused, emphasizing student needs and feedback over flashy feature sets.",
+    "tags": [
+      "product",
+      "customer"
+    ]
+  },
+  {
+    "intent": "founder_why",
+    "question": "Why is he building a startup instead of a regular project?",
+    "keywords": [
+      "building a startup",
+      "regular project",
+      "why startup"
+    ],
+    "answer": "He builds a startup because the problem affects many students and deserves a product-led solution, not just a one-off experiment.",
+    "tags": [
+      "founder",
+      "startup"
+    ]
+  },
+  {
+    "intent": "founder_challenge",
+    "question": "What is the biggest challenge in his startup journey?",
+    "keywords": [
+      "biggest challenge",
+      "startup journey"
+    ],
+    "answer": "The biggest challenge is balancing academic workload with shipping product iterations and gathering meaningful user feedback.",
+    "tags": [
+      "founder",
+      "startup"
+    ]
+  },
+  {
+    "intent": "product_performance",
+    "question": "Does he care about speed and performance?",
+    "keywords": [
+      "speed",
+      "performance",
+      "optimize"
+    ],
+    "answer": "Yes, he cares about performance and strives for fast, responsive interfaces and optimized student workflows.",
+    "tags": [
+      "product",
+      "performance"
+    ]
+  },
+  {
+    "intent": "user_research",
+    "question": "Does he conduct user research?",
+    "keywords": [
+      "user research",
+      "feedback"
+    ],
+    "answer": "He conducts light user research through surveys, discussions, and prototype testing with students.",
+    "tags": [
+      "product",
+      "research"
+    ]
+  },
+  {
+    "intent": "startup_priorities",
+    "question": "What are his top priorities for the startup?",
+    "keywords": [
+      "top priorities",
+      "startup priorities"
+    ],
+    "answer": "Top priorities: clarify the student problem, validate core features, and make the product easy to use.",
+    "tags": [
+      "startup"
+    ]
+  },
+  {
+    "intent": "founder_collaboration",
+    "question": "Is he open to collaborating with other founders?",
+    "keywords": [
+      "collaborating",
+      "other founders"
+    ],
+    "answer": "Yes, he is open to collaborating with other founders who share the same student-product mindset.",
+    "tags": [
+      "collaboration",
+      "founder"
+    ]
+  },
+  {
+    "intent": "founder_skillset",
+    "question": "What is his founder skillset?",
+    "keywords": [
+      "founder skillset",
+      "skills"
+    ],
+    "answer": "His founder skillset includes product strategy, frontend engineering, problem framing, and communication.",
+    "tags": [
+      "founder",
+      "skills"
+    ]
+  },
+  {
+    "intent": "startup_culture",
+    "question": "What culture does he want in his startup?",
+    "keywords": [
+      "culture",
+      "startup culture"
+    ],
+    "answer": "He wants a culture of fast learning, simplicity, and user-first decision making.",
+    "tags": [
+      "culture"
+    ]
+  },
+  {
+    "intent": "product_focus",
+    "question": "What feature does he focus on first?",
+    "keywords": [
+      "feature focus",
+      "focus on first"
+    ],
+    "answer": "He focuses first on features that help students manage time, stay organized, and reduce distractions.",
+    "tags": [
+      "product"
+    ]
+  },
+  {
+    "intent": "company_direction",
+    "question": "Where is his company headed in the next year?",
+    "keywords": [
+      "next year",
+      "company direction"
+    ],
+    "answer": "In the next year, the company aims to refine its core student workflows and test growth within education communities.",
+    "tags": [
+      "startup"
+    ]
+  },
+  {
+    "intent": "startup_focus",
+    "question": "Does he focus on education technology?",
+    "keywords": [
+      "education technology",
+      "edtech"
+    ],
+    "answer": "Yes, Bookeeds is positioned as an edtech product focusing on student productivity and learning support.",
+    "tags": [
+      "startup",
+      "edtech"
+    ]
+  },
+  {
+    "intent": "founder_leadership",
+    "question": "How does he lead technical work?",
+    "keywords": [
+      "lead technical work",
+      "technical leadership"
+    ],
+    "answer": "He leads by prototyping, setting technical direction, and ensuring features are built with quality and speed.",
+    "tags": [
+      "leadership"
+    ]
+  },
+  {
+    "intent": "startup_scale",
+    "question": "Does he plan to scale Bookeeds?",
+    "keywords": [
+      "scale",
+      "scaling",
+      "scale bookeeds"
+    ],
+    "answer": "He plans to scale carefully once the product proves it solves real student needs and attracts repeat usage.",
+    "tags": [
+      "startup"
+    ]
+  },
+  {
+    "intent": "founder_elevator_pitch",
+    "question": "What is his elevator pitch?",
+    "keywords": [
+      "elevator pitch",
+      "pitch"
+    ],
+    "answer": "Bookeeds is a student productivity platform that helps learners set goals, organize study resources, and avoid distraction in a single focused environment.",
+    "tags": [
+      "pitch"
+    ]
+  },
+  {
+    "intent": "target_customers",
+    "question": "Who are his target customers?",
+    "keywords": [
+      "target customers",
+      "customers",
+      "students"
+    ],
+    "answer": "Target customers are students, learners, and academic communities looking for better study planning and productivity habits.",
+    "tags": [
+      "audience"
+    ]
+  },
+  {
+    "intent": "founder_focus",
+    "question": "What does he care about most when building products?",
+    "keywords": [
+      "care about",
+      "building products"
+    ],
+    "answer": "He cares most about usefulness, clarity, and making features that students can adopt quickly without friction.",
+    "tags": [
+      "product"
+    ]
+  },
+  {
+    "intent": "startup_feedback",
+    "question": "How does he use feedback in development?",
+    "keywords": [
+      "feedback",
+      "development"
+    ],
+    "answer": "He uses feedback to prioritize improvements, fix pain points, and decide which product experiments to keep.",
+    "tags": [
+      "product"
+    ]
+  },
+  {
+    "intent": "corporate_style",
+    "question": "Is his startup more corporate or agile?",
+    "keywords": [
+      "corporate",
+      "agile",
+      "startup style"
+    ],
+    "answer": "His startup is agile, with fast iterations, lean experiments, and a focus on learning quickly from users.",
+    "tags": [
+      "startup"
+    ]
+  },
+  {
+    "intent": "founder_values2",
+    "question": "What personal values drive his startup?",
+    "keywords": [
+      "personal values",
+      "drive",
+      "startup"
+    ],
+    "answer": "Values like discipline, learning, purpose, and practical product impact drive his startup approach.",
+    "tags": [
+      "values"
+    ]
+  },
+  {
+    "intent": "founder_future",
+    "question": "What is his future ambition with Bookeeds?",
+    "keywords": [
+      "future ambition",
+      "bookeeds future"
+    ],
+    "answer": "His future ambition is to make Bookeeds a trusted study companion for students across universities and learning communities.",
+    "tags": [
+      "goals"
+    ]
+  },
+  {
+    "intent": "hiring_competitive",
+    "question": "Why is he competitive as a hire?",
+    "keywords": [
+      "competitive",
+      "hire",
+      "competitive hire"
+    ],
+    "answer": "He is competitive because he offers both strong frontend engineering and a founder-level understanding of product direction.",
+    "tags": [
+      "hiring"
+    ]
+  },
+  {
+    "intent": "founder_market",
+    "question": "How does he assess the student market?",
+    "keywords": [
+      "student market",
+      "assess market"
+    ],
+    "answer": "He assesses the student market by observing study behavior, pain points, and the ways learners use digital tools.",
+    "tags": [
+      "market"
+    ]
+  },
+  {
+    "intent": "startup_sustainability",
+    "question": "Is Bookeeds built for long-term sustainability?",
+    "keywords": [
+      "long-term sustainability",
+      "sustainable startup"
+    ],
+    "answer": "Yes, the product is designed to grow responsibly with features that provide ongoing value to students.",
+    "tags": [
+      "startup"
+    ]
+  },
+  {
+    "intent": "founder_choice",
+    "question": "Why did he choose the education space?",
+    "keywords": [
+      "education space",
+      "choose",
+      "why education"
+    ],
+    "answer": "He chose education because he wants to improve student productivity and because the problem is meaningful and widely felt.",
+    "tags": [
+      "founder",
+      "industry"
+    ]
+  },
+  {
+    "intent": "founder_story2",
+    "question": "How did he start his founder journey?",
+    "keywords": [
+      "founder journey",
+      "start journey"
+    ],
+    "answer": "He started his founder journey by building small web projects, finding a recurring student problem, and then launching Bookeeds to solve it.",
+    "tags": [
+      "founder"
+    ]
+  },
+  {
+    "intent": "startup_test",
+    "question": "How does he test early startup features?",
+    "keywords": [
+      "test early features",
+      "startup features"
+    ],
+    "answer": "He tests early features with prototypes, small user groups, and quick feedback loops.",
+    "tags": [
+      "product"
+    ]
+  },
+  {
+    "intent": "founder_advice",
+    "question": "What advice would he give to other founders?",
+    "keywords": [
+      "advice",
+      "other founders"
+    ],
+    "answer": "He would advise other founders to solve a clear problem, build fast, and keep asking real users for feedback.",
+    "tags": [
+      "founder",
+      "advice"
+    ]
+  }
 ]

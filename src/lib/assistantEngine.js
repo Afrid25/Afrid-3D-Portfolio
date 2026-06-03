@@ -123,10 +123,10 @@ const contactText = (profile = {}) => {
 
 const appendFollowUp = (text, followUp) => `${text}\n\n${followUp}`;
 
-const missingInfoReply = {
-  text: "I couldn't find verified information about that in Afrid's portfolio knowledge base.",
-  actions: [createAction("Ask About Projects", "prompt", "Tell me about Afrid's projects")],
-};
+const missingInfoReply = (profile = {}) => ({
+  text: "I couldn't find verified information about that in Afrid's portfolio knowledge base. For a direct answer, contact Afrid via WhatsApp, Telegram, or email.",
+  actions: createContactActions(profile),
+});
 
 export const createLocalAssistantReply = ({ query, knowledge, mode = "general" }) => {
   const flat = flattenKnowledge(knowledge || {});
@@ -293,17 +293,23 @@ export const createLocalAssistantReply = ({ query, knowledge, mode = "general" }
     };
   }
 
-  const faqHit = flat.faq.find((item) => {
-    const questionWords = item.question
-      .toLowerCase()
-      .replace(/[?]/g, "")
-      .split(/\s+/)
-      .filter((word) => word.length > 2 && !faqStopWords.has(word));
-    const queryWords = normalizedQuery.split(/\s+/).filter((word) => !faqStopWords.has(word));
-    const overlap = questionWords.filter((word) => queryWords.includes(word));
+  const faqHit = (flat.faq || [])
+    .map((item) => {
+      const questionText = (item.question || item.intent || "").toLowerCase();
+      const keywordText = Array.isArray(item.keywords) ? item.keywords.join(" ").toLowerCase() : "";
+      const intentText = (item.intent || "").toLowerCase();
+      return { raw: item, questionText, keywordText, intentText };
+    })
+    .find(({ raw, questionText, keywordText, intentText }) => {
+      const combinedText = `${questionText} ${keywordText} ${intentText}`.replace(/[?]/g, "");
+      const faqWords = combinedText
+        .split(/\s+/)
+        .filter((word) => word.length > 2 && !faqStopWords.has(word));
+      const queryWords = normalizedQuery.split(/\s+/).filter((word) => !faqStopWords.has(word));
+      const overlap = faqWords.filter((word) => queryWords.includes(word));
 
-    return overlap.length >= 2 || (overlap.length >= 1 && questionWords.length <= 3);
-  });
+      return overlap.length >= 2 || (overlap.length >= 1 && faqWords.length <= 4);
+    })?.raw;
 
   if (faqHit) {
     return {
@@ -315,11 +321,11 @@ export const createLocalAssistantReply = ({ query, knowledge, mode = "general" }
   }
 
   if (hasAny(normalizedQuery, unsupportedPersonalKeywords)) {
-    return missingInfoReply;
+    return missingInfoReply(flat.profile);
   }
 
   if (!retrieved.length) {
-    return missingInfoReply;
+    return missingInfoReply(flat.profile);
   }
 
   const latest = flat.latestUpdates[0];
