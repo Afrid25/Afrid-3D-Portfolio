@@ -80,19 +80,45 @@ const iconMap = {
 const categoryIconMap = {
   "ai-tech": FaBrain,
   "tech-activity": FaCode,
-  leadership: FaMedal,
+  "web-development": FaCode,
+  "cultural-achievement": FaMedal,
   "workshops-training": FaShieldAlt,
 };
 
 const groupThemeMap = {
   "ai-tech": themeStyles.purple,
   "tech-activity": themeStyles.blueGold,
-  leadership: themeStyles.amber,
+  "web-development": themeStyles.blueGold,
+  "cultural-achievement": themeStyles.amber,
   "workshops-training": themeStyles.green,
 };
 
 const CertificatePreview = ({ certificate, compact = false }) => {
   const theme = themeStyles[certificate.theme];
+
+  if (certificate.fileType === "summary") {
+    return (
+      <div
+        className='flex h-full min-h-[180px] flex-col justify-between overflow-hidden rounded-[22px] border border-white/10 bg-black/30 p-5'
+        style={{ background: `linear-gradient(145deg, ${theme.bg}, rgba(255,255,255,0.035))` }}
+      >
+        <div
+          className='h-1 w-20 rounded-full'
+          style={{ background: `linear-gradient(90deg, ${theme.color}, ${theme.secondary})` }}
+        />
+        <div>
+          <p className='text-xs font-semibold uppercase tracking-[0.2em] text-white/45'>
+            Certificate Record
+          </p>
+          <p className='mt-3 text-lg font-black leading-tight text-white'>{certificate.title}</p>
+          <p className='mt-2 text-sm leading-6 text-white/55'>{certificate.issuer}</p>
+        </div>
+        <p className='text-xs font-bold uppercase tracking-[0.18em]' style={{ color: theme.color }}>
+          {certificate.badge}
+        </p>
+      </div>
+    );
+  }
 
   if (certificate.fileType === "pdf") {
     return (
@@ -248,17 +274,19 @@ const TimelineCertificateItem = ({ certificate, index, isLast, onOpen }) => {
             >
               Quick View
             </button>
-            <a
-              href={certificate.file}
-              target='_blank'
-              rel='noreferrer'
-              className='inline-flex min-h-[44px] flex-1 items-center justify-center gap-2 rounded-full px-4 text-sm font-bold text-primary transition duration-300 hover:-translate-y-0.5'
-              style={{
-                background: `linear-gradient(135deg, ${theme.color}, ${theme.secondary})`,
-              }}
-            >
-              View Certificate <FaExternalLinkAlt className='text-xs' aria-hidden='true' />
-            </a>
+            {certificate.file ? (
+              <a
+                href={certificate.file}
+                target='_blank'
+                rel='noreferrer'
+                className='inline-flex min-h-[44px] flex-1 items-center justify-center gap-2 rounded-full px-4 text-sm font-bold text-primary transition duration-300 hover:-translate-y-0.5'
+                style={{
+                  background: `linear-gradient(135deg, ${theme.color}, ${theme.secondary})`,
+                }}
+              >
+                View Certificate <FaExternalLinkAlt className='text-xs' aria-hidden='true' />
+              </a>
+            ) : null}
           </div>
         </div>
       </motion.article>
@@ -456,7 +484,9 @@ const CertificateModal = ({ certificate, onClose }) => {
 
         <div className='grid max-h-[calc(92vh-130px)] gap-5 overflow-y-auto p-5 sm:p-6 lg:grid-cols-[minmax(0,1.3fr)_minmax(280px,0.7fr)]'>
           <div className='min-h-[320px] overflow-hidden rounded-[24px] border border-white/10 bg-black/35'>
-            {certificate.fileType === "pdf" ? (
+            {certificate.fileType === "summary" ? (
+              <CertificatePreview certificate={certificate} />
+            ) : certificate.fileType === "pdf" ? (
               <iframe
                 src={`${certificate.file}#toolbar=1&navpanes=0`}
                 title={`${certificate.title} preview`}
@@ -480,17 +510,19 @@ const CertificateModal = ({ certificate, onClose }) => {
                 <p className='mt-2 text-sm leading-6 text-white/78'>{value}</p>
               </div>
             ))}
-            <a
-              href={certificate.file}
-              target='_blank'
-              rel='noreferrer'
-              className='inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-full text-sm font-bold text-primary transition hover:-translate-y-0.5'
-              style={{
-                background: `linear-gradient(135deg, ${theme.color}, ${theme.secondary})`,
-              }}
-            >
-              View Full Certificate <FaExternalLinkAlt className='text-xs' aria-hidden='true' />
-            </a>
+            {certificate.file ? (
+              <a
+                href={certificate.file}
+                target='_blank'
+                rel='noreferrer'
+                className='inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-full text-sm font-bold text-primary transition hover:-translate-y-0.5'
+                style={{
+                  background: `linear-gradient(135deg, ${theme.color}, ${theme.secondary})`,
+                }}
+              >
+                View Full Certificate <FaExternalLinkAlt className='text-xs' aria-hidden='true' />
+              </a>
+            ) : null}
           </div>
         </div>
       </motion.div>

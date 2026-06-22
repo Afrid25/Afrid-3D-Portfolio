@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id='top'
-      className='relative overflow-hidden bg-[radial-gradient(circle_at_top_left,_rgba(255,76,76,0.18),_transparent_26%),radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.06),_transparent_22%),linear-gradient(180deg,_#0f0f0f_0%,_#141414_100%)]'
+      className='relative ozverflow-hidden bg-[radial-gradient(circle_at_top_left,_rgba(255,76,76,0.18),_transparent_26%),radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.06),_transparent_22%),linear-gradient(180deg,_#0f0f0f_0%,_#141414_100%)]'
     >
       <div className='pointer-events-none absolute inset-0' aria-hidden='true'>
         <div className='absolute left-[-8%] top-20 h-56 w-56 rounded-full bg-[#ff4c4c]/12 blur-3xl' />
@@ -37,7 +37,17 @@ const Hero = () => {
             className='relative mx-auto flex w-full justify-center lg:mx-0 lg:justify-end'
           >
             <div className='absolute h-[260px] w-[260px] rounded-full bg-[#ff4c4c]/18 blur-3xl sm:h-[320px] sm:w-[320px] lg:h-[420px] lg:w-[420px]' />
-            <div className='gradient-circle relative aspect-square w-[260px] rounded-full sm:w-[320px] lg:w-[420px]'>
+            <div
+              className='gradient-circle relative aspect-square w-[260px] rounded-full sm:w-[320px] lg:w-[420px]'
+              style={{
+                boxShadow: `
+                  0 0 40px rgba(255,76,76,0.6),
+                  0 0 80px rgba(255,76,76,0.4),
+                  0 0 160px rgba(255,76,76,0.3)
+                `,
+              }}
+            >
+              <div className="absolute inset-[-30px] rounded-full bg-[#ff4c4c]/25 blur-[100px] z-0" />
               <div className='profile-image-shell relative z-10 flex h-full w-full items-end justify-center overflow-hidden rounded-full bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.14),_rgba(255,255,255,0.03)_46%,_rgba(0,0,0,0.34)_100%)] shadow-[0_40px_100px_-40px_rgba(255,76,76,0.45)]'>
                 <img
                   src={profilePhoto}

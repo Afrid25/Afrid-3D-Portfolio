@@ -1,6 +1,11 @@
 {
   "items": [
     {
+      "title": "MATVerse ecommerce project added",
+      "date": "2026-06-13",
+      "summary": "The deployed MATVerse marketplace and its GitHub repository are now included in the portfolio projects and chatbot knowledge base."
+    },
+    {
       "title": "Portfolio chatbot knowledge base added",
       "date": "2026-05-23",
       "summary": "A modular knowledge system was added so future chatbot answers can be updated through data files."

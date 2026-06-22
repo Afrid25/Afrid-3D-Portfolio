@@ -12,6 +12,50 @@
       "file": "/certificates/cert-01-anthropic-ai-fluency.pdf"
     },
     {
+      "id": "ai-certificate-01",
+      "name": "AI Certificate 01",
+      "issuer": "Online AI Learning Program",
+      "issuerDetail": "Verified AI certificate added from Afrid's certificate archive",
+      "date": "2026",
+      "achievement": "Completed an AI-focused certificate program, strengthening practical understanding of modern AI tools and workflows.",
+      "verification": "Verified certificate file is available in the portfolio.",
+      "category": "AI & Tech",
+      "file": "/certificates/cert-05-ai-certificate-01.pdf"
+    },
+    {
+      "id": "ai-certificate-02",
+      "name": "AI Certificate 02",
+      "issuer": "Online AI Learning Program",
+      "issuerDetail": "Verified AI certificate added from Afrid's certificate archive",
+      "date": "2026",
+      "achievement": "Completed an additional AI certificate covering applied AI learning and practical digital productivity.",
+      "verification": "Verified certificate file is available in the portfolio.",
+      "category": "AI & Tech",
+      "file": "/certificates/cert-06-ai-certificate-02.pdf"
+    },
+    {
+      "id": "ai-certificate-03",
+      "name": "AI Certificate 03",
+      "issuer": "Online AI Learning Program",
+      "issuerDetail": "Verified AI certificate added from Afrid's certificate archive",
+      "date": "2026",
+      "achievement": "Completed AI training that supports Afrid's growth in AI-assisted development, automation, and problem solving.",
+      "verification": "Verified certificate file is available in the portfolio.",
+      "category": "AI & Tech",
+      "file": "/certificates/cert-07-ai-certificate-03.pdf"
+    },
+    {
+      "id": "ai-certificate-04",
+      "name": "AI Certificate 04",
+      "issuer": "Online AI Learning Program",
+      "issuerDetail": "Verified AI certificate added from Afrid's certificate archive",
+      "date": "2026",
+      "achievement": "Completed another AI certificate as part of continuous learning across AI tools, concepts, and applied workflows.",
+      "verification": "Verified certificate file is available in the portfolio.",
+      "category": "AI & Tech",
+      "file": "/certificates/cert-08-ai-certificate-04.pdf"
+    },
+    {
       "id": "road-to-faang",
       "name": "Road to FAANG Companies",
       "issuer": "IIUC Competitive Programming Society",
@@ -34,6 +78,27 @@
       "file": "/certificates/cert-03-bteb-computer-office.jpg"
     },
     {
+      "id": "programming-hero-web-engineering-batch-14",
+      "name": "Web Engineering - Programming Hero Batch 14",
+      "issuer": "Programming Hero",
+      "issuerDetail": "AI Driven Full Stack Web Engineer program",
+      "date": "2026",
+      "achievement": "Joined Programming Hero Batch 14 for AI-driven full stack web engineering training.",
+      "verification": "Certificate record is available in the portfolio.",
+      "category": "Web Engineering"
+    },
+    {
+      "id": "introduction-to-html",
+      "name": "Introduction to HTML",
+      "issuer": "Online Web Development Learning Program",
+      "issuerDetail": "Foundational HTML certificate added from Afrid's certificate archive",
+      "date": "2026",
+      "achievement": "Completed an Introduction to HTML certificate, building a stronger foundation in semantic page structure and front-end development.",
+      "verification": "Verified certificate file is available in the portfolio.",
+      "category": "Web Development",
+      "file": "/certificates/cert-09-introduction-html.pdf"
+    },
+    {
       "id": "vdp-training",
       "name": "VDP Basic Training",
       "issuer": "Bangladesh Ansar & Village Defence Party",
@@ -52,7 +117,7 @@
       "date": "May 20, 2022",
       "achievement": "Placed 3rd in patriotic song, reflecting dedication to Bangladesh's cultural heritage and performing arts.",
       "verification": "Verified certificate image is available in the portfolio.",
-      "category": "Leadership",
+      "category": "Cultural Achievement",
       "file": "/certificates/patrioticsong_3rd_position.jpg"
     },
     {
@@ -63,7 +128,7 @@
       "date": "October 18, 2015",
       "achievement": "Won 1st place in folk song, recognized for vocal performance and traditional Bangladeshi cultural expression.",
       "verification": "Verified certificate image is available in the portfolio.",
-      "category": "Leadership",
+      "category": "Cultural Achievement",
       "file": "/certificates/folksong_1st_position.jpg"
     },
     {
@@ -74,7 +139,7 @@
       "date": "2015",
       "achievement": "Awarded 2nd place in folk song, showing consistent strength in traditional music performance.",
       "verification": "Verified certificate image is available in the portfolio.",
-      "category": "Leadership",
+      "category": "Cultural Achievement",
       "file": "/certificates/folk_song_2nd_position.jpg"
     },
     {
@@ -85,8 +150,28 @@
       "date": "2015",
       "achievement": "Won 1st place in an academic singing competition, recognizing musical talent at institutional level.",
       "verification": "Verified certificate image is available in the portfolio.",
-      "category": "Leadership",
+      "category": "Cultural Achievement",
       "file": "/certificates/singing_academic_1st.jpg"
+    },
+    {
+      "id": "youth-cultural-council-merit-2016",
+      "name": "Youth Cultural Council Merit Certificate",
+      "issuer": "Youth Cultural Council, Bangladesh",
+      "issuerDetail": "Special participation in primary-level music under a youth cultural examination program",
+      "date": "May 20, 2016",
+      "achievement": "Recognized for participation and achievement in a youth cultural council examination program focused on national song performance.",
+      "verification": "Certificate record is available in the portfolio.",
+      "category": "Cultural Achievement"
+    },
+    {
+      "id": "primary-school-cultural-competition-2015",
+      "name": "Primary School Cultural Competition - Folk Song",
+      "issuer": "Kaptai Upazila Shilpakala Academy",
+      "issuerDetail": "Primary school cultural competition, Srijonshil Bangladesh, 2015",
+      "date": "October 15, 2015",
+      "achievement": "Earned 2nd position at upazila level in folk music during the 2015 primary school cultural competition.",
+      "verification": "Certificate record is available in the portfolio.",
+      "category": "Cultural Achievement"
     }
   ]
 }

@@ -300,7 +300,7 @@ export const createLocalAssistantReply = ({ query, knowledge, mode = "general" }
       const intentText = (item.intent || "").toLowerCase();
       return { raw: item, questionText, keywordText, intentText };
     })
-    .find(({ raw, questionText, keywordText, intentText }) => {
+    .find(({ questionText, keywordText, intentText }) => {
       const combinedText = `${questionText} ${keywordText} ${intentText}`.replace(/[?]/g, "");
       const faqWords = combinedText
         .split(/\s+/)

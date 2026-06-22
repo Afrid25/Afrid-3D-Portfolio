@@ -29,6 +29,7 @@ import security from "./company/security.png";
 import bloodbank from "./bloodbank.png";
 import bookeeds from "./bookeeds.png";
 import aicontroller from "./aicontroller.png";
+import matverse from "./matverse.png";
 
 export {
   logo,
@@ -59,4 +60,5 @@ export {
   bloodbank,
   bookeeds,
   aicontroller,
+  matverse,
 };

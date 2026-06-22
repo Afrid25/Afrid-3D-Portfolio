@@ -1,6 +1,24 @@
 {
   "items": [
     {
+      "id": "matverse-ecommerce",
+      "name": "MATVerse Ecommerce",
+      "category": "Online marketplace",
+      "status": "Active",
+      "featured": true,
+      "date": "2026 - Present",
+      "problem": "General ecommerce shoppers need a clear way to search products, browse departments, compare items, and move quickly toward cart and profile actions.",
+      "solution": "MATVerse provides a responsive marketplace experience with department browsing, product search, featured deals, product cards, cart entry points, and profile flows.",
+      "summary": "A deployed ecommerce marketplace for electronics, fashion, grocery, home, beauty, sports, baby products, and eco-friendly picks.",
+      "technologies": ["Next.js", "TypeScript", "React", "Tailwind CSS"],
+      "tags": ["ecommerce", "marketplace", "shopping", "nextjs", "typescript"],
+      "links": {
+        "github": "https://github.com/Afrid25/ecommerce",
+        "live": "https://ourshop-flax.vercel.app/"
+      },
+      "sectionId": "projects"
+    },
+    {
       "id": "bookeeds",
       "name": "Bookeeds",
       "category": "Student productivity startup",

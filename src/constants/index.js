@@ -22,6 +22,7 @@ import {
   bloodbank,
   bookeeds,
   aicontroller,
+  matverse,
   threejs,
 } from "../assets";
 
@@ -209,6 +210,20 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "MATVerse Ecommerce",
+    description:
+      "A full ecommerce marketplace with product discovery, department browsing, search, cart, profile flows, themed UI, and Tk-based product pricing.",
+    tags: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "React" },
+      { name: "Tailwind" },
+    ],
+    image: matverse,
+    source_code_link: "https://github.com/Afrid25/ecommerce",
+    live_link: "https://ourshop-flax.vercel.app/",
+  },
   {
     name: "Blood For Life",
     description:
