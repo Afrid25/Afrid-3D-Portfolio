@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import profilePhoto from "../assets/profile-photoroom.png";
 
 const Hero = () => {
   return (
@@ -53,7 +52,7 @@ const Hero = () => {
               <div className="absolute inset-[-30px] rounded-full bg-[#ff4c4c]/25 blur-[100px] z-0" />
               <div className='profile-image-shell relative z-10 flex h-full w-full items-end justify-center overflow-hidden rounded-full bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.14),_rgba(255,255,255,0.03)_46%,_rgba(0,0,0,0.34)_100%)] shadow-[0_40px_100px_-40px_rgba(255,76,76,0.45)]'>
                 <img
-                  src={profilePhoto}
+                  src='/seo/afrid-profile.png'
                   alt='MD AFRID FOISAL OPU profile'
                   width='853'
                   height='1280'
