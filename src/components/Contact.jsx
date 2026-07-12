@@ -1,7 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import { FaFacebookF, FaGithub, FaLinkedinIn, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaGithub, FaTelegramPlane, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 import { SectionWrapper } from "../hoc";
@@ -16,11 +16,6 @@ const initialFormState = {
 };
 
 const contactSocialLinks = [
-  {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com",
-    Icon: FaLinkedinIn,
-  },
   {
     name: "GitHub",
     href: socialLinks.find((link) => link.name === "GitHub")?.href || "https://github.com/Afrid25",
@@ -46,6 +41,11 @@ const contactSocialLinks = [
     name: "Telegram",
     href: socialLinks.find((link) => link.name === "Telegram")?.href || "https://t.me/+8801849667752",
     Icon: FaTelegramPlane,
+  },
+  {
+    name: "YouTube",
+    href: socialLinks.find((link) => link.name === "YouTube")?.href,
+    Icon: FaYoutube,
   },
 ];
 

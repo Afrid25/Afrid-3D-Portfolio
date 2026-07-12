@@ -24,7 +24,10 @@ const Hero = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className='flex flex-col items-center justify-center text-center lg:items-start lg:text-left'
           >
-            <h1 className={`${styles.heroHeadText} max-w-3xl text-white`}>I AM AFRID</h1>
+            <h1 className={`${styles.heroHeadText} max-w-3xl text-white`}>
+              I AM AFRID
+              <span className='sr-only'> — MD AFRID FOISAL OPU, Computer Science and Engineering student</span>
+            </h1>
             <p className='mt-5 text-lg font-semibold uppercase tracking-[0.3em] text-white/75 sm:text-xl'>
               A CSE STUDENT
             </p>
@@ -51,7 +54,9 @@ const Hero = () => {
               <div className='profile-image-shell relative z-10 flex h-full w-full items-end justify-center overflow-hidden rounded-full bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.14),_rgba(255,255,255,0.03)_46%,_rgba(0,0,0,0.34)_100%)] shadow-[0_40px_100px_-40px_rgba(255,76,76,0.45)]'>
                 <img
                   src={profilePhoto}
-                  alt='Afrid profile'
+                  alt='MD AFRID FOISAL OPU profile'
+                  width='853'
+                  height='1280'
                   className='profile-image h-full w-full translate-y-3 scale-[1.14] object-contain object-top sm:translate-y-4'
                   fetchPriority='high'
                   decoding='async'

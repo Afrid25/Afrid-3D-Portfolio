@@ -15,6 +15,8 @@ const ExperienceCard = ({ experience, index }) => (
         <img
           src={experience.icon}
           alt={experience.company_name}
+          width='64'
+          height='64'
           className='h-7 w-7 object-contain'
           loading='lazy'
           decoding='async'

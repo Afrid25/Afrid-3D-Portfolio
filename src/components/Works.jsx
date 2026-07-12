@@ -14,6 +14,14 @@ const ProjectCard = ({
   source_code_link,
   live_link,
 }) => {
+  const imageDimensions = {
+    "MATVerse Ecommerce": { width: 1200, height: 800 },
+    "Blood For Life": { width: 1919, height: 899 },
+    Bookeeds: { width: 1913, height: 883 },
+    "AI Controller for PC": { width: 1854, height: 882 },
+  };
+  const dimensions = imageDimensions[name];
+
   return (
     <motion.article
       variants={fadeIn("up", "spring", index * 0.12, 0.75)}
@@ -31,6 +39,8 @@ const ProjectCard = ({
             <img
               src={image}
               alt={`${name} preview`}
+              width={dimensions.width}
+              height={dimensions.height}
               className='h-full w-full object-cover transition duration-500 hover:scale-105'
               loading='lazy'
               decoding='async'
@@ -40,6 +50,8 @@ const ProjectCard = ({
           <img
             src={image}
             alt={`${name} preview`}
+            width={dimensions.width}
+            height={dimensions.height}
             className='h-full w-full object-cover'
             loading='lazy'
             decoding='async'

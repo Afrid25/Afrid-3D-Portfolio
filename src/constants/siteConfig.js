@@ -3,21 +3,21 @@ const emailAddress = "25afridfoisal00@gmail.com";
 export const siteConfig = {
   name: "Md Afrid Foisal Opu",
   shortName: "AFRID",
-  role: "Frontend & Product Engineer",
+  role: "Computer Science and Engineering Student, and full stack software development learner.",
   email: emailAddress,
-  location: "Dhaka, Bangladesh",
-  url: "https://afrid-3d-portfolio.vercel.app",
+  location: "International Islamic University Chittagong (IIUC)",
+  url: "https://md-afrid-foisal-opu.xyz",
   repository: "https://github.com/Afrid25/Afrid-3D-Portfolio",
-  availability: "Available for internships, freelance work, and product collaborations.",
+  availability: "Currently learning and building personal projects.",
   about:
-    "I am a CSE student focused on building clean, responsive digital products with strong visual hierarchy and thoughtful front-end execution.",
+    "I am MD AFRID FOISAL OPU, known as Afrid, a Computer Science and Engineering student at International Islamic University Chittagong (IIUC) and a full stack software development learner.",
   summary:
-    "My work blends interface design, product thinking, and practical implementation so each project feels polished, easy to use, and ready for real users.",
+    "I am interested in web development, artificial intelligence, cyber security, startup building, and open source. I am also the founder of Bookeeds, a student-focused platform designed to reduce social media misuse and improve student productivity.",
   hero: {
-    eyebrow: "Frontend engineering with product taste",
-    headline: "I build polished web experiences that feel fast, clear, and useful.",
+    eyebrow: "Computer Science and Engineering student",
+    headline: "I learn and build thoughtful web experiences.",
     description:
-      "CSE student from Dhaka focused on React, product UI, responsive systems, and thoughtful motion for real-world digital products.",
+      "A full stack software development learner interested in web development, AI, cyber security, startup building, and open source.",
   },
   resume: {
     downloadUrl: "/cv/afrids-cv.pdf",
@@ -79,6 +79,13 @@ export const socialLinks = [
     href: "https://x.com/AfridOpu",
     icon: "twitter",
     description: "Follow on Twitter",
+    enabled: true,
+  },
+  {
+    name: "YouTube",
+    href: "https://www.youtube.com/@LifeCodeWithAfrid",
+    icon: "youtube",
+    description: "Watch on YouTube",
     enabled: true,
   },
   {

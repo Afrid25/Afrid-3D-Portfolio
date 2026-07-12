@@ -6,6 +6,8 @@ import { navLinks } from "../constants";
 import { siteConfig } from "../constants/siteConfig";
 import { styles } from "../styles";
 
+const NAV_OFFSET = 88;
+
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [open, setOpen] = useState(false);
@@ -40,9 +42,34 @@ const Navbar = () => {
     };
   }, []);
 
-  const handleNavClick = (title) => {
+  const scrollToSection = (id, attempt = 0) => {
+    const target = document.getElementById(id);
+
+    if (!target) {
+      if (attempt < 8) {
+        window.setTimeout(() => scrollToSection(id, attempt + 1), 75);
+      }
+      return;
+    }
+
+    const top =
+      id === "top" ? 0 : target.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
+
+    window.scrollTo({
+      top: Math.max(top, 0),
+      behavior: "smooth",
+    });
+
+    window.history.replaceState(null, "", `#${id}`);
+  };
+
+  const handleNavClick = (event, nav) => {
+    event.preventDefault();
+    const { id, title } = nav;
+
     setActive(title);
     setOpen(false);
+    scrollToSection(id);
   };
 
   return (
@@ -56,7 +83,7 @@ const Navbar = () => {
         <div className='flex items-center justify-between gap-4 py-4'>
           <a
             href='#top'
-            onClick={() => handleNavClick("Home")}
+            onClick={(event) => handleNavClick(event, { id: "top", title: "Home" })}
             className='text-xl font-black uppercase tracking-[0.32em] text-white transition hover:text-[#ff8b8b] sm:text-2xl'
           >
             {siteConfig.shortName}
@@ -67,7 +94,7 @@ const Navbar = () => {
               <li key={nav.id}>
                 <a
                   href={`#${nav.id}`}
-                  onClick={() => handleNavClick(nav.title)}
+                  onClick={(event) => handleNavClick(event, nav)}
                   className={`inline-flex min-h-[44px] items-center text-xs font-semibold uppercase tracking-[0.16em] transition duration-300 hover:text-white xl:text-sm ${
                     active === nav.title ? "text-white" : "text-secondary"
                   }`}
@@ -96,7 +123,7 @@ const Navbar = () => {
             onClick={() => setOpen((value) => !value)}
             className='inline-flex min-h-[48px] min-w-[48px] items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:border-white/20 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff4c4c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#050816] lg:hidden'
           >
-            <img src={menuIcon} alt='menu' className='h-3 w-5 object-contain' />
+            <img src={menuIcon} alt='' width='20' height='12' className='h-3 w-5 object-contain' />
           </button>
         </div>
 
@@ -121,7 +148,7 @@ const Navbar = () => {
                   <li key={nav.id}>
                     <a
                       href={`#${nav.id}`}
-                      onClick={() => handleNavClick(nav.title)}
+                      onClick={(event) => handleNavClick(event, nav)}
                       className={`flex min-h-[52px] w-full items-center rounded-2xl border px-4 py-3 text-sm font-semibold uppercase tracking-[0.18em] transition duration-300 ${
                         active === nav.title
                           ? "border-[#ff4c4c]/35 bg-[#ff4c4c]/10 text-white"

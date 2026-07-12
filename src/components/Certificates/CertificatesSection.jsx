@@ -142,6 +142,8 @@ const CertificatePreview = ({ certificate, compact = false }) => {
       <img
         src={certificate.file}
         alt={`${certificate.title} certificate`}
+        width='1200'
+        height='900'
         className={`h-full w-full ${compact ? "object-cover" : "object-contain"} bg-white`}
         loading='lazy'
         decoding='async'
@@ -496,6 +498,8 @@ const CertificateModal = ({ certificate, onClose }) => {
               <img
                 src={certificate.file}
                 alt={`${certificate.title} certificate`}
+                width='1200'
+                height='900'
                 className='h-full max-h-[72vh] w-full object-contain bg-white'
               />
             )}

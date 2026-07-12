@@ -491,7 +491,7 @@ const PortfolioChatbot = () => {
   /* ------------------------------------------------------------------ */
   const chatbot = (
     <div
-      className="fixed inset-x-3 z-[9999] flex justify-end sm:inset-x-auto sm:right-6"
+      className="pointer-events-none fixed inset-x-3 z-30 flex justify-end sm:inset-x-auto sm:right-6"
       style={{ bottom: "calc(0.75rem + var(--keyboard-offset, 0px))" }}
     >
       <AnimatePresence>
@@ -504,7 +504,7 @@ const PortfolioChatbot = () => {
             transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
             aria-label="Portfolio assistant chat"
             role="dialog"
-            className={`mb-4 flex h-[min(720px,calc(var(--chat-height,100vh)-88px))] w-[calc(100vw-24px)] max-w-[440px] min-w-0 flex-col overflow-hidden rounded-[22px] border backdrop-blur-2xl sm:w-[420px] sm:rounded-[28px] ${panelClass}`}
+            className={`pointer-events-auto mb-4 flex h-[min(720px,calc(var(--chat-height,100vh)-88px))] w-[calc(100vw-24px)] max-w-[440px] min-w-0 flex-col overflow-hidden rounded-[22px] border backdrop-blur-2xl sm:w-[420px] sm:rounded-[28px] ${panelClass}`}
           >
             {/* ---------- HEADER ---------- */}
             <header
@@ -779,7 +779,7 @@ const PortfolioChatbot = () => {
         aria-label={open ? "Close assistant" : "Open assistant"}
         aria-controls="portfolio-chat-panel"
         aria-expanded={open}
-        className="group relative inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#ff4c4c] text-white shadow-[0_0_42px_rgba(255,76,76,0.42)] sm:h-16 sm:w-16"
+        className="pointer-events-auto group relative inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#ff4c4c] text-white shadow-[0_0_42px_rgba(255,76,76,0.42)] sm:h-16 sm:w-16"
       >
         <span className="absolute inset-0 rounded-full bg-[#ff4c4c] opacity-35 blur-xl transition group-hover:opacity-55" />
         <FaComments aria-hidden="true" className="relative text-2xl" />

@@ -31,6 +31,8 @@ const Tech = () => {
             <img
               src={technology.icon}
               alt={technology.name}
+              width='240'
+              height='240'
               className='mx-auto h-11 w-11 object-contain'
               loading='lazy'
               decoding='async'

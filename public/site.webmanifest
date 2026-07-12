@@ -1,7 +1,7 @@
 {
-  "name": "Afrid Foisal Portfolio",
+  "name": "MD AFRID FOISAL OPU Portfolio",
   "short_name": "Afrid",
-  "description": "Frontend and product-focused developer portfolio built with React, Vite, Tailwind CSS, and Three.js.",
+  "description": "Personal portfolio of MD AFRID FOISAL OPU, a CSE student and full stack software development learner.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#050816",
