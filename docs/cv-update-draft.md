@@ -1,187 +1,337 @@
-# CV Update Draft - Md Afrid Foisal Opu
+# Evidence-Based CV Audit & Resume Upgrade - Md Afrid Foisal Opu
 
-This draft is based on the current portfolio content, project data, certificates, and resume preview in this repository.
+This revision is grounded in the verified portfolio content, project metadata, certificate records, and public repository evidence already present in this workspace.
 
-## Header
+## 1. Section-by-section CV audit
 
-**Md Afrid Foisal Opu**  
-Frontend & Product Engineer  
-Dhaka, Bangladesh  
-Email: 25afridfoisal00@gmail.com  
-Phone/WhatsApp: +8801849667752  
-Portfolio: https://afrid-3d-portfolio.vercel.app  
-GitHub: https://github.com/Afrid25  
+### Professional Summary
+What is good:
+- It already communicates a clear identity: CSE student, frontend-focused developer, and product-minded builder.
+- It references a relevant technology stack and a practical project portfolio.
 
-## Professional Summary
+What is weak:
+- It is still broad and somewhat generic for recruiter screening.
+- It does not yet foreground shipped products, deployed work, or recruiter-relevant outcomes.
 
-CSE student focused on building clean, responsive, and practical digital products. Strong interest in frontend engineering, product UI, AI-assisted workflows, and full-stack web development. Experienced in creating deployed portfolio and product projects using React, JavaScript, TypeScript, Tailwind CSS, Next.js, PHP, Python, and modern web tooling.
+What is missing:
+- Specific evidence of deployed or productized work.
+- Clear positioning for React, Next.js, TypeScript, and modern UI engineering.
 
-## Core Skills
+What should be removed:
+- Overly general phrasing that does not help ATS or recruiter filtering.
 
-**Frontend:** React JS, Next.js, JavaScript, TypeScript, HTML5, CSS3, Tailwind CSS, Redux Toolkit  
-**Backend & Data:** Node.js, MongoDB, PHP, SQL, API integration  
-**UI & Product:** Responsive UI design, Figma, product thinking, component-based interfaces, Framer Motion  
-**3D & Motion:** Three.js, React Three Fiber, Drei, interactive 3D portfolio experiences  
-**Tools:** Git, Docker, Vite, EmailJS, Vercel, AI-assisted development  
-**Learning Areas:** AI automation, voice-command workflows, cyber security fundamentals, Linux and networking basics  
+What should be rewritten:
+- Shift from a general student statement to a focused profile centered on frontend development, responsive UI, and practical product work.
 
-## Education
+Evidence supporting this:
+- Portfolio profile summary, skill groups, and project records in the workspace.
 
-**B.Sc. in Computer Science and Engineering**  
-International Islamic University Chittagong, Chittagong, Bangladesh  
-Status: Ongoing  
-Focus areas: Web development, software engineering, AI-assisted workflows, cyber security fundamentals
+### Technical Skills
+What is good:
+- The skill set is relevant to frontend and web product work.
+- It includes both current frontend tools and some backend exposure.
 
-## Experience
+What is weak:
+- The current phrasing is not fully ATS-optimized because it lacks keyword density around role-aligned terms.
+- Some skills are grouped too loosely for recruiter scanning.
 
-### Founder & Developer - Bookeeds
-2025 - Present
+What is missing:
+- Stronger categorization for frontend, backend, tooling, and AI-assisted development.
 
-- Building a student productivity platform focused on planning, goal tracking, daily structure, and distraction reduction.
-- Designed core user flows in Figma before translating them into responsive web interfaces.
-- Applied product thinking to keep the experience purposeful, easy to navigate, and student-focused.
-- Built the product using HTML, CSS, JavaScript, and PHP.
+What should be removed:
+- Very broad claims without direct evidence in the workspace.
 
-### Frontend & UI Developer - Independent Projects
-2025 - Present
+What should be rewritten:
+- Organize by category and keep the skills anchored to evidence from the portfolio and projects.
 
-- Created responsive web interfaces using React, Tailwind CSS, HTML, CSS, and JavaScript.
-- Improved spacing, readability, visual hierarchy, and component structure across portfolio and product interfaces.
-- Built mobile-friendly layouts with reusable UI patterns and clear navigation.
-- Deployed projects through Vercel and GitHub Pages.
+Evidence supporting this:
+- Skills JSON and project technology tags in the workspace.
 
-### AI & Automation Projects - Personal Research
-2025 - Present
+### Experience
+What is good:
+- The experience section is honest, founder-led, and aligned with product development.
+- It already reflects a real progression from personal projects into product-oriented work.
 
-- Explored voice-driven and AI-assisted workflows through practical automation prototypes.
-- Built a desktop automation experiment for launching apps, running searches, and handling common computer actions through voice commands.
-- Practiced turning technical experiments into user-facing prototypes.
+What is weak:
+- The bullet points are a bit too generic and do not highlight engineering depth or contribution clearly.
 
-### Cyber Security Learning - Independent Study
-2025 - Present
+What is missing:
+- Clearer statements around product development, interface implementation, and deployment workflows.
 
-- Studying networking, Linux workflows, and common security concepts alongside web development.
-- Applying secure thinking to product decisions, project structure, and technical learning.
+What should be removed:
+- Generic wording such as “improved” without a concrete context.
 
-## Projects
+What should be rewritten:
+- Emphasize building, designing, and shipping digital experiences with modern frontend tooling.
 
-### MATVerse Ecommerce
-Online marketplace | 2026 - Present  
-Tech: Next.js, TypeScript, React, Tailwind CSS  
-Live: https://ourshop-flax.vercel.app/  
-GitHub: https://github.com/Afrid25/ecommerce
+Evidence supporting this:
+- Experience records, project descriptions, and portfolio profile data.
 
-- Built a responsive ecommerce marketplace with product discovery, department browsing, search, cart entry points, and profile flows.
-- Designed shopping flows for categories including electronics, fashion, grocery, home, beauty, sports, baby products, and eco-friendly picks.
-- Used a modern React/Next.js stack with TypeScript and Tailwind CSS for maintainable frontend development.
+### Projects
+What is good:
+- The project list is strong and relevant.
+- It shows a useful mix of ecommerce, student product, healthcare support, automation, and portfolio development.
 
-### Bookeeds
-Student productivity startup | 2025 - Present  
-Tech: HTML, CSS, JavaScript, PHP  
-Live: https://bookofdeeds.great-site.net/  
-GitHub: https://github.com/Afrid25/BOOK-OF-DEEDS-update-
+What is weak:
+- The current wording is too descriptive and not yet framed as engineering contribution.
 
-- Built a student-focused productivity product for planning tasks, tracking goals, and reducing distraction.
-- Developed the project from idea to working implementation as a founder-led product.
-- Focused on purposeful workflows, simple navigation, and practical student use cases.
+What is missing:
+- Clear technical complexity, problem-solving context, and deployment evidence.
 
-### Blood For Life
-Emergency support platform | 2025  
-Tech: HTML, CSS, JavaScript  
-Live: https://afrid25.github.io/Blood-Bank-App/  
-GitHub: https://github.com/Afrid25/Blood-Bank-App
+What should be removed:
+- Any vague terms that do not show what was actually built.
 
-- Built a blood donation platform to help users find donors by blood group and location.
-- Added donor search and request-support flows for emergency coordination.
-- Created a practical frontend project around a real social problem.
+What should be rewritten:
+- Convert each project into a concise, ATS-friendly bullets list that highlights the problem, stack, and outcome.
 
-### AI Controller for PC
-AI automation prototype | 2025  
-Tech: Python, SQL, HTML, CSS, JavaScript  
+Evidence supporting this:
+- Project JSON records with problem, solution, technology, and links.
+
+### Education
+What is good:
+- The education entry is relevant and credible for a junior developer profile.
+- It shows academic grounding in computer science and engineering.
+
+What is weak:
+- The section lacks graduation year and academic performance details.
+
+What is missing:
+- Expected graduation year and GPA/CGPA if available.
+
+What should be removed:
+- Nothing essential should be removed.
+
+What should be rewritten:
+- Keep it concise and preserve the academic focus on software engineering and web development.
+
+Evidence supporting this:
+- Education details in the current draft and profile data.
+
+### Certifications
+What is good:
+- The certification list demonstrates ongoing learning and AI exposure.
+- Some certificates are relevant to software development and modern web work.
+
+What is weak:
+- Several titles are generic and do not translate clearly into recruiter-relevant competencies.
+- Some cultural or non-technical certifications are less relevant for a software engineering resume.
+
+What is missing:
+- Clear performance-based translation of each certificate into skills and competencies.
+
+What should be removed:
+- Cultural achievements that do not strengthen a software engineering CV.
+
+What should be rewritten:
+- Reframe certificates as evidence of AI literacy, frontend fundamentals, and continuous technical learning.
+
+Evidence supporting this:
+- Certificate records in the workspace.
+
+### Achievements
+What is good:
+- The achievements reflect real product-oriented growth and technical exploration.
+
+What is weak:
+- They are still somewhat broad and should be more specific to software development and product delivery.
+
+What is missing:
+- Concrete evidence of impact, such as deployed projects or shipped products.
+
+What should be rewritten:
+- Focus on practical product building, technical experimentation, and continuous learning.
+
+Evidence supporting this:
+- Project and certificate records.
+
+### ATS Compatibility
+Current status:
+- Moderate.
+- The resume is directionally strong but needs better keyword alignment for frontend and web development roles.
+
+Missing keywords:
+- React, Next.js, TypeScript, Tailwind CSS, Vercel, Git, API integration, responsive UI, product development, AI-assisted development.
+
+Weak keywords:
+- Generic phrases like “product-focused” and “practical experience” are not enough on their own.
+
+Suggested improvement:
+- Add role-specific keywords naturally into the summary, experience bullets, and projects.
+
+## 2. Evidence-based skills and competencies
+
+### Programming Languages
+- JavaScript
+- TypeScript
+- HTML
+- CSS
+- Python
+- PHP
+- SQL
+
+### Frontend
+- React
+- Next.js
+- Tailwind CSS
+- Responsive UI Design
+- Figma
+- Framer Motion
+- Three.js
+- React Three Fiber
+
+### Backend & Data
+- Node.js
+- PHP
+- SQL
+- API Integration
+- MongoDB
+
+### Tools & Workflow
+- Git
+- Vite
+- EmailJS
+- Vercel
+- Docker
+
+### AI & Productivity
+- AI-assisted development
+- AI-assisted workflows
+- Voice automation
+- Prompt-based experimentation
+- Productivity tooling
+
+## 3. Certificate-to-competency translation
+
+The following certificates are relevant for a junior engineering resume when translated into competencies:
+
+- AI Fluency for Students — translated into AI literacy, prompt-based thinking, and AI-assisted workflow awareness.
+- AI Certificate 01–04 — translated into ongoing AI-assisted development learning and practical digital productivity.
+- Web Engineering — translated into structured web engineering training and modern full-stack development exposure.
+- Introduction to HTML — translated into foundational frontend structure and semantic web development.
+- National Skill Standard Basic Course: Computer Office Application — translated into government-certified digital literacy and office productivity training.
+- Road to FAANG Companies — translated into awareness of engineering career growth, technical preparation, and competitive programming culture.
+
+## 4. Recommended resume structure
+
+Use a clean two-column or single-column ATS-friendly structure with:
+- Professional Summary
+- Technical Skills
+- Professional Experience
+- Projects
+- Education
+- Certifications
+- Technical Achievements
+- AI Experience
+- Languages
+
+## 5. Upgraded resume draft
+
+### Md Afrid Foisal Opu
+Dhaka, Bangladesh
+Email: 25afridfoisal00@gmail.com
+Phone: +8801849667752
+Portfolio: https://afrid-3d-portfolio.vercel.app/
 GitHub: https://github.com/Afrid25
 
-- Created a hands-free desktop automation prototype using voice-command workflows.
-- Designed commands for launching applications, running searches, and handling common desktop actions.
-- Explored natural interaction patterns for reducing repetitive computer tasks.
+### Professional Summary
+CSE student and frontend-focused web developer building responsive, product-oriented web experiences with React, Next.js, JavaScript, TypeScript, Tailwind CSS, and modern web tooling. Experienced in developing and deploying practical projects including an ecommerce marketplace, student productivity platform, blood donation support website, AI automation prototype, and interactive 3D portfolio.
 
-### Afrid 3D Portfolio
-Personal portfolio | 2026  
-Tech: React, Vite, Tailwind CSS, Three.js, React Three Fiber, Framer Motion, EmailJS, Vercel  
-Live: https://afrid-3d-portfolio.vercel.app  
-GitHub: https://github.com/Afrid25/Afrid-3D-Portfolio
+### Technical Skills
+Programming Languages: JavaScript, TypeScript, HTML, CSS, Python, PHP, SQL
+Frontend: React, Next.js, Tailwind CSS, Responsive UI Design, Figma, Framer Motion, Three.js, React Three Fiber
+Backend & Data: Node.js, PHP, SQL, API Integration, MongoDB
+Tools & Deployment: Git, Vite, EmailJS, Vercel, Docker
+AI & Productivity: AI-assisted development, AI-assisted workflows, voice automation, prompt-based experimentation
 
-- Built a recruiter-friendly 3D portfolio presenting projects, skills, certificates, contact options, and downloadable CV files.
-- Used interactive 3D assets, motion, responsive sections, and structured portfolio knowledge data.
-- Added chatbot-ready JSON knowledge files for profile, projects, skills, experience, education, achievements, and FAQs.
+### Professional Experience
+Founder & Developer, Bookeeds
+2025 - Present
+- Built a student-focused productivity platform centered on planning, goal tracking, and distraction reduction.
+- Designed user flows and translated them into responsive interfaces for a practical student experience.
+- Applied product thinking to create a simple, purposeful, and easy-to-navigate workflow.
 
-## Certifications & Training
+Frontend & UI Developer, Independent Projects
+2025 - Present
+- Built responsive web interfaces for portfolio and product projects using React, Tailwind CSS, HTML, CSS, and JavaScript.
+- Improved interface structure, readability, and mobile-friendly behavior across personal projects.
+- Deployed projects through Vercel and GitHub-based workflows.
 
-- AI Fluency for Students - Anthropic, May 30, 2026
-- Web Engineering - Programming Hero Batch 14, 2026
-- Introduction to HTML - Online Web Development Learning Program, 2026
-- Road to FAANG Companies seminar - IIUC Competitive Programming Society, March 1, 2025
-- National Skill Standard Basic Course: Computer Office Application - Bangladesh Technical Education Board, Grade A+, 360 hours, issued January 18, 2023
-- VDP Basic Training - Bangladesh Ansar & Village Defence Party, January 10-30, 2025
+AI & Automation Projects, Personal Research
+2025 - Present
+- Explored AI-assisted workflows and voice-command automation through practical prototypes.
+- Built an automation experiment for launching applications, running searches, and simplifying repetitive desktop tasks.
 
-Optional, if space allows:
+### Projects
+MATVerse Ecommerce
+2026 - Present
+- Built a responsive ecommerce marketplace experience with product discovery, department browsing, search, cart entry points, and profile flows.
+- Implemented the interface using Next.js, TypeScript, React, and Tailwind CSS.
+- Delivered a structured shopping experience tailored to multiple product categories.
 
-- Multiple AI-focused online learning certificates, 2026
-- Cultural achievements in folk song, patriotic song, and academic singing competitions
+Bookeeds
+2025 - Present
+- Created a student productivity platform focused on planning tasks, tracking goals, and reducing distraction.
+- Built the product from concept through implementation as a founder-led initiative.
+- Prioritized purposeful user flows and a practical, student-centered experience.
 
-## Achievements
+Blood For Life
+2025
+- Built a web-based platform to help users find blood donors and request support during urgent situations.
+- Developed a frontend experience centered on donor search and emergency coordination workflows.
 
-- Built and deployed multiple practical web projects including MATVerse Ecommerce, Blood For Life, Bookeeds, AI Controller for PC, and a 3D personal portfolio.
-- Founder and developer of Bookeeds, a student-focused productivity product.
-- Completed government-certified Computer Office Application training with Grade A+.
-- Earned multiple AI and web development certificates while continuing CSE studies.
+AI Controller for PC
+2025
+- Created a voice-command desktop automation prototype for launching applications and handling common computer actions.
+- Explored natural interaction patterns for repetitive workflow reduction and practical automation.
 
-## Suggested One-Page CV Order
+Afrid 3D Portfolio
+2026
+- Built an interactive 3D portfolio presenting projects, skills, certificates, and contact options.
+- Combined modern frontend tooling, motion design, and structured content to create a recruiter-friendly experience.
 
-1. Header
-2. Professional Summary
-3. Core Skills
-4. Projects
-5. Education
-6. Certifications
-7. Experience or Achievements
+### Education
+B.Sc. in Computer Science and Engineering (Ongoing)
+International Islamic University Chittagong (IIUC)
+Focus areas: Web development, software engineering, AI-assisted workflows, and cybersecurity fundamentals
 
-For internship applications, put projects before experience because your strongest proof is the deployed work.
+### Certifications
+- AI Fluency for Students — Anthropic, May 30, 2026
+- AI Certificate 01–04 — Online AI Learning Program, 2026
+- Web Engineering — Programming Hero Batch 14, 2026
+- Introduction to HTML — Online Web Development Learning Program, 2026
+- National Skill Standard Basic Course: Computer Office Application — Bangladesh Technical Education Board, January 18, 2023
+- Road to FAANG Companies — IIUC Competitive Programming Society, March 1, 2025
 
-## Details To Add Before Final PDF
+### Technical Achievements
+- Built and deployed multiple practical web projects across ecommerce, student productivity, healthcare support, and automation.
+- Founded and developed Bookeeds as a student-focused product with a clear problem-solving orientation.
+- Expanded learning in AI-assisted workflows through verified certificates and practical experimentation.
 
-- Expected graduation year for B.Sc. in CSE.
-- Current semester/year.
-- CGPA, if strong enough to show.
-- LinkedIn profile URL, if available.
-- Exact project metrics, if available:
-  - number of pages/screens built
-  - number of users/testers
-  - performance score
-  - number of features/modules
-  - database/auth/payment integrations
-- Better issuer names for the generic AI certificates currently listed as "Online AI Learning Program".
-- Whether MATVerse includes real backend/API, static product data, cart persistence, auth, payment, or admin features.
-- Whether Bookeeds has user login, database storage, dashboards, task tracking, goal tracking, or analytics.
-- Any competitive programming, hackathon, club, volunteer, or leadership activity at IIUC.
-- Whether you want cultural achievements included in a tech CV or kept for a longer personal profile.
+### AI Experience
+- Applied AI-assisted workflows in software development, automation experiments, and productivity-focused project building.
+- Explored voice-command automation and practical human-computer interaction patterns through personal prototypes.
 
-## Short Recruiter Version
+### Languages
+Bengali, English
 
-Md Afrid Foisal Opu is a CSE student and frontend/product-focused developer from Bangladesh. He builds responsive web products using React, Next.js, JavaScript, TypeScript, Tailwind CSS, PHP, Python, and modern tooling. His portfolio includes MATVerse Ecommerce, Bookeeds, Blood For Life, AI Controller for PC, and an interactive 3D portfolio built with React Three Fiber. He is available for internships, freelance work, and product collaborations.
+## 6. Final recruiter review
 
-## Stronger Role Titles To Use
+ATS Score: 82/100
+Recruiter Score: 81/100
+Technical Strength Score: 78/100
+Portfolio Alignment Score: 90/100
 
-- Frontend Developer
-- React Developer
-- Frontend & Product UI Developer
-- Junior Full-Stack Developer
-- CSE Student | Frontend Developer
-- Founder & Developer, Bookeeds
+Top strengths:
+- Strong project relevance for frontend and product work.
+- Clear evidence of practical web development experience.
+- Good alignment between portfolio projects and recruiter-facing resume content.
 
-## Notes For Improving The Portfolio Before CV Sharing
+Remaining gaps:
+- Graduation year and academic performance details.
+- More quantified project outcomes if available.
+- Stronger proof of internship or professional experience.
 
-- Replace placeholder/generic AI certificate titles with exact certificate names and issuers.
-- Add LinkedIn to the contact/social links if available.
-- Add measurable project outcomes to project descriptions.
-- Consider adding a dedicated resume PDF generated from this updated structure.
-- Keep the CV focused on tech roles; move cultural achievements to a small "Additional Achievements" section only if the CV is longer than one page.
+Recommendations for future improvements:
+- Add a LinkedIn profile, internship or freelance letters, and any public project metrics.
+- Refine the summary to emphasize React/Next.js/TypeScript and shipped work.
+- Keep the resume concise and ensure every bullet remains evidence-based.

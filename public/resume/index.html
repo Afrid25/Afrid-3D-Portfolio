@@ -14,11 +14,7 @@
         --accent: #6d3df6;
         --border: #d9def1;
       }
-
-      * {
-        box-sizing: border-box;
-      }
-
+      * { box-sizing: border-box; }
       body {
         margin: 0;
         background: var(--bg);
@@ -26,9 +22,8 @@
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.6;
       }
-
       main {
-        width: min(960px, calc(100% - 2rem));
+        width: min(1000px, calc(100% - 2rem));
         margin: 2rem auto;
         background: var(--surface);
         border: 1px solid var(--border);
@@ -36,118 +31,23 @@
         overflow: hidden;
         box-shadow: 0 24px 60px rgba(17, 24, 39, 0.08);
       }
-
-      .hero {
-        padding: 2rem;
-        background: linear-gradient(135deg, #111827 0%, #34256b 100%);
-        color: white;
-      }
-
-      .hero p,
-      .hero a {
-        color: rgba(255, 255, 255, 0.88);
-      }
-
-      .content {
-        display: grid;
-        gap: 1.5rem;
-        padding: 2rem;
-      }
-
-      .grid {
-        display: grid;
-        gap: 1rem;
-      }
-
-      .grid.two {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      }
-
-      .card {
-        border: 1px solid var(--border);
-        border-radius: 18px;
-        padding: 1rem 1.1rem;
-      }
-
-      h1,
-      h2,
-      h3,
-      p {
-        margin: 0;
-      }
-
-      h1 {
-        font-size: clamp(2rem, 4vw, 3rem);
-        line-height: 1.1;
-      }
-
-      h2 {
-        font-size: 1.1rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: var(--accent);
-        margin-bottom: 0.75rem;
-      }
-
-      h3 {
-        font-size: 1.05rem;
-        margin-bottom: 0.35rem;
-      }
-
-      ul {
-        margin: 0;
-        padding-left: 1.2rem;
-      }
-
-      a {
-        color: var(--accent);
-      }
-
-      .actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.75rem;
-        margin-top: 1.25rem;
-      }
-
-      .button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 44px;
-        padding: 0.75rem 1.2rem;
-        border-radius: 999px;
-        text-decoration: none;
-        font-weight: 700;
-        border: 1px solid transparent;
-      }
-
-      .button.primary {
-        background: white;
-        color: #111827;
-      }
-
-      .button.secondary {
-        border-color: rgba(255, 255, 255, 0.24);
-      }
-
-      @media print {
-        body {
-          background: white;
-        }
-
-        main {
-          width: 100%;
-          margin: 0;
-          border: 0;
-          border-radius: 0;
-          box-shadow: none;
-        }
-
-        .actions {
-          display: none;
-        }
-      }
+      .hero { padding: 2rem; background: linear-gradient(135deg, #111827 0%, #34256b 100%); color: white; }
+      .hero p, .hero a { color: rgba(255,255,255,0.9); }
+      .content { display: grid; gap: 1.3rem; padding: 2rem; }
+      .grid { display: grid; gap: 1rem; }
+      .grid.two { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+      .card { border: 1px solid var(--border); border-radius: 18px; padding: 1rem 1.1rem; }
+      h1, h2, h3, p { margin: 0; }
+      h1 { font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.1; }
+      h2 { font-size: 1rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.7rem; }
+      h3 { font-size: 1.05rem; margin-bottom: 0.35rem; }
+      ul { margin: 0; padding-left: 1.2rem; }
+      a { color: var(--accent); }
+      .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
+      .button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0.75rem 1.2rem; border-radius: 999px; text-decoration: none; font-weight: 700; border: 1px solid transparent; }
+      .button.primary { background: white; color: #111827; }
+      .button.secondary { border-color: rgba(255,255,255,0.24); }
+      @media print { body { background: white; } main { width: 100%; margin: 0; border: 0; border-radius: 0; box-shadow: none; } .actions { display: none; } }
     </style>
   </head>
   <body>
@@ -155,10 +55,7 @@
       <section class="hero">
         <p>Resume Preview</p>
         <h1>Md Afrid Foisal Opu</h1>
-        <p style="margin-top: 0.75rem">
-          CSE student focused on full-stack development, responsive interfaces, and practical
-          cybersecurity learning.
-        </p>
+        <p style="margin-top: 0.75rem">CSE student and product-focused front-end developer building responsive web experiences with React, Next.js, JavaScript, TypeScript, Tailwind CSS, and modern web tooling.</p>
         <div class="actions">
           <a class="button primary" href="/cv/afrids-cv.pdf" download>Download PDF</a>
           <a class="button secondary" href="mailto:25afridfoisal00@gmail.com">Email</a>
@@ -169,56 +66,42 @@
       <section class="content">
         <div>
           <h2>Summary</h2>
-          <p>
-            Developer with a strong interest in product building, accessible interfaces, and
-            trustworthy web experiences. Comfortable working across UI implementation, front-end
-            architecture, and early-stage product experimentation.
-          </p>
+          <p>Student developer focused on practical web products, responsive UI, AI-assisted workflows, and early-stage product building. Experienced in deploying projects spanning ecommerce, education productivity, emergency support, automation, and interactive 3D portfolio work.</p>
         </div>
 
         <div class="grid two">
           <section class="card">
             <h2>Core Skills</h2>
             <ul>
-              <li>React, JavaScript, TypeScript, Tailwind CSS</li>
-              <li>Responsive UI design and component-based front-end work</li>
-              <li>Node.js, MongoDB, Git, Figma, Three.js</li>
+              <li>React, Next.js, JavaScript, TypeScript, Tailwind CSS</li>
+              <li>HTML, CSS, PHP, SQL, API integration</li>
+              <li>Three.js, React Three Fiber, Framer Motion, Figma</li>
             </ul>
           </section>
-
           <section class="card">
             <h2>Contact</h2>
             <ul>
               <li>Email: 25afridfoisal00@gmail.com</li>
               <li>GitHub: github.com/Afrid25</li>
-              <li>Location: Dhaka, Bangladesh</li>
+              <li>Location: Chittagong, Bangladesh</li>
             </ul>
           </section>
         </div>
 
         <div>
-          <h2>Projects</h2>
+          <h2>Selected Projects</h2>
           <div class="grid">
             <section class="card">
+              <h3>MATVerse Ecommerce</h3>
+              <p>Built a responsive marketplace experience using Next.js, TypeScript, React, and Tailwind CSS.</p>
+            </section>
+            <section class="card">
               <h3>Bookeeds</h3>
-              <p>
-                Student-focused productivity platform for organizing academic work, planning study
-                sessions, and building more intentional learning habits.
-              </p>
+              <p>Created a student-focused productivity product centered on planning, goal tracking, and distraction reduction.</p>
             </section>
             <section class="card">
               <h3>Blood For Life</h3>
-              <p>
-                Web platform connecting blood donors and recipients with searchable donor records
-                and request flows for emergency response.
-              </p>
-            </section>
-            <section class="card">
-              <h3>AI Controller for PC</h3>
-              <p>
-                Voice-command experiment for launching apps, handling searches, and automating
-                common desktop actions through natural speech.
-              </p>
+              <p>Developed a blood donor search and request-support experience for urgent coordination.</p>
             </section>
           </div>
         </div>
@@ -227,19 +110,18 @@
           <section class="card">
             <h2>Experience</h2>
             <ul>
-              <li>Founder and developer building Bookeeds</li>
-              <li>Independent front-end and UI development practice</li>
-              <li>AI automation and cybersecurity self-learning projects</li>
+              <li>Founder & Developer, Bookeeds</li>
+              <li>Frontend & UI Developer, Independent Projects</li>
+              <li>AI & Automation Projects, Personal Research</li>
             </ul>
           </section>
-
           <section class="card">
-            <h2>Availability</h2>
-            <p>
-              Open to internships, freelance projects, and collaborative product work. A more
-              detailed private packet of certificates and verification files can be shared securely
-              on request.
-            </p>
+            <h2>Education & Credentials</h2>
+            <ul>
+              <li>B.Sc. in CSE, IIUC (ongoing)</li>
+              <li>AI Fluency for Students — Anthropic</li>
+              <li>National Skill Standard Course — Computer Office Application, Grade A+</li>
+            </ul>
           </section>
         </div>
       </section>
