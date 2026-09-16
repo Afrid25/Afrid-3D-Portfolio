@@ -8,9 +8,9 @@ export const certificateCategories = [
 ];
 
 export const certificateStats = [
-  { label: "All", count: 16, color: "#f8fafc" },
+  { label: "All", count: 17, color: "#f8fafc" },
   { label: "AI & Tech", count: 5, color: "#8b5cf6" },
-  { label: "Tech Activity", count: 3, color: "#38bdf8" },
+  { label: "Tech Activity", count: 4, color: "#38bdf8" },
   { label: "Web Development", count: 1, color: "#14b8a6" },
   { label: "Cultural Achievement", count: 6, color: "#f59e0b" },
   { label: "Workshops & Training", count: 1, color: "#22c55e" },
@@ -135,6 +135,22 @@ export const certificateGroups = [
         icon: "code",
         file: "/certificates/cert-02-faang-seminar.pdf",
         fileType: "pdf",
+      },
+      {
+        id: "racdox-hackathon-participant",
+        title: "RACDOX Hackathon Participant",
+        issuer: "RACDOX",
+        issuerDetail: "Hackathon Participation Certificate",
+        date: "September 15, 2026",
+        caption:
+          "Successfully participated in the RACDOX Hackathon and demonstrated creativity, technical skill, and teamwork in building innovative solutions.",
+        category: "tech-activity",
+        categoryLabel: "Tech Activity",
+        badge: "Hackathon Participant",
+        verified: true,
+        theme: "blueGold",
+        icon: "award",
+        fileType: "summary",
       },
       {
         id: "bteb-computer-office",
