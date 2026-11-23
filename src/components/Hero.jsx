@@ -1,72 +1,38 @@
-import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { socialLinks, siteConfig } from "../constants/siteConfig";
 
-import { styles } from "../styles";
-
-const Hero = () => {
+export default function Hero() {
   return (
-    <section
-      id='top'
-      className='relative ozverflow-hidden bg-[radial-gradient(circle_at_top_left,_rgba(255,76,76,0.18),_transparent_26%),radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.06),_transparent_22%),linear-gradient(180deg,_#0f0f0f_0%,_#141414_100%)]'
-    >
-      <div className='pointer-events-none absolute inset-0' aria-hidden='true'>
-        <div className='absolute left-[-8%] top-20 h-56 w-56 rounded-full bg-[#ff4c4c]/12 blur-3xl' />
-        <div className='absolute bottom-8 right-[-10%] h-64 w-64 rounded-full bg-white/6 blur-3xl' />
-      </div>
-
-      <div
-        className={`${styles.paddingX} relative mx-auto flex min-h-[100svh] max-w-7xl items-center py-24 pt-32`}
-      >
-        <div className='grid w-full gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-center'>
-          <motion.div
-            initial={{ opacity: 0, x: -36 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
-            className='flex flex-col items-center justify-center text-center lg:items-start lg:text-left'
-          >
-            <h1 className={`${styles.heroHeadText} max-w-3xl text-white`}>
-              I AM AFRID
-              <span className='sr-only'> — MD AFRID FOISAL OPU, Computer Science and Engineering student</span>
-            </h1>
-            <p className='mt-5 text-lg font-semibold uppercase tracking-[0.3em] text-white/75 sm:text-xl'>
-              A CSE STUDENT
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 36 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
-            className='relative mx-auto flex w-full justify-center lg:mx-0 lg:justify-end'
-          >
-            <div className='absolute h-[260px] w-[260px] rounded-full bg-[#ff4c4c]/18 blur-3xl sm:h-[320px] sm:w-[320px] lg:h-[420px] lg:w-[420px]' />
-            <div
-              className='gradient-circle relative aspect-square w-[260px] rounded-full sm:w-[320px] lg:w-[420px]'
-              style={{
-                boxShadow: `
-                  0 0 40px rgba(255,76,76,0.6),
-                  0 0 80px rgba(255,76,76,0.4),
-                  0 0 160px rgba(255,76,76,0.3)
-                `,
-              }}
-            >
-              <div className="absolute inset-[-30px] rounded-full bg-[#ff4c4c]/25 blur-[100px] z-0" />
-              <div className='profile-image-shell relative z-10 flex h-full w-full items-end justify-center overflow-hidden rounded-full bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.14),_rgba(255,255,255,0.03)_46%,_rgba(0,0,0,0.34)_100%)] shadow-[0_40px_100px_-40px_rgba(255,76,76,0.45)]'>
-                <img
-                  src='/seo/afrid-profile.png'
-                  alt='MD AFRID FOISAL OPU profile'
-                  width='853'
-                  height='1280'
-                  className='profile-image h-full w-full translate-y-3 scale-[1.14] object-contain object-top sm:translate-y-4'
-                  fetchPriority='high'
-                  decoding='async'
-                />
-              </div>
-            </div>
-          </motion.div>
+    <section id="top" aria-labelledby="intro-title" className="bg-primary">
+      <div className="hero-layout portfolio-wrap grid items-center gap-10 pb-14 pt-28 md:grid-cols-[1.6fr_1fr] md:py-32">
+        <div className="hero-copy">
+          <p className="eyebrow">Full-stack developer and CSE student</p>
+          <h1 id="intro-title" className="mt-6 text-5xl font-semibold tracking-tight sm:text-7xl">Hi, I’m Afrid.</h1>
+          <p className="mt-4 text-2xl sm:text-4xl">I build web applications.</p>
+          <p className="mt-2 text-xs text-secondary md:hidden">CSE at IIUC</p>
+          <p className="hidden md:block mt-5 max-w-xl leading-7 text-secondary">I’m MD Afrid Foisal Opu, a Computer Science and Engineering student at International Islamic University Chattogram. I work with React, Next.js, Node.js, Express.js and MongoDB.</p>
+          </div>
+          <div className="hero-links">
+          <div className="hero-actions flex gap-2">
+            <a className="action action-primary" href="#projects">View my projects</a>
+            <a className="action" href={siteConfig.resume.downloadUrl} download>Download resume</a>
+          </div>
+          <div className="flex gap-2 mt-2">
+            <a className="hero-social" aria-label="GitHub" href="https://github.com/Afrid25"><FaGithub /></a>
+            <a className="hero-social" aria-label="LinkedIn" href={siteConfig.linkedInUrl} target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a className="hero-social" aria-label="Facebook" href={socialLinks.find(link => link.name === "Facebook").href}><FaFacebook /></a>
+          </div>
+        </div>
+        <div className="portrait-frame">
+          <img src="/seo/afrid-profile.webp" width="853" height="1280" alt="MD Afrid Foisal Opu" fetchPriority="high" className="mx-auto aspect-[4/5] w-full max-w-xs rounded-xl border border-slate-700 bg-slate-800 object-cover object-top" />
+          <span className="portrait-chip chip-top">Developer</span>
+          <span className="portrait-chip chip-student">CSE Student</span>
+          <span className="portrait-chip chip-bottom">Video Editor</span>
         </div>
       </div>
+      <aside className="update-strip portfolio-wrap" aria-label="Upcoming updates">
+        <strong>Up next</strong><div className="update-window"><span>Bookeeds development updates · Portfolio video-editing showcase</span></div>
+      </aside>
     </section>
   );
-};
-
-export default Hero;
+}

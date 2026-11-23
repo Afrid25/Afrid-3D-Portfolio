@@ -19,43 +19,8 @@ import {
   frontend,
   security,
   startup,
-  bloodbank,
-  bookeeds,
-  aicontroller,
-  matverse,
   threejs,
 } from "../assets";
-
-export const navLinks = [
-  {
-    id: "top",
-    title: "Home",
-  },
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "journey",
-    title: "Technical Journey",
-  },
-  {
-    id: "skills",
-    title: "Skills",
-  },
-  {
-    id: "projects",
-    title: "Projects",
-  },
-  {
-    id: "certificates",
-    title: "Certificates",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
-];
 
 const services = [
   {
@@ -209,54 +174,8 @@ const testimonials = [
   },
 ];
 
-const projects = [
-  {
-    name: "MATVerse Ecommerce",
-    description:
-      "A full ecommerce marketplace with product discovery, department browsing, search, cart, profile flows, themed UI, and Tk-based product pricing.",
-    tags: [
-      { name: "Next.js" },
-      { name: "TypeScript" },
-      { name: "React" },
-      { name: "Tailwind" },
-    ],
-    image: matverse,
-    source_code_link: "https://github.com/Afrid25/ecommerce",
-    live_link: "https://ourshop-flax.vercel.app/",
-  },
-  {
-    name: "Blood For Life",
-    description:
-      "A blood donation platform that helps people search donors by group and location, request support quickly, and manage emergency response more efficiently.",
-    tags: [{ name: "HTML" }, { name: "JavaScript" }, { name: "CSS" }],
-    image: bloodbank,
-    source_code_link: "https://github.com/Afrid25/Blood-Bank-App",
-    live_link: "https://afrid25.github.io/Blood-Bank-App/",
-  },
-  {
-    name: "Bookeeds",
-    description:
-      "A student productivity product focused on planning, tracking goals, and reducing distraction through a more intentional digital workflow.",
-    tags: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }, { name: "PHP" }],
-    image: bookeeds,
-    source_code_link: "https://github.com/Afrid25/BOOK-OF-DEEDS-update-",
-    live_link: "https://bookofdeeds.great-site.net/",
-  },
-  {
-    name: "AI Controller for PC",
-    description:
-      "A voice-command desktop automation experiment for launching apps, running searches, and handling common computer actions with hands-free control.",
-    tags: [
-      { name: "Python" },
-      { name: "SQL" },
-      { name: "HTML" },
-      { name: "CSS" },
-      { name: "JavaScript" },
-    ],
-    image: aicontroller,
-    source_code_link: "https://github.com/Afrid25",
-    live_link: "",
-  },
-];
+export { projects } from "../data/projects";
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials };
+
+

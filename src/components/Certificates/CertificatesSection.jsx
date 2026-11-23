@@ -164,8 +164,13 @@ const TimelineCertificateItem = ({ certificate, index, isLast, onOpen }) => {
         visible: { opacity: 1, y: 0 },
       }}
       transition={{ type: "spring", stiffness: 170, damping: 24, delay: index * 0.04 }}
-      className='relative md:grid md:grid-cols-[72px_minmax(0,1fr)] md:gap-6'
+      className='relative min-w-0 md:grid md:grid-cols-[72px_minmax(0,1fr)] md:gap-6'
     >
+      <button type="button" onClick={() => onOpen(certificate)} aria-label={certificate.title}
+        className="flex h-full w-full flex-col items-start gap-2 rounded-xl border border-white/10 bg-white/5 p-3 text-left text-sm md:hidden">
+        <Icon aria-hidden="true" className="text-sky-300" />
+        {certificate.shortTitle || certificate.title}
+      </button>
       <div className='relative hidden md:block'>
         {!isLast ? (
           <span
@@ -184,7 +189,7 @@ const TimelineCertificateItem = ({ certificate, index, isLast, onOpen }) => {
 
       <motion.article
         layout
-        className='group relative flex min-h-[220px] w-full flex-col overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.045] p-4 shadow-[0_32px_90px_-58px_rgba(255,76,76,0.42)] transition duration-300 hover:-translate-y-1 hover:border-white/20 sm:flex-row'
+        className='group relative hidden md:flex min-h-[220px] w-full flex-col overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.045] p-4 shadow-[0_32px_90px_-58px_rgba(56,189,248,0.42)] transition duration-300 hover:-translate-y-1 hover:border-white/20 sm:flex-row'
         style={{ boxShadow: `0 30px 90px -62px ${theme.shadow}` }}
       >
         <div
@@ -305,7 +310,8 @@ const CategoryAccordionCard = ({ group, isOpen, onToggle, onOpenCertificate, ind
     <motion.section
       layout
       variants={fadeIn("up", "spring", index * 0.07, 0.65)}
-      className='overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.035] shadow-[0_28px_90px_-68px_rgba(56,189,248,0.65)]'
+      data-expanded={isOpen}
+      className='cert-category overflow-hidden rounded-[30px] border border-white/10 bg-white/[0.035] shadow-[0_28px_90px_-68px_rgba(56,189,248,0.65)]'
       style={
         isOpen
           ? {
@@ -326,7 +332,8 @@ const CategoryAccordionCard = ({ group, isOpen, onToggle, onOpenCertificate, ind
         whileTap={{ scale: 0.99 }}
         className='group flex w-full flex-col gap-5 p-5 text-left transition duration-300 sm:flex-row sm:items-center sm:justify-between sm:p-6'
       >
-        <div className='flex min-w-0 gap-4'>
+        <div className='flex flex-col items-start gap-2 sm:hidden'><Icon style={{color: theme.color}} /><strong>{group.title.replace(/ Certificates$| Achievement$/, "")}</strong><small>{group.certificates.length} {group.certificates.length === 1 ? "certificate" : "certificates"}</small></div>
+        <div className='hidden min-w-0 gap-4 sm:flex'>
           <span
             className='flex h-16 w-16 shrink-0 items-center justify-center rounded-[24px] border text-2xl'
             style={{
@@ -350,7 +357,7 @@ const CategoryAccordionCard = ({ group, isOpen, onToggle, onOpenCertificate, ind
           </span>
         </div>
 
-        <span className='flex shrink-0 items-center gap-4 sm:pl-5'>
+        <span className='hidden shrink-0 items-center gap-4 sm:flex sm:pl-5'>
           <span>
             <span className='block text-right text-3xl font-black' style={{ color: theme.color }}>
               {group.certificates.length}
@@ -392,7 +399,7 @@ const CategoryAccordionCard = ({ group, isOpen, onToggle, onOpenCertificate, ind
                   transition: { staggerChildren: 0.08, delayChildren: 0.08 },
                 },
               }}
-              className='space-y-7 border-t border-white/10 px-5 pb-6 pt-6 sm:px-6 lg:px-8'
+              className='grid grid-cols-2 gap-2 md:block md:space-y-7 border-t border-white/10 px-5 pb-6 pt-6 sm:px-6 lg:px-8'
             >
               {group.certificates.map((certificate, certificateIndex) => (
                 <TimelineCertificateItem
@@ -561,7 +568,7 @@ const CertificatesSection = () => {
         certificate.
       </motion.p>
 
-      <div className='mt-10 space-y-5'>
+      <div className='certificate-groups mt-8 grid grid-cols-2 items-start gap-3 sm:block sm:space-y-5'>
         {certificateGroups.map((group, index) => (
           <CategoryAccordionCard
             key={group.id}
@@ -587,3 +594,4 @@ const CertificatesSection = () => {
 };
 
 export default SectionWrapper(CertificatesSection, "certificates", 0.03);
+

@@ -121,7 +121,7 @@ const TypingIndicator = ({ lightMode }) => (
 /* ------------------------------------------------------------------ */
 
 const PortfolioChatbot = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
   const [knowledge, setKnowledge] = useState(null);
@@ -484,7 +484,7 @@ const PortfolioChatbot = () => {
   /* ------------------------------------------------------------------ */
   const panelClass = lightMode
     ? "border-slate-200 bg-white/95 text-slate-950 shadow-[0_30px_100px_-35px_rgba(15,23,42,0.45)]"
-    : "border-white/10 bg-[#080b16]/95 text-white shadow-[0_30px_100px_-35px_rgba(255,76,76,0.48)]";
+    : "border-white/10 bg-[#080b16]/95 text-white shadow-[0_30px_100px_-35px_rgba(56,189,248,0.48)]";
 
   /* ------------------------------------------------------------------ */
   /*  Render                                                            */
@@ -514,7 +514,7 @@ const PortfolioChatbot = () => {
             >
               <div className="flex items-center justify-between gap-2">
                 <div className="flex items-center gap-3">
-                  <span className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-[#ff4c4c] text-white shadow-[0_0_34px_rgba(255,76,76,0.45)] sm:h-11 sm:w-11">
+                  <span className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-[#38bdf8] text-white shadow-[0_0_34px_rgba(56,189,248,0.45)] sm:h-11 sm:w-11">
                     <FaComments aria-hidden="true" />
                     <motion.span
                       animate={{ scale: [1, 1.25, 1] }}
@@ -587,7 +587,7 @@ const PortfolioChatbot = () => {
                     onClick={() => setMode(item.id)}
                     className={`min-h-[38px] rounded-full border px-3 text-[11px] font-semibold uppercase tracking-[0.08em] transition sm:text-xs sm:tracking-[0.14em] ${
                       mode === item.id
-                        ? "border-[#ff4c4c] bg-[#ff4c4c] text-white"
+                        ? "border-[#38bdf8] bg-[#38bdf8] text-white"
                         : lightMode
                           ? "border-slate-200 bg-white text-slate-600 hover:bg-slate-50"
                           : "border-white/10 bg-white/5 text-white/60 hover:bg-white/10"
@@ -622,7 +622,7 @@ const PortfolioChatbot = () => {
                               ? lightMode
                                 ? "border border-slate-200 bg-white text-slate-700"
                                 : "border border-white/10 bg-white/[0.06] text-white/80"
-                              : "bg-[#ff4c4c] text-white shadow-[0_14px_36px_-22px_rgba(255,76,76,0.85)]"
+                              : "bg-[#38bdf8] text-white shadow-[0_14px_36px_-22px_rgba(56,189,248,0.85)]"
                           }`}
                         >
                           {message.content}
@@ -711,8 +711,8 @@ const PortfolioChatbot = () => {
                 }}
                 className={`flex items-end gap-2 rounded-2xl border p-2 transition ${
                   lightMode
-                    ? "border-slate-200 bg-white focus-within:border-[#ff4c4c]"
-                    : "border-white/10 bg-black/25 focus-within:border-[#ff4c4c]"
+                    ? "border-slate-200 bg-white focus-within:border-[#38bdf8]"
+                    : "border-white/10 bg-black/25 focus-within:border-[#38bdf8]"
                 }`}
               >
                 <textarea
@@ -746,7 +746,7 @@ const PortfolioChatbot = () => {
                     title={listening ? "Stop listening" : "Voice input"}
                     className={`inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full transition ${
                       listening
-                        ? "animate-pulse bg-[#ff4c4c] text-white"
+                        ? "animate-pulse bg-[#38bdf8] text-white"
                         : lightMode
                           ? "bg-slate-100 text-slate-600 hover:bg-slate-200"
                           : "bg-white/10 text-white/70 hover:bg-white/15"
@@ -760,7 +760,7 @@ const PortfolioChatbot = () => {
                   disabled={loading || !!streamingId || !input.trim()}
                   aria-label="Send message"
                   title="Send"
-                  className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#ff4c4c] text-white shadow-[0_12px_34px_-18px_rgba(255,76,76,0.9)] transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#38bdf8] text-white shadow-[0_12px_34px_-18px_rgba(56,189,248,0.9)] transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   <FaPaperPlane aria-hidden="true" />
                 </button>
@@ -779,15 +779,15 @@ const PortfolioChatbot = () => {
         aria-label={open ? "Close assistant" : "Open assistant"}
         aria-controls="portfolio-chat-panel"
         aria-expanded={open}
-        className="pointer-events-auto group relative inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#ff4c4c] text-white shadow-[0_0_42px_rgba(255,76,76,0.42)] sm:h-16 sm:w-16"
+        className="pointer-events-auto group relative inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#38bdf8] text-white shadow-[0_0_42px_rgba(56,189,248,0.42)] sm:h-16 sm:w-16"
       >
-        <span className="absolute inset-0 rounded-full bg-[#ff4c4c] opacity-35 blur-xl transition group-hover:opacity-55" />
+        <span className="absolute inset-0 rounded-full bg-[#38bdf8] opacity-35 blur-xl transition group-hover:opacity-55" />
         <FaComments aria-hidden="true" className="relative text-2xl" />
         {unread > 0 && !open && (
           <motion.span
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
-            className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-white text-[10px] font-bold text-[#ff4c4c] shadow-md"
+            className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-white text-[10px] font-bold text-[#38bdf8] shadow-md"
           >
             {unread > 9 ? "9+" : unread}
           </motion.span>
@@ -804,3 +804,4 @@ const PortfolioChatbot = () => {
 };
 
 export default PortfolioChatbot;
+

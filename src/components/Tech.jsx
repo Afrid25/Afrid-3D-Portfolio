@@ -21,12 +21,12 @@ const Tech = () => {
         web applications without unnecessary complexity.
       </motion.p>
 
-      <div className='mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6'>
+      <div className='mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6'>
         {technologies.map((technology, index) => (
           <motion.article
             key={technology.name}
             variants={fadeIn("up", "spring", index * 0.04, 0.6)}
-            className='rounded-[24px] border border-white/10 bg-white/[0.04] px-4 py-5 text-center shadow-[0_20px_60px_-50px_rgba(255,76,76,0.28)]'
+            className='rounded-[24px] border border-white/10 bg-white/[0.04] px-4 py-5 text-center shadow-[0_20px_60px_-50px_rgba(56,189,248,0.28)]'
           >
             <img
               src={technology.icon}
@@ -46,3 +46,4 @@ const Tech = () => {
 };
 
 export default SectionWrapper(Tech, "skills");
+
