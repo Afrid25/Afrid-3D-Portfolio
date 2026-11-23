@@ -1,7 +1,7 @@
 import { Suspense, lazy } from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import useIsMobile from "./hooks/useIsMobile";
+import Overview from "./components/home/Overview";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
@@ -11,7 +11,7 @@ const Tech = lazy(() => import("./components/Tech"));
 const Works = lazy(() => import("./components/Works"));
 const CertificatesSection = lazy(() => import("./components/Certificates/CertificatesSection"));
 const Contact = lazy(() => import("./components/Contact"));
-const StarsCanvas = lazy(() => import("./components/canvas/Stars"));
+
 const PortfolioChatbot = lazy(() => import("./components/chatbot/PortfolioChatbot"));
 
 const SectionFallback = ({ compact = false }) => (
@@ -19,7 +19,7 @@ const SectionFallback = ({ compact = false }) => (
 );
 
 const App = () => {
-  const isMobile = useIsMobile(768);
+
 
   return (
     <BrowserRouter>
@@ -31,14 +31,15 @@ const App = () => {
       </a>
 
       <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-center bg-no-repeat'>
+        <div className='bg-primary'>
           <Navbar />
           <Hero />
+          <Overview />
         </div>
 
         <main id='main-content'>
           <Suspense fallback={<SectionFallback />}>
-            <About />
+            <Works />
           </Suspense>
           <Suspense fallback={<SectionFallback />}>
             <Experience />
@@ -47,7 +48,7 @@ const App = () => {
             <Tech />
           </Suspense>
           <Suspense fallback={<SectionFallback />}>
-            <Works />
+            <About />
           </Suspense>
           <Suspense fallback={<SectionFallback />}>
             <CertificatesSection />
@@ -56,11 +57,7 @@ const App = () => {
             <Suspense fallback={<SectionFallback />}>
               <Contact />
             </Suspense>
-            {!isMobile ? (
-              <Suspense fallback={null}>
-                <StarsCanvas />
-              </Suspense>
-            ) : null}
+
           </div>
         </main>
         <Suspense fallback={null}>
@@ -73,3 +70,4 @@ const App = () => {
 };
 
 export default App;
+

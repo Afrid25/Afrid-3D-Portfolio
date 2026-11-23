@@ -37,7 +37,7 @@ export const navLinks = [
   },
   {
     id: "journey",
-    title: "Technical Journey",
+    title: "Journey",
   },
   {
     id: "skills",
@@ -260,3 +260,4 @@ const projects = [
 ];
 
 export { services, technologies, experiences, testimonials, projects };
+
