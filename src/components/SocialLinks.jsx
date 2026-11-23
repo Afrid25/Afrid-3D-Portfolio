@@ -172,7 +172,7 @@ const SocialLinks = ({ className = "" }) => {
             target={isExternal ? "_blank" : undefined}
             rel={isExternal ? "noreferrer" : undefined}
             aria-label={`${link.name}: ${link.description}`}
-            className='group flex min-h-[148px] flex-col items-center justify-center rounded-[28px] border border-white/10 bg-black/20 px-4 py-6 text-center transition duration-300 hover:-translate-y-1 hover:border-white/15 hover:bg-white/[0.06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff4c4c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#111111]'
+            className='group flex min-h-[148px] flex-col items-center justify-center rounded-[28px] border border-white/10 bg-black/20 px-4 py-6 text-center transition duration-300 hover:-translate-y-1 hover:border-white/15 hover:bg-white/[0.06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#38bdf8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#111111]'
           >
             <span
               className={`flex h-16 w-16 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] transition duration-300 ${accentTone[link.icon] || ""}`}
@@ -193,3 +193,4 @@ const SocialLinks = ({ className = "" }) => {
 };
 
 export default SocialLinks;
+

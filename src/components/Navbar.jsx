@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { navLinks } from "../constants";
+import { navLinks } from "../constants/navigation";
 import { siteConfig } from "../constants/siteConfig";
 
 export default function Navbar() {
@@ -23,9 +23,9 @@ export default function Navbar() {
       className="block py-3 text-sm text-secondary hover:text-white aria-[current=location]:text-sky-300">{title}</a>
   ));
   const resume = <a href={siteConfig.resume.downloadUrl} download className="action">Resume</a>;
-  return <nav aria-label="Primary" className="fixed inset-x-0 top-0 z-40 border-b border-slate-700 bg-primary">
-    <div className="portfolio-wrap flex min-h-16 items-center justify-between">
-      <a href="#top" className="font-bold tracking-[.22em]">AFRID</a>
+  return <nav aria-label="Primary" className="glass-nav fixed z-40">
+    <div className="nav-inner flex min-h-16 items-center justify-between">
+      <a href="#top" className="rgb-brand font-bold tracking-[.22em]">AFRID</a>
       <div className="hidden items-center gap-5 lg:flex">{links}{resume}</div>
       <button className="action lg:hidden" onClick={() => sheet.current.showModal()} aria-haspopup="dialog">Menu</button>
       <dialog ref={sheet} aria-label="Navigation" className="ml-auto mr-0 h-dvh max-h-none w-72 bg-slate-900 p-6 text-white backdrop:bg-black/60">

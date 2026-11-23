@@ -17,7 +17,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-10 grid gap-6 xl:grid-cols-[minmax(0,1.2fr)_minmax(320px,0.8fr)]'
       >
-        <div className='rounded-[32px] border border-white/10 bg-white/[0.04] p-8 shadow-[0_32px_90px_-52px_rgba(255,76,76,0.35)] sm:p-10'>
+        <div className='about-panel rounded-[32px] border border-white/10 bg-white/[0.04] p-8 shadow-[0_32px_90px_-52px_rgba(56,189,248,0.35)] sm:p-10'>
           <p className='max-w-2xl text-base leading-8 text-white/70 sm:text-lg'>
             {siteConfig.about}
           </p>
@@ -30,7 +30,7 @@ const About = () => {
               href={siteConfig.resume.downloadUrl}
               download
               aria-label='Download my CV as PDF'
-              className='inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#ff4c4c] px-6 py-3 text-sm font-semibold text-white shadow-[0_16px_40px_-20px_rgba(255,76,76,0.8)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#ff6262] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff4c4c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#111111]'
+              className='inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#38bdf8] px-6 py-3 text-sm font-semibold text-white shadow-[0_16px_40px_-20px_rgba(56,189,248,0.8)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#7dd3fc] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#38bdf8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#111111]'
             >
               {siteConfig.resume.label}
             </a>
@@ -39,17 +39,17 @@ const About = () => {
             </span>
           </div>
 
-          <div className='mt-10 rounded-[28px] border border-white/10 bg-black/20 p-6'>
-            <p className='text-sm uppercase tracking-[0.24em] text-white/40'>Availability</p>
+          <details className='mt-4 rounded-xl border border-white/10 bg-black/20 p-3'>
+            <summary className='cursor-pointer text-sm font-semibold'>Availability</summary>
             <p className='mt-3 text-lg font-medium text-white'>{siteConfig.availability}</p>
-          </div>
+          </details>
         </div>
 
         <aside className='grid gap-4'>
           {profileHighlights.map((item) => (
             <article
               key={item.label}
-              className='rounded-[28px] border border-white/10 bg-white/[0.04] p-6 shadow-[0_24px_70px_-50px_rgba(255,76,76,0.28)]'
+              className='rounded-[28px] border border-white/10 bg-white/[0.04] p-6 shadow-[0_24px_70px_-50px_rgba(56,189,248,0.28)]'
             >
               <p className='text-sm uppercase tracking-[0.24em] text-white/40'>{item.label}</p>
               <h3 className='mt-3 text-2xl font-semibold tracking-[-0.03em] text-white'>
@@ -65,3 +65,4 @@ const About = () => {
 };
 
 export default SectionWrapper(About, "about");
+

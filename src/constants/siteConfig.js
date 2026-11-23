@@ -1,6 +1,7 @@
 const emailAddress = "25afridfoisal00@gmail.com";
 
 export const siteConfig = {
+  linkedInUrl: "https://www.linkedin.com/in/md-afrid-foisal-opu-0474b8307/",
   name: "Md Afrid Foisal Opu",
   shortName: "AFRID",
   role: "Computer Science and Engineering Student, and full stack software development learner.",

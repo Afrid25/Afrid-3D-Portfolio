@@ -8,7 +8,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ExperienceCard = ({ experience, index }) => (
   <motion.article
     variants={fadeIn("up", "spring", index * 0.12, 0.75)}
-    className='flex h-full flex-col rounded-[28px] border border-white/10 bg-white/[0.04] p-6 shadow-[0_24px_70px_-50px_rgba(255,76,76,0.28)]'
+    className='flex h-full flex-col rounded-[28px] border border-white/10 bg-white/[0.04] p-6 shadow-[0_24px_70px_-50px_rgba(56,189,248,0.28)]'
   >
     <div className='flex items-center justify-between gap-4'>
       <div className='flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-black/30'>
@@ -32,13 +32,14 @@ const ExperienceCard = ({ experience, index }) => (
       {experience.company_name}
     </p>
 
-    <ul className='mt-6 space-y-3'>
+    <details className='mt-4 sm:hidden'><summary>Details</summary><ul>{experience.points.map(point => <li className='mt-2' key={point}>{point}</li>)}</ul></details>
+    <ul className='mt-6 hidden space-y-3 sm:block'>
       {experience.points.map((point, pointIndex) => (
         <li
           key={`${experience.title}-${pointIndex}`}
           className='flex gap-3 text-sm leading-7 text-white/65'
         >
-          <span className='mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#ff4c4c]' />
+          <span className='mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#38bdf8]' />
           <span>{point}</span>
         </li>
       ))}
@@ -61,7 +62,7 @@ const Experience = () => {
         Four areas that shape how I learn, design, and build as a developer.
       </motion.p>
 
-      <div className='mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4'>
+      <div className='journey-grid mt-10 grid grid-cols-2 gap-3 sm:gap-6 md:grid-cols-2 lg:grid-cols-4'>
         {experiences.map((experience, index) => (
           <ExperienceCard key={`experience-${index}`} experience={experience} index={index} />
         ))}
@@ -71,3 +72,4 @@ const Experience = () => {
 };
 
 export default SectionWrapper(Experience, "journey");
+

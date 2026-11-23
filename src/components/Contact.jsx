@@ -1,11 +1,10 @@
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import { FaFacebookF, FaGithub, FaTelegramPlane, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaGithub, FaLinkedin, FaTelegramPlane, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 import { SectionWrapper } from "../hoc";
-import { socialLinks } from "../constants/siteConfig";
+import { siteConfig, socialLinks } from "../constants/siteConfig";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -16,6 +15,7 @@ const initialFormState = {
 };
 
 const contactSocialLinks = [
+  { name: "LinkedIn", href: siteConfig.linkedInUrl, Icon: FaLinkedin },
   {
     name: "GitHub",
     href: socialLinks.find((link) => link.name === "GitHub")?.href || "https://github.com/Afrid25",
@@ -69,6 +69,7 @@ const Contact = () => {
     setFeedback({ type: "idle", message: "" });
 
     try {
+      const { default: emailjs } = await import("@emailjs/browser");
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
@@ -107,7 +108,7 @@ const Contact = () => {
 
       <motion.div
         variants={fadeIn("up", "tween", 0.1, 0.8)}
-        className='mx-auto mt-10 w-full max-w-3xl rounded-[32px] border border-white/10 bg-white/[0.04] p-8 shadow-[0_28px_90px_-54px_rgba(255,76,76,0.3)] sm:p-10'
+        className='mx-auto mt-10 w-full max-w-3xl rounded-[32px] border border-white/10 bg-white/[0.04] p-8 shadow-[0_28px_90px_-54px_rgba(56,189,248,0.3)] sm:p-10'
       >
         <form onSubmit={handleSubmit} className='mx-auto flex w-full max-w-xl flex-col gap-6'>
           <label className='flex flex-col gap-3 text-left'>
@@ -122,7 +123,7 @@ const Contact = () => {
               placeholder='Your Name'
               autoComplete='name'
               required
-              className='min-h-[56px] rounded-2xl border border-white/10 bg-black/20 px-5 text-base text-white placeholder:text-white/35 focus:border-[#ff4c4c]/50 focus:outline-none'
+              className='min-h-[56px] rounded-2xl border border-white/10 bg-black/20 px-5 text-base text-white placeholder:text-white/35 focus:border-[#38bdf8]/50 focus:outline-none'
             />
           </label>
 
@@ -138,7 +139,7 @@ const Contact = () => {
               placeholder='Your Email'
               autoComplete='email'
               required
-              className='min-h-[56px] rounded-2xl border border-white/10 bg-black/20 px-5 text-base text-white placeholder:text-white/35 focus:border-[#ff4c4c]/50 focus:outline-none'
+              className='min-h-[56px] rounded-2xl border border-white/10 bg-black/20 px-5 text-base text-white placeholder:text-white/35 focus:border-[#38bdf8]/50 focus:outline-none'
             />
           </label>
 
@@ -153,14 +154,14 @@ const Contact = () => {
               onChange={handleChange}
               placeholder='Your Message'
               required
-              className='rounded-2xl border border-white/10 bg-black/20 px-5 py-4 text-base text-white placeholder:text-white/35 focus:border-[#ff4c4c]/50 focus:outline-none'
+              className='rounded-2xl border border-white/10 bg-black/20 px-5 py-4 text-base text-white placeholder:text-white/35 focus:border-[#38bdf8]/50 focus:outline-none'
             />
           </label>
 
           <button
             type='submit'
             disabled={loading}
-            className='inline-flex min-h-[56px] w-full items-center justify-center rounded-2xl bg-[#ff4c4c] px-6 text-sm font-semibold uppercase tracking-[0.18em] text-white shadow-[0_16px_40px_-20px_rgba(255,76,76,0.8)] transition duration-300 hover:bg-[#ff6262] disabled:cursor-not-allowed disabled:opacity-70'
+            className='inline-flex min-h-[56px] w-full items-center justify-center rounded-2xl bg-[#38bdf8] px-6 text-sm font-semibold uppercase tracking-[0.18em] text-white shadow-[0_16px_40px_-20px_rgba(56,189,248,0.8)] transition duration-300 hover:bg-[#7dd3fc] disabled:cursor-not-allowed disabled:opacity-70'
           >
             {loading ? "Sending..." : "Send Message"}
           </button>
@@ -191,9 +192,9 @@ const Contact = () => {
                   key={link.name}
                   href={link.href}
                   target='_blank'
-                  rel='noreferrer'
+                  rel='noopener noreferrer'
                   aria-label={`Open ${link.name}`}
-                  className='inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-black/20 text-white transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:text-[#ff6262] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ff4c4c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#111111]'
+                  className='inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-black/20 text-white transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:text-[#7dd3fc] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#38bdf8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#111111]'
                 >
                   <SocialIcon size={22} />
                 </a>
@@ -207,3 +208,4 @@ const Contact = () => {
 };
 
 export default SectionWrapper(Contact, "contact");
+

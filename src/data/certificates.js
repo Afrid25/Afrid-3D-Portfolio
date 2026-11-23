@@ -26,6 +26,7 @@ export const certificateGroups = [
       {
         id: "anthropic-ai-fluency",
         title: "AI Fluency for Students",
+        shortTitle: "AI Fluency",
         issuer: "Anthropic",
         issuerDetail: "Makers of Claude AI",
         date: "May 30, 2026",
@@ -121,6 +122,7 @@ export const certificateGroups = [
       {
         id: "road-to-faang",
         title: "Road to FAANG Companies",
+        shortTitle: "Road to FAANG",
         issuer: "IIUC Competitive Programming Society",
         issuerDetail: "Endorsed by Arnab Dashgupta, Software Engineer at Google",
         date: "March 1, 2025",
@@ -155,6 +157,7 @@ export const certificateGroups = [
       {
         id: "bteb-computer-office",
         title: "National Skill Standard Basic Course - Computer Office Application",
+        shortTitle: "Office Applications",
         issuer: "Bangladesh Technical Education Board, Dhaka",
         issuerDetail: "Skill Development Training Center, Kaptai, Rangamati",
         date: "Issued January 18, 2023",
@@ -176,6 +179,7 @@ export const certificateGroups = [
       {
         id: "programming-hero-web-engineering-batch-14",
         title: "Web Engineering - Programming Hero Batch 14",
+        shortTitle: "Web Engineering",
         issuer: "Programming Hero",
         issuerDetail: "AI Driven Full Stack Web Engineer program",
         date: "2026",
@@ -319,6 +323,7 @@ export const certificateGroups = [
       {
         id: "youth-cultural-council-merit-2016",
         title: "Youth Cultural Council Merit Certificate",
+        shortTitle: "Cultural Merit",
         issuer: "Youth Cultural Council, Bangladesh",
         issuerDetail: "Special participation in primary-level music under a youth cultural examination program",
         date: "May 20, 2016",
@@ -335,6 +340,7 @@ export const certificateGroups = [
       {
         id: "primary-school-cultural-competition-2015",
         title: "Primary School Cultural Competition - Folk Song",
+        shortTitle: "School Folk Song",
         issuer: "Kaptai Upazila Shilpakala Academy",
         issuerDetail: "Primary school cultural competition, Srijonshil Bangladesh, 2015",
         date: "October 15, 2015",
